@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LBP
+Version: Q-2019.12
+Date   : Fri Mar 12 11:07:35 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: CONTROL/global_index_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: gray_addr[13]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LBP                tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  CONTROL/global_index_reg_0_/CK (DFFSX2)                 0.00       0.50 r
+  CONTROL/global_index_reg_0_/Q (DFFSX2)                  0.57       1.07 r
+  CONTROL/global_index[0] (CONTROL)                       0.00       1.07 r
+  READ/global_index[0] (READ)                             0.00       1.07 r
+  READ/U3/Y (INVX3)                                       0.23       1.30 f
+  READ/U91/Y (CLKINVX2)                                   0.55       1.85 r
+  READ/U156/Y (AND2XL)                                    0.51       2.37 r
+  READ/U157/Y (AND2XL)                                    0.51       2.88 r
+  READ/U55/Y (AND2XL)                                     0.51       3.39 r
+  READ/U59/Y (AND2XL)                                     0.51       3.91 r
+  READ/U63/Y (AND2XL)                                     0.51       4.42 r
+  READ/U64/Y (AND2XL)                                     0.52       4.95 r
+  READ/U85/Y (OR2XL)                                      0.49       5.43 r
+  READ/U41/Y (AND2XL)                                     0.51       5.94 r
+  READ/U77/Y (AND2XL)                                     0.51       6.46 r
+  READ/U68/Y (AND2XL)                                     0.51       6.97 r
+  READ/U74/Y (AND2XL)                                     0.51       7.48 r
+  READ/U147/Y (AND2XL)                                    0.37       7.85 r
+  READ/U272/Y (XOR2X1)                                    0.28       8.13 f
+  READ/U191/Y (AO22X1)                                    0.38       8.51 f
+  READ/U89/Y (AOI221XL)                                   0.51       9.02 r
+  READ/U87/Y (NAND3X1)                                    0.29       9.31 f
+  READ/gray_addr[13] (READ)                               0.00       9.31 f
+  U1/Y (BUFX12)                                           0.56       9.88 f
+  gray_addr[13] (out)                                     0.00       9.88 f
+  data arrival time                                                  9.88
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.50      10.50
+  clock uncertainty                                      -0.10      10.40
+  output external delay                                  -0.50       9.90
+  data required time                                                 9.90
+  --------------------------------------------------------------------------
+  data required time                                                 9.90
+  data arrival time                                                 -9.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+1

@@ -1,0 +1,3445 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2018.03
+# platform  : Linux 2.6.32-431.el6.x86_64
+# version   : 2018.03p001 64 bits
+# build date: 2018.04.24 18:13:05 PDT
+#----------------------------------------
+# started Mon Feb 01 19:59:49 CST 2021
+# hostname  : ideal125
+# pid       : 29161
+# arguments : '-label' 'session_0' '-console' 'ideal125:35065' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/max.chen/ICCONTEST/2018/B_ICC2018_priliminary_grad_cell_based/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/max.chen/ICCONTEST/2018/B_ICC2018_priliminary_grad_cell_based/jgproject/.tmp/.initCmds.tcl' 'superlint.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2018 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/max.chen/ICCONTEST/2018/B_ICC2018_priliminary_grad_cell_based/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_afl".
+INFO: reading configuration file "/home/max.chen/.config/jasper/jaspergold.conf".
+% check_superlint -init
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% # Config rules
+% config_rtlds -rule -enable -domain { LINT AUTO_FORMAL }
+% config_rtlds -rule -disable -tag { CAS_IS_DFRC SIG_IS_DLCK SIG_NO_TGFL SIG_NO_TGRS SIG_NO_TGST FSM_NO_MTRN FSM_NO_TRRN }
+% # vsd2018_constrain //
+% config_rtlds -rule  -disable -category { NAMING AUTO_FORMAL_DEAD_CODE AUTO_FORMAL_SIGNALS AUTO_FORMAL_ARITHMETIC_OVERFLOW }
+% config_rtlds -rule  -disable -tag { IDN_NR_SVKY ARY_MS_DRNG IDN_NR_AMKY IDN_NR_CKYW IDN_NR_SVKW ARY_NR_LBND VAR_NR_INDL INS_NR_PTEX INP_NO_USED OTP_NR_ASYA FLP_NR_MXCS OTP_UC_INST OTP_NR_UDRV REG_NR_TRRC INS_NR_INPR MOD_NS_GLGC } 
+% config_rtlds -rule  -disable -tag { REG_NR_RWRC }
+% # vsd2018_constrain //
+% 
+% analyze -sv  ./huffman.v
+[-- (VERI-1482)] Analyzing Verilog file '/home/nfs_cad/cadence/JASPER/jasper_2018.03p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './huffman.v'
+% elaborate -bbox true -top huffman
+INFO (ISW003): Top module name is "huffman".
+[INFO (VERI-1018)] ./huffman.v(1): compiling module 'huffman'
+[INFO (VERI-1018)] ./huffman.v(55): compiling module 'controlUnit'
+[WARN (VERI-1209)] ./huffman.v(72): expression size 32 truncated to fit in target size 1
+[INFO (VERI-1018)] ./huffman.v(148): compiling module 'grayCounter'
+[WARN (VERI-9005)] ./huffman.v(191): 8 bit index expression (gray_data - 8'b01) truncated to 3 bits
+[WARN (VERI-9005)] ./huffman.v(191): 8 bit index expression (gray_data - 8'b01) truncated to 3 bits
+[INFO (VERI-1018)] ./huffman.v(200): compiling module 'sorting'
+[INFO (VERI-1018)] ./huffman.v(295): compiling module 'huffTree'
+[WARN (VERI-1209)] ./huffman.v(323): expression size 32 truncated to fit in target size 4
+[WARN (VERI-1209)] ./huffman.v(346): expression size 32 truncated to fit in target size 3
+[WARN (VERI-9005)] ./huffman.v(375): 32 bit index expression (tree_cnt + 1) truncated to 4 bits
+[WARN (VERI-9005)] ./huffman.v(392): 32 bit index expression (sort_cnt + 1) truncated to 3 bits
+[WARN (VERI-9005)] ./huffman.v(393): 32 bit index expression (sort_cnt + 1) truncated to 3 bits
+[WARN (VERI-9005)] ./huffman.v(394): 32 bit index expression (sort_cnt + 1) truncated to 3 bits
+[INFO (VERI-1018)] ./huffman.v(407): compiling module 'encodeHuff'
+[WARN (VERI-1209)] ./huffman.v(445): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./huffman.v(446): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./huffman.v(447): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./huffman.v(448): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./huffman.v(449): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./huffman.v(450): expression size 32 truncated to fit in target size 1
+[WARN (VERI-9005)] ./huffman.v(485): 8 bit index expression idx[i] truncated to 3 bits
+[WARN (VERI-1209)] ./huffman.v(486): expression size 32 truncated to fit in target size 8
+[WARN (VERI-9005)] ./huffman.v(491): 32 bit index expression (tree_cnt + 1) truncated to 4 bits
+[WARN (VERI-9005)] ./huffman.v(492): 8 bit index expression idx[i] truncated to 3 bits
+[WARN (VERI-1209)] ./huffman.v(493): expression size 32 truncated to fit in target size 8
+[WARN (VERI-1209)] ./huffman.v(499): expression size 32 truncated to fit in target size 4
+huffman
+[<embedded>] % 
+[<embedded>] % # Setup clock and reset
+[<embedded>] % clock clk
+[<embedded>] % reset reset
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "reset".
+[<embedded>] % 
+[<embedded>] % # Setup for CTL check
+[<embedded>] % set_superlint_fsm_ctl_livelock true
+WARNING (WG002): "superlint_fsm_ctl_livelock" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+[<embedded>] % set_superlint_fsm_ctl_deadlock true
+WARNING (WG002): "superlint_fsm_ctl_deadlock" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+[<embedded>] % 
+[<embedded>] % # Setup for LTL check
+[<embedded>] % #set_superlint_fsm_ctl_livelock false
+[<embedded>] % #set_superlint_fsm_ctl_deadlock false
+[<embedded>] % #set_superlint_add_automatic_task_assumption true
+[<embedded>] % 
+[<embedded>] % # Extract checks
+[<embedded>] % check_superlint -extract
+INFO (ISL009): Started detection of ASG_IS_XRCH, ARY_IS_OOBI, CAS_NO_PRIO checks
+INFO (ISL009): Started detection of FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB checks
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 3 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 2 iterations. Assigned values for 614 of 614 design flops, 0 of 0 design latches, 68 of 68 internal elements.
+INFO (ISL009): Started detection of BUS_IS_CONT,BUS_IS_FLOT checks
+INFO (ISL014): Started extracting properties for ASG_IS_XRCH,ARY_IS_OOBI,CAS_NO_PRIO checks
+INFO (ISL015): Extracted 24 properties of ASG_IS_XRCH,ARY_IS_OOBI,CAS_NO_PRIO
+INFO (ISL014): Started extracting properties for FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB checks
+INFO (ISL015): Extracted 17 properties of FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB
+INFO (ISL014): Started extracting properties for BUS_IS_CONT,BUS_IS_FLOT checks
+INFO (ISL015): Extracted 0 properties of BUS_IS_CONT,BUS_IS_FLOT
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL016): Extracted 2 STRUCTURAL checks.
+INFO (ISL016): Extracted 14 SYNTH checks.
+INFO (ISL016): Extracted 61 BASIC LINT checks.
+118
+[<embedded>] % 
+[<embedded>] % # Prove
+[<embedded>] % set_superlint_prove_parallel_tasks on
+[<embedded>] % set_prove_no_traces true
+[<embedded>] % check_superlint -prove -time_limit 10m -bg
+INFO (ISL008): Running multiple proof threads in parallel, one per task.
+    Expect high resource allocation.
+WARNING (WG002): "superlint_prove_parallel_tasks" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+WARNING (WSL054): "superlint_prove_parallel_tasks" is enabled, overriding the following settings: proofgrid_per_engine_max_jobs, proofgrid_max_jobs.
+    For message help, type "help -message WSL054"
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_FSM>", 8 properties to prove with 0 already proven/unreachable
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Ht J N I L 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Ht J N I L, total 5 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.015s
+0.0.PRE: Performing Proof Simplification...
+0.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: Proof Simplification Iteration 1	[0.00 s]
+0.0.Ht: Proof Simplification Iteration 2	[0.00 s]
+0.0.Ht: Proof Simplification Iteration 3	[0.00 s]
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+0.0.PRE: Proof Simplification completed in 0.01 s
+0: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 9
+0: ProofGrid is starting event handling
+0.0.L: Proofgrid shell started at 29407@ideal125(local) jg_29161_ideal125_1
+0.0.Ht: Proofgrid shell started at 29403@ideal125(local) jg_29161_ideal125_1
+0.0.L: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Proofgrid shell started at 29406@ideal125(local) jg_29161_ideal125_1
+0.0.N: Proofgrid shell started at 29405@ideal125(local) jg_29161_ideal125_1
+0.0.I: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.J: Proofgrid shell started at 29404@ideal125(local) jg_29161_ideal125_1
+0.0.J: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+0.0.I: Starting proof for property "fsm_state_cover_STATE_CNTDONE_prop_3"	[0.00 s].
+0.0.N: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+0.0.N: Starting proof for property "fsm_state_cover_STATE_CNTDONE_prop_3"	[0.00 s].
+0.0.I: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.N: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.00 s]
+0.0.N: Trace Attempt  3	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  4	[0.02 s]
+0.0.J: Trace Attempt  1	[0.02 s]
+0.0.L: Using trace diversification with seed 1 (0.05)
+0.0.I: Trace Attempt  4	[0.04 s]
+0.0.N: Trace Attempt  4	[0.04 s]
+0.0.L: Using LRU state removal heuristic
+0.0.Ht: Trace Attempt  1	[0.05 s]
+0.0.I: Trace Attempt  5	[0.05 s]
+INFO (IPF047): 0.0.J: The cover property "fsm_state_cover_STATE_INIT_prop_1" was covered in 1 cycles in 0.05 s.
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  2	[0.05 s]
+INFO (IPF047): 0.0.J: The cover property "fsm_state_cover_STATE_GETCNT_prop_2" was covered in 2 cycles in 0.05 s.
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  2	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  3	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  4	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.N: Trace Attempt  5	[0.05 s]
+0.0.Ht: Trace Attempt  2	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.Ht: Trace Attempt  3	[0.06 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.Ht: Trace Attempt  4	[0.06 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  1	[0.05 s]
+0.0.Ht: Trace Attempt  5	[0.06 s]
+0.0.J: Trace Attempt  1	[0.06 s]
+0.0.J: Trace Attempt  1	[0.06 s]
+0.0.J: Trace Attempt  1	[0.06 s]
+0.0.J: Trace Attempt  1	[0.06 s]
+0.0.L: Using states from traces to { (reset) }
+0.0.J: Trace Attempt  1	[0.06 s]
+0.0.L: Trace Attempt  1	[0.06 s]
+0.0.L: Using states from traces to { (reset) }
+0.0.J: Trace Attempt  1	[0.06 s]
+0.0.L: Trace Attempt  1	[0.07 s]
+0.0.J: Trace Attempt  1	[0.07 s]
+0.0.L: Trace Attempt  2	[0.07 s]
+0.0.L: Using states from traces to { (reset) }
+0.0.J: Trace Attempt  1	[0.07 s]
+0.0.L: Trace Attempt  1	[0.07 s]
+0.0.J: Trace Attempt  1	[0.07 s]
+0.0.L: Trace Attempt  2	[0.07 s]
+0.0.J: Trace Attempt  1	[0.07 s]
+0.0.J: Trace Attempt  1	[0.08 s]
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+0.0.J: Trace Attempt  1	[0.08 s]
+INFO (IPF127): Using rule superlint_chunking_rule.
+0.0.J: Trace Attempt  1	[0.08 s]
+INFO (IPF127): Using action: prove_action.
+0.0.I: Trace Attempt  5	[0.08 s]
+0.0.J: Trace Attempt  1	[0.08 s]
+0.0.J: Trace Attempt  1	[0.09 s]
+0.0.J: Trace Attempt  1	[0.09 s]
+0.0.L: Trace Attempt  3	[0.09 s]
+0.0.J: Trace Attempt  1	[0.09 s]
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_FSM_CTL_DEADLOCK>", 8 properties to prove with 0 already proven/unreachable
+0.0.J: Trace Attempt  1	[0.09 s]
+0.0.L: Trace Attempt  4	[0.10 s]
+0.0.J: Trace Attempt  1	[0.10 s]
+0.0.J: Trace Attempt  1	[0.10 s]
+0.0.L: Trace Attempt  5	[0.10 s]
+0.0.J: Trace Attempt  1	[0.10 s]
+0.0.J: Trace Attempt  1	[0.10 s]
+0.0.J: Trace Attempt  1	[0.10 s]
+0.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[0.12 s]
+0.0.J: Trace Attempt  1	[0.12 s]
+0.0.J: Trace Attempt  1	[0.12 s]
+INFO (IPF031): Settings used for proof thread 1:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Tri 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Tri, total 1 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+1: Using multistage preprocessing
+1: Starting reduce
+0.0.J: Trace Attempt  1	[0.12 s]
+0.0.J: Trace Attempt  1	[0.13 s]
+1: Finished reduce in 0.006s
+0.0.J: Trace Attempt  1	[0.13 s]
+1.0.PRE: Performing Proof Simplification...
+1.0.Tri: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+1.0.Tri: Proof Simplification Iteration 1	[0.00 s]
+1.0.Tri: Proof Simplification Iteration 2	[0.00 s]
+0.0.J: Trace Attempt  1	[0.13 s]
+1.0.Tri: Proof Simplification Iteration 3	[0.00 s]
+0.0.J: Trace Attempt  1	[0.14 s]
+1.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 1.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+1.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 1.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+1.0.PRE: Proof Simplification completed in 0.01 s
+1: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0.0.J: Trace Attempt  1	[0.14 s]
+1: =============================== ProofGrid start ===============================
+1: ProofGrid usable level: 8
+0.0.J: Trace Attempt  1	[0.14 s]
+1: ProofGrid is starting event handling
+0.0.J: Trace Attempt  1	[0.15 s]
+0.0.J: Trace Attempt  1	[0.15 s]
+0.0.J: Trace Attempt  1	[0.15 s]
+0.0.J: Trace Attempt  1	[0.16 s]
+0.0.J: Trace Attempt  1	[0.16 s]
+0.0.J: Trace Attempt  1	[0.16 s]
+0.0.J: Trace Attempt  1	[0.16 s]
+0.0.J: Trace Attempt  1	[0.17 s]
+1.0.Tri: Proofgrid shell started at 29456@ideal125(local) jg_29161_ideal125_2
+1.0.Tri: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.J: Trace Attempt  1	[0.17 s]
+1.0.Tri: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_CNTDONE_prop_12"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.J: Trace Attempt  1	[0.17 s]
+0.0.J: Trace Attempt  1	[0.17 s]
+0.0.J: Trace Attempt  1	[0.17 s]
+0.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[0.19 s]
+0.0.J: Trace Attempt  1	[0.19 s]
+0.0.J: Trace Attempt  1	[0.19 s]
+0.0.J: Trace Attempt  1	[0.19 s]
+0.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[0.21 s]
+0.0.J: Trace Attempt  1	[0.21 s]
+0.0.J: Trace Attempt  1	[0.21 s]
+0.0.J: Trace Attempt  1	[0.21 s]
+0.0.J: Trace Attempt  1	[0.22 s]
+0.0.J: Trace Attempt  1	[0.22 s]
+0.0.J: Trace Attempt  1	[0.22 s]
+0.0.J: Trace Attempt  1	[0.22 s]
+0.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[0.25 s]
+0.0.J: Trace Attempt  1	[0.25 s]
+0.0.J: Trace Attempt  1	[0.25 s]
+0.0.J: Trace Attempt  1	[0.25 s]
+0.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[0.27 s]
+0.0.J: Trace Attempt  1	[0.27 s]
+0.0.J: Trace Attempt  1	[0.27 s]
+0.0.J: Trace Attempt  1	[0.27 s]
+0.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[0.29 s]
+0.0.J: Trace Attempt  1	[0.29 s]
+0.0.J: Trace Attempt  1	[0.29 s]
+0.0.J: Trace Attempt  1	[0.29 s]
+0.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[0.31 s]
+0.0.J: Trace Attempt  1	[0.31 s]
+0.0.J: Trace Attempt  1	[0.31 s]
+0.0.J: Trace Attempt  1	[0.31 s]
+1.0.Tri:    0.00" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[0.37 s]
+0.0.J: Trace Attempt  1	[0.37 s]
+0.0.J: Trace Attempt  1	[0.37 s]
+0.0.J: Trace Attempt  1	[0.37 s]
+0.0.J: Trace Attempt  1	[0.38 s]
+0.0.J: Trace Attempt  1	[0.38 s]
+0.0.J: Trace Attempt  1	[0.38 s]
+0.0.J: Trace Attempt  1	[0.38 s]
+0.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[0.42 s]
+0.0.J: Trace Attempt  1	[0.42 s]
+0.0.J: Trace Attempt  1	[0.42 s]
+0.0.J: Trace Attempt  1	[0.42 s]
+0.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[0.45 s]
+0.0.J: Trace Attempt  1	[0.45 s]
+0.0.J: Trace Attempt  1	[0.45 s]
+0.0.J: Trace Attempt  1	[0.45 s]
+0.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[0.48 s]
+0.0.J: Trace Attempt  1	[0.48 s]
+0.0.J: Trace Attempt  1	[0.48 s]
+0.0.J: Trace Attempt  1	[0.48 s]
+0.0.J: Trace Attempt  1	[0.49 s]
+0.0.J: Trace Attempt  1	[0.49 s]
+0.0.J: Trace Attempt  1	[0.49 s]
+0.0.J: Trace Attempt  1	[0.49 s]
+0.0.J: Trace Attempt  1	[0.50 s]
+0.0.J: Trace Attempt  1	[0.50 s]
+0.0.J: Trace Attempt  1	[0.50 s]
+0.0.J: Trace Attempt  1	[0.50 s]
+0.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[0.53 s]
+0.0.J: Trace Attempt  1	[0.53 s]
+0.0.J: Trace Attempt  1	[0.53 s]
+0.0.J: Trace Attempt  1	[0.53 s]
+0.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[0.55 s]
+0.0.J: Trace Attempt  1	[0.55 s]
+0.0.J: Trace Attempt  1	[0.55 s]
+0.0.J: Trace Attempt  1	[0.55 s]
+0.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[0.60 s]
+0.0.J: Trace Attempt  1	[0.60 s]
+0.0.J: Trace Attempt  1	[0.60 s]
+0.0.J: Trace Attempt  1	[0.60 s]
+0.0.J: Trace Attempt  1	[0.61 s]
+0.0.J: Trace Attempt  1	[0.61 s]
+0.0.J: Trace Attempt  1	[0.61 s]
+0.0.J: Trace Attempt  1	[0.61 s]
+0.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[0.63 s]
+0.0.J: Trace Attempt  1	[0.63 s]
+0.0.J: Trace Attempt  1	[0.63 s]
+0.0.J: Trace Attempt  1	[0.63 s]
+0.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[0.65 s]
+0.0.J: Trace Attempt  1	[0.65 s]
+0.0.J: Trace Attempt  1	[0.65 s]
+0.0.J: Trace Attempt  1	[0.65 s]
+0.0.J: Trace Attempt  1	[0.66 s]
+0.0.J: Trace Attempt  1	[0.66 s]
+0.0.J: Trace Attempt  1	[0.66 s]
+0.0.J: Trace Attempt  1	[0.66 s]
+0.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[0.69 s]
+0.0.I: Trace Attempt  1	[0.70 s]
+0.0.I: Trace Attempt  2	[0.70 s]
+0.0.J: Trace Attempt  1	[0.70 s]
+0.0.J: Trace Attempt  1	[0.70 s]
+0.0.J: Trace Attempt  1	[0.70 s]
+0.0.J: Trace Attempt  1	[0.70 s]
+0.0.J: Trace Attempt  1	[0.71 s]
+0.0.J: Trace Attempt  1	[0.71 s]
+0.0.I: Trace Attempt  3	[0.71 s]
+0.0.J: Trace Attempt  1	[0.71 s]
+0.0.J: Trace Attempt  1	[0.71 s]
+0.0.J: Trace Attempt  1	[0.72 s]
+0.0.J: Trace Attempt  1	[0.72 s]
+0.0.J: Trace Attempt  1	[0.72 s]
+0.0.I: Trace Attempt  5	[0.72 s]
+0.0.J: Trace Attempt  1	[0.72 s]
+0.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[0.75 s]
+0.0.J: Trace Attempt  1	[0.75 s]
+0.0.J: Trace Attempt  1	[0.75 s]
+0.0.J: Trace Attempt  1	[0.75 s]
+0.0.J: Trace Attempt  1	[0.76 s]
+0.0.J: Trace Attempt  1	[0.76 s]
+0.0.J: Trace Attempt  1	[0.76 s]
+0.0.J: Trace Attempt  1	[0.76 s]
+0.0.J: Trace Attempt  1	[0.77 s]
+0.0.J: Trace Attempt  1	[0.77 s]
+0.0.J: Trace Attempt  1	[0.77 s]
+0.0.J: Trace Attempt  1	[0.77 s]
+0.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[0.79 s]
+0.0.J: Trace Attempt  1	[0.79 s]
+0.0.J: Trace Attempt  1	[0.79 s]
+0.0.J: Trace Attempt  1	[0.79 s]
+0.0.J: Trace Attempt  1	[0.80 s]
+0.0.J: Trace Attempt  1	[0.80 s]
+0.0.J: Trace Attempt  1	[0.80 s]
+0.0.J: Trace Attempt  1	[0.80 s]
+0.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[0.82 s]
+0.0.J: Trace Attempt  1	[0.82 s]
+0.0.J: Trace Attempt  1	[0.82 s]
+0.0.J: Trace Attempt  1	[0.82 s]
+0.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[0.85 s]
+0.0.J: Trace Attempt  1	[0.85 s]
+0.0.J: Trace Attempt  1	[0.85 s]
+0.0.J: Trace Attempt  1	[0.85 s]
+0.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[0.87 s]
+0.0.J: Trace Attempt  1	[0.87 s]
+0.0.J: Trace Attempt  1	[0.87 s]
+0.0.J: Trace Attempt  1	[0.87 s]
+0.0.J: Trace Attempt  1	[0.88 s]
+0.0.J: Trace Attempt  1	[0.88 s]
+0.0.J: Trace Attempt  1	[0.88 s]
+0.0.J: Trace Attempt  1	[0.88 s]
+0.0.J: Trace Attempt  1	[0.89 s]
+0.0.J: Trace Attempt  1	[0.89 s]
+0.0.J: Trace Attempt  1	[0.89 s]
+0.0.J: Trace Attempt  1	[0.89 s]
+0.0.J: Trace Attempt  1	[0.89 s]
+0.0.N: Trace Attempt  1	[0.90 s]
+0.0.N: Trace Attempt  2	[0.90 s]
+0.0.J: Trace Attempt  1	[0.90 s]
+0.0.J: Trace Attempt  1	[0.90 s]
+0.0.N: Trace Attempt  3	[0.90 s]
+0.0.J: Trace Attempt  1	[0.90 s]
+0.0.J: Trace Attempt  1	[0.90 s]
+0.0.J: Trace Attempt  1	[0.91 s]
+0.0.J: Trace Attempt  1	[0.91 s]
+0.0.J: Trace Attempt  1	[0.91 s]
+0.0.J: Trace Attempt  1	[0.91 s]
+0.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[0.93 s]
+0.0.N: Trace Attempt  5	[0.93 s]
+0.0.J: Trace Attempt  1	[0.93 s]
+0.0.J: Trace Attempt  1	[0.93 s]
+0.0.J: Trace Attempt  1	[0.93 s]
+0.0.J: Trace Attempt  1	[0.93 s]
+0.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[0.96 s]
+0: ProofGrid usable level: 11
+0.0.J: Trace Attempt  1	[0.96 s]
+0.0.J: Trace Attempt  1	[0.96 s]
+0.0.J: Trace Attempt  1	[0.96 s]
+0.0.J: Trace Attempt  1	[0.97 s]
+0.0.J: Trace Attempt  1	[0.97 s]
+0.0.J: Trace Attempt  1	[0.97 s]
+0.0.J: Trace Attempt  1	[0.97 s]
+0.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[1.01 s]
+0.0.J: Trace Attempt  1	[1.01 s]
+0.0.J: Trace Attempt  1	[1.01 s]
+0.0.J: Trace Attempt  1	[1.01 s]
+0.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[1.05 s]
+0.0.J: Trace Attempt  1	[1.05 s]
+0.0.J: Trace Attempt  1	[1.05 s]
+0.0.J: Trace Attempt  1	[1.05 s]
+0.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[1.08 s]
+0.0.J: Trace Attempt  1	[1.08 s]
+0.0.J: Trace Attempt  1	[1.08 s]
+0.0.J: Trace Attempt  1	[1.08 s]
+0.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[1.12 s]
+0.0.J: Trace Attempt  1	[1.12 s]
+0.0.J: Trace Attempt  1	[1.12 s]
+0.0.J: Trace Attempt  1	[1.12 s]
+0.0.J: Trace Attempt  1	[1.13 s]
+0.0.J: Trace Attempt  1	[1.13 s]
+0.0.J: Trace Attempt  1	[1.13 s]
+0.0.J: Trace Attempt  1	[1.13 s]
+0.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[1.16 s]
+0.0.J: Trace Attempt  1	[1.16 s]
+0.0.J: Trace Attempt  1	[1.16 s]
+0.0.J: Trace Attempt  1	[1.16 s]
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+0.0.J: Trace Attempt  1	[1.17 s]
+0.0.J: Trace Attempt  1	[1.17 s]
+0.0.J: Trace Attempt  1	[1.17 s]
+0.0.J: Trace Attempt  1	[1.17 s]
+0.0.J: Trace Attempt  1	[1.18 s]
+0.0.J: Trace Attempt  1	[1.18 s]
+0.0.J: Trace Attempt  1	[1.18 s]
+0.0.J: Trace Attempt  1	[1.18 s]
+0.0.J: Trace Attempt  1	[1.19 s]
+0.0.J: Trace Attempt  1	[1.19 s]
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+0.0.J: Trace Attempt  1	[1.19 s]
+0.0.J: Trace Attempt  1	[1.19 s]
+0.0.J: Trace Attempt  1	[1.20 s]
+0.0.J: Trace Attempt  1	[1.20 s]
+0.0.J: Trace Attempt  1	[1.20 s]
+0.0.J: Trace Attempt  1	[1.20 s]
+0.0.J: Trace Attempt  1	[1.21 s]
+0.0.J: Trace Attempt  1	[1.21 s]
+0.0.J: Trace Attempt  1	[1.21 s]
+0.0.J: Trace Attempt  1	[1.21 s]
+0.0.J: Trace Attempt  1	[1.21 s]
+0.0.J: Trace Attempt  1	[1.22 s]
+0.0.J: Trace Attempt  1	[1.22 s]
+0.0.J: Trace Attempt  1	[1.22 s]
+0.0.J: Trace Attempt  1	[1.22 s]
+0.0.J: Trace Attempt  1	[1.23 s]
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_FSM_CTL_LIVELOCK>", 1 properties to prove with 0 already proven/unreachable
+0.0.J: Trace Attempt  1	[1.23 s]
+0.0.J: Trace Attempt  1	[1.23 s]
+0.0.J: Trace Attempt  1	[1.23 s]
+0.0.J: Trace Attempt  1	[1.24 s]
+0.0.J: Trace Attempt  1	[1.24 s]
+0.0.J: Trace Attempt  1	[1.24 s]
+0.0.J: Trace Attempt  1	[1.24 s]
+0.0.J: Trace Attempt  1	[1.25 s]
+0.0.J: Trace Attempt  1	[1.25 s]
+0.0.J: Trace Attempt  1	[1.25 s]
+0.0.J: Trace Attempt  1	[1.25 s]
+0.0.J: Trace Attempt  1	[1.25 s]
+INFO (IPF031): Settings used for proof thread 2:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Tri 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Tri, total 1 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+2: Using multistage preprocessing
+2: Starting reduce
+0.0.J: Trace Attempt  1	[1.26 s]
+0.0.J: Trace Attempt  1	[1.26 s]
+0.0.J: Trace Attempt  1	[1.26 s]
+2: Finished reduce in 0.005s
+0.0.J: Trace Attempt  1	[1.26 s]
+2.0.PRE: Performing Proof Simplification...
+2.0.Tri: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.Tri: Proof Simplification Iteration 1	[0.00 s]
+0.0.J: Trace Attempt  1	[1.27 s]
+2.0.Tri: Proof Simplification Iteration 2	[0.00 s]
+2.0.Tri: Proof Simplification Iteration 3	[0.00 s]
+0.0.J: Trace Attempt  1	[1.27 s]
+0.0.J: Trace Attempt  1	[1.27 s]
+2.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 2.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+2.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 2.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+2.0.PRE: Proof Simplification completed in 0.01 s
+2: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0.0.J: Trace Attempt  1	[1.27 s]
+2: =============================== ProofGrid start ===============================
+2: ProofGrid usable level: 1
+0.0.J: Trace Attempt  1	[1.27 s]
+0.0.J: Trace Attempt  1	[1.28 s]
+2: ProofGrid is starting event handling
+0.0.J: Trace Attempt  1	[1.28 s]
+0.0.J: Trace Attempt  1	[1.28 s]
+0.0.J: Trace Attempt  1	[1.28 s]
+0.0.J: Trace Attempt  1	[1.29 s]
+0.0.J: Trace Attempt  1	[1.29 s]
+0.0.J: Trace Attempt  1	[1.29 s]
+0.0.J: Trace Attempt  1	[1.29 s]
+0.0.J: Trace Attempt  1	[1.30 s]
+2.0.Tri: Proofgrid shell started at 29492@ideal125(local) jg_29161_ideal125_3
+0.0.J: Trace Attempt  1	[1.30 s]
+2.0.Tri: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.J: Trace Attempt  1	[1.30 s]
+2.0.Tri: Last scan. Per property time limit: 0s
+2.0.Tri: Starting proof for property "fsm_state_livelock_STATE_INIT_prop_9"	[0.00 s].
+2.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.J: Trace Attempt  1	[1.30 s]
+0.0.J: Trace Attempt  1	[1.30 s]
+0.0.J: Trace Attempt  1	[1.31 s]
+0.0.J: Trace Attempt  1	[1.31 s]
+0.0.J: Trace Attempt  1	[1.31 s]
+0.0.J: Trace Attempt  1	[1.31 s]
+0.0.J: Trace Attempt  1	[1.32 s]
+0.0.J: Trace Attempt  1	[1.32 s]
+0.0.J: Trace Attempt  1	[1.32 s]
+0.0.J: Trace Attempt  1	[1.32 s]
+0.0.J: Trace Attempt  1	[1.33 s]
+0.0.J: Trace Attempt  1	[1.33 s]
+0.0.J: Trace Attempt  1	[1.33 s]
+0.0.J: Trace Attempt  1	[1.33 s]
+0.0.J: Trace Attempt  1	[1.34 s]
+0.0.J: Trace Attempt  1	[1.34 s]
+0.0.J: Trace Attempt  1	[1.34 s]
+0.0.J: Trace Attempt  1	[1.34 s]
+0.0.J: Trace Attempt  1	[1.34 s]
+0.0.J: Trace Attempt  1	[1.35 s]
+0.0.J: Trace Attempt  1	[1.35 s]
+0.0.J: Trace Attempt  1	[1.35 s]
+0.0.J: Trace Attempt  1	[1.35 s]
+0.0.J: Trace Attempt  1	[1.36 s]
+0.0.J: Trace Attempt  1	[1.36 s]
+0.0.J: Trace Attempt  1	[1.36 s]
+0.0.J: Trace Attempt  1	[1.36 s]
+0.0.J: Trace Attempt  1	[1.37 s]
+0.0.J: Trace Attempt  1	[1.37 s]
+0.0.J: Trace Attempt  1	[1.37 s]
+0.0.J: Trace Attempt  1	[1.37 s]
+0.0.J: Trace Attempt  1	[1.38 s]
+0.0.J: Trace Attempt  1	[1.38 s]
+0.0.J: Trace Attempt  1	[1.38 s]
+0.0.J: Trace Attempt  1	[1.38 s]
+0.0.J: Trace Attempt  1	[1.39 s]
+0.0.J: Trace Attempt  1	[1.39 s]
+0.0.J: Trace Attempt  1	[1.39 s]
+0.0.J: Trace Attempt  1	[1.39 s]
+0.0.J: Trace Attempt  1	[1.40 s]
+0.0.J: Trace Attempt  1	[1.40 s]
+0.0.J: Trace Attempt  1	[1.40 s]
+0.0.J: Trace Attempt  1	[1.40 s]
+0.0.J: Trace Attempt  1	[1.40 s]
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+0.0.J: Trace Attempt  1	[1.41 s]
+0.0.J: Trace Attempt  1	[1.41 s]
+background (thread 3)
+0.0.J: Trace Attempt  1	[1.41 s]
+0.0.J: Trace Attempt  1	[1.41 s]
+0.0.J: Trace Attempt  1	[1.42 s]
+0.0.J: Trace Attempt  1	[1.42 s]
+0.0.J: Trace Attempt  1	[1.42 s]
+0.0.J: Trace Attempt  1	[1.42 s]
+0.0.J: Trace Attempt  1	[1.43 s]
+2.0.Tri:    0.01" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.J: Trace Attempt  1	[1.43 s]
+INFO (IPF127): Using rule superlint_chunking_rule.
+0.0.J: Trace Attempt  1	[1.43 s]
+0.0.J: Trace Attempt  1	[1.43 s]
+0.0.J: Trace Attempt  1	[1.44 s]
+0.0.J: Trace Attempt  1	[1.44 s]
+0.0.J: Trace Attempt  1	[1.44 s]
+0.0.J: Trace Attempt  1	[1.44 s]
+INFO (IPF127): Using action: prove_action.
+0.0.J: Trace Attempt  1	[1.44 s]
+0.0.J: Trace Attempt  1	[1.45 s]
+0.0.J: Trace Attempt  1	[1.45 s]
+0.0.J: Trace Attempt  1	[1.45 s]
+0.0.J: Trace Attempt  1	[1.45 s]
+0.0.J: Trace Attempt  1	[1.46 s]
+0.0.J: Trace Attempt  1	[1.46 s]
+0.0.J: Trace Attempt  1	[1.46 s]
+0.0.J: Trace Attempt  1	[1.46 s]
+0.0.J: Trace Attempt  1	[1.47 s]
+0.0.J: Trace Attempt  1	[1.47 s]
+0.0.J: Trace Attempt  1	[1.47 s]
+0.0.J: Trace Attempt  1	[1.47 s]
+0.0.J: Trace Attempt  1	[1.48 s]
+0.0.J: Trace Attempt  1	[1.48 s]
+0.0.J: Trace Attempt  1	[1.48 s]
+0.0.J: Trace Attempt  1	[1.48 s]
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_OUT_OF_BOUND_INDEXING>", 24 properties to prove with 0 already proven/unreachable
+0.0.J: Trace Attempt  1	[1.48 s]
+0.0.J: Trace Attempt  1	[1.49 s]
+0.0.J: Trace Attempt  1	[1.49 s]
+0.0.J: Trace Attempt  1	[1.49 s]
+0.0.J: Trace Attempt  1	[1.49 s]
+0.0.J: Trace Attempt  1	[1.50 s]
+0.0.J: Trace Attempt  1	[1.50 s]
+0.0.J: Trace Attempt  1	[1.50 s]
+0.0.J: Trace Attempt  1	[1.50 s]
+0.0.J: Trace Attempt  1	[1.50 s]
+0.0.J: Trace Attempt  1	[1.51 s]
+0.0.J: Trace Attempt  1	[1.51 s]
+0.0.J: Trace Attempt  1	[1.51 s]
+0.0.J: Trace Attempt  1	[1.51 s]
+0.0.J: Trace Attempt  1	[1.52 s]
+0.0.J: Trace Attempt  1	[1.52 s]
+0.0.J: Trace Attempt  1	[1.52 s]
+0.0.J: Trace Attempt  1	[1.52 s]
+0.0.J: Trace Attempt  1	[1.53 s]
+0.0.J: Trace Attempt  1	[1.53 s]
+0.0.J: Trace Attempt  1	[1.53 s]
+0.0.J: Trace Attempt  1	[1.53 s]
+0.0.J: Trace Attempt  1	[1.54 s]
+INFO (IPF031): Settings used for proof thread 3:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Ht J N I L 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Ht J N I L, total 5 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+0.0.J: Trace Attempt  1	[1.54 s]
+3.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.PRE: The property "out_of_bound_indexing_prop_18" was proven in 0.00 s.
+3: Found proofs for 1 properties in preprocessing
+3: Using multistage preprocessing
+3: Starting reduce
+0.0.J: Trace Attempt  1	[1.54 s]
+0.0.J: Trace Attempt  1	[1.54 s]
+0.0.J: Trace Attempt  1	[1.54 s]
+0.0.J: Trace Attempt  1	[1.55 s]
+0.0.J: Trace Attempt  1	[1.55 s]
+3: Finished reduce in 0.009s
+0.0.J: Trace Attempt  1	[1.55 s]
+3.0.PRE: Performing Proof Simplification...
+3.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Ht: Proof Simplification Iteration 1	[0.00 s]
+0.0.J: Trace Attempt  1	[1.55 s]
+3.0.Ht: Proof Simplification Iteration 2	[0.00 s]
+0.0.J: Trace Attempt  1	[1.56 s]
+3.0.Ht: Proof Simplification Iteration 3	[0.00 s]
+0.0.J: Trace Attempt  1	[1.56 s]
+3.0.Ht: Proof Simplification Iteration 4	[0.01 s]
+0.0.J: Trace Attempt  1	[1.56 s]
+0.0.J: Trace Attempt  1	[1.56 s]
+3.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+3.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+0.0.J: Trace Attempt  1	[1.57 s]
+3.0.PRE: A proof was found: No trace exists. [0.00 s]
+0.0.J: Trace Attempt  1	[1.57 s]
+0.0.J: Trace Attempt  1	[1.57 s]
+INFO (IPF057): 3.0.PRE: The property "out_of_bound_indexing_prop_25" was proven in 0.00 s.
+0.0.J: Trace Attempt  1	[1.57 s]
+0.0.J: Trace Attempt  1	[1.58 s]
+0.0.J: Trace Attempt  1	[1.58 s]
+3.0.PRE: Proof Simplification completed in 0.03 s
+3.0.Ht: Identified and disabled 4 duplicated targets.
+3: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+3: =============================== ProofGrid start ===============================
+3: ProofGrid usable level: 8
+0.0.J: Trace Attempt  1	[1.58 s]
+0.0.J: Trace Attempt  1	[1.58 s]
+0.0.J: Trace Attempt  1	[1.58 s]
+3: ProofGrid is starting event handling
+0.0.J: Trace Attempt  1	[1.59 s]
+0.0.J: Trace Attempt  1	[1.59 s]
+0.0.J: Trace Attempt  1	[1.59 s]
+0.0.J: Trace Attempt  1	[1.60 s]
+0.0.J: Trace Attempt  1	[1.60 s]
+0.0.J: Trace Attempt  1	[1.60 s]
+0.0.J: Trace Attempt  1	[1.60 s]
+0.0.J: Trace Attempt  1	[1.60 s]
+3.0.J: Proofgrid shell started at 29526@ideal125(local) jg_29161_ideal125_4
+3.0.I: Proofgrid shell started at 29528@ideal125(local) jg_29161_ideal125_4
+3.0.L: Proofgrid shell started at 29529@ideal125(local) jg_29161_ideal125_4
+0.0.J: Trace Attempt  1	[1.61 s]
+3.0.N: Proofgrid shell started at 29527@ideal125(local) jg_29161_ideal125_4
+3.0.J: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Ht: Proofgrid shell started at 29525@ideal125(local) jg_29161_ideal125_4
+3.0.I: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.L: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.I: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_19"	[0.00 s].
+0.0.J: Trace Attempt  1	[1.61 s]
+0.0.J: Trace Attempt  1	[1.61 s]
+0.0.J: Trace Attempt  1	[1.62 s]
+3.0.N: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_19"	[0.00 s].
+3.0.L: Using trace diversification with seed 1 (0.05)
+3.0.L: Using LRU state removal heuristic
+3.0.L: Using states from traces to { (reset) }
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.Ht: Trace Attempt  1	[0.01 s]
+3.0.L: Trace Attempt  1	[0.01 s]
+3.0.Ht: Trace Attempt  2	[0.01 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 2 cycles was found for the property "out_of_bound_indexing_prop_32" in 0.00 s.
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 2 cycles was found for the property "out_of_bound_indexing_prop_33" in 0.00 s.
+3.0.Ht: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.Ht: Trace Attempt  4	[0.01 s]
+0.0.J: Trace Attempt  1	[1.62 s]
+3.0.L: Trace Attempt  2	[0.01 s]
+3.0.Ht: Trace Attempt  5	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  2	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  2	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.L: Using states from traces to { (reset) }
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+0.0.J: Trace Attempt  1	[1.62 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+0.0.J: Trace Attempt  1	[1.63 s]
+3.0.L: Trace Attempt  1	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.L: Trace Attempt  2	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.I: Trace Attempt  3	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+0.0.J: Trace Attempt  1	[1.63 s]
+3.0.L: Trace Attempt  3	[0.02 s]
+3.0.J: Trace Attempt  1	[0.03 s]
+0.0.J: Trace Attempt  1	[1.64 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+0.0.J: Trace Attempt  1	[1.64 s]
+3.0.J: Trace Attempt  1	[0.03 s]
+3.0.L: Trace Attempt  4	[0.03 s]
+0.0.J: Trace Attempt  1	[1.64 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+0.0.J: Trace Attempt  1	[1.65 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+3.0.L: Trace Attempt  5	[0.04 s]
+0.0.J: Trace Attempt  1	[1.65 s]
+3.0.I: Trace Attempt  4	[0.04 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+0.0.J: Trace Attempt  1	[1.65 s]
+3.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  1	[1.66 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+0.0.J: Trace Attempt  1	[1.66 s]
+3.0.J: Trace Attempt  1	[0.05 s]
+0.0.J: Trace Attempt  1	[1.66 s]
+3.0.J: Trace Attempt  1	[0.06 s]
+0.0.J: Trace Attempt  1	[1.67 s]
+3.0.J: Trace Attempt  1	[0.06 s]
+0.0.J: Trace Attempt  1	[1.67 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+0.0.J: Trace Attempt  1	[1.67 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+0.0.J: Trace Attempt  1	[1.68 s]
+0.0.J: Trace Attempt  1	[1.68 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+0.0.J: Trace Attempt  1	[1.68 s]
+3.0.J: Trace Attempt  1	[0.08 s]
+0.0.J: Trace Attempt  1	[1.69 s]
+3.0.J: Trace Attempt  1	[0.08 s]
+0.0.J: Trace Attempt  1	[1.69 s]
+3.0.J: Trace Attempt  1	[0.09 s]
+0.0.J: Trace Attempt  1	[1.69 s]
+3.0.J: Trace Attempt  1	[0.09 s]
+0.0.J: Trace Attempt  1	[1.70 s]
+0.0.J: Trace Attempt  1	[1.70 s]
+3.0.J: Trace Attempt  1	[0.09 s]
+0.0.J: Trace Attempt  1	[1.71 s]
+3.0.J: Trace Attempt  1	[0.10 s]
+0.0.J: Trace Attempt  1	[1.71 s]
+3.0.J: Trace Attempt  1	[0.10 s]
+0.0.J: Trace Attempt  1	[1.71 s]
+3.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[1.72 s]
+3.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[1.72 s]
+0.0.J: Trace Attempt  1	[1.72 s]
+3.0.J: Trace Attempt  1	[0.11 s]
+0.0.J: Trace Attempt  1	[1.73 s]
+3.0.J: Trace Attempt  1	[0.12 s]
+0.0.J: Trace Attempt  1	[1.73 s]
+3.0.J: Trace Attempt  1	[0.12 s]
+0.0.J: Trace Attempt  1	[1.73 s]
+3.0.J: Trace Attempt  1	[0.13 s]
+0.0.J: Trace Attempt  1	[1.74 s]
+3.0.J: Trace Attempt  1	[0.13 s]
+0.0.J: Trace Attempt  1	[1.74 s]
+0.0.J: Trace Attempt  1	[1.74 s]
+3.0.J: Trace Attempt  1	[0.14 s]
+0.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[0.14 s]
+0.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[0.14 s]
+0.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[0.15 s]
+0.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[0.15 s]
+0.0.J: Trace Attempt  1	[1.76 s]
+0.0.J: Trace Attempt  1	[1.76 s]
+3.0.J: Trace Attempt  1	[0.15 s]
+0.0.J: Trace Attempt  1	[1.77 s]
+3.0.J: Trace Attempt  1	[0.16 s]
+0.0.J: Trace Attempt  1	[1.77 s]
+3.0.J: Trace Attempt  1	[0.16 s]
+0.0.J: Trace Attempt  1	[1.77 s]
+3.0.J: Trace Attempt  1	[0.17 s]
+0.0.J: Trace Attempt  1	[1.78 s]
+0.0.J: Trace Attempt  1	[1.78 s]
+3.0.J: Trace Attempt  1	[0.17 s]
+0.0.J: Trace Attempt  1	[1.78 s]
+3.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[1.79 s]
+3.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[1.79 s]
+3.0.J: Trace Attempt  1	[0.18 s]
+0.0.J: Trace Attempt  1	[1.79 s]
+0.0.J: Trace Attempt  1	[1.80 s]
+3.0.J: Trace Attempt  1	[0.19 s]
+0.0.J: Trace Attempt  1	[1.80 s]
+3.0.J: Trace Attempt  1	[0.19 s]
+0.0.J: Trace Attempt  1	[1.80 s]
+3.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[1.81 s]
+3.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[1.81 s]
+3.0.J: Trace Attempt  1	[0.20 s]
+0.0.J: Trace Attempt  1	[1.81 s]
+3.0.J: Trace Attempt  1	[0.21 s]
+0.0.J: Trace Attempt  1	[1.82 s]
+0.0.J: Trace Attempt  1	[1.82 s]
+3.0.J: Trace Attempt  1	[0.21 s]
+0.0.J: Trace Attempt  1	[1.82 s]
+3.0.J: Trace Attempt  1	[0.22 s]
+0.0.J: Trace Attempt  1	[1.83 s]
+3.0.J: Trace Attempt  1	[0.22 s]
+0.0.J: Trace Attempt  1	[1.83 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[1.83 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[1.84 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+0.0.J: Trace Attempt  1	[1.84 s]
+0.0.J: Trace Attempt  1	[1.84 s]
+3.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[1.85 s]
+3.0.J: Trace Attempt  1	[0.24 s]
+0.0.J: Trace Attempt  1	[1.85 s]
+3.0.J: Trace Attempt  1	[0.25 s]
+0.0.J: Trace Attempt  1	[1.86 s]
+3.0.J: Trace Attempt  1	[0.25 s]
+0.0.J: Trace Attempt  1	[1.86 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[1.86 s]
+0.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+0.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[0.27 s]
+0.0.J: Trace Attempt  1	[1.88 s]
+3.0.J: Trace Attempt  1	[0.27 s]
+0.0.J: Trace Attempt  1	[1.88 s]
+3.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[1.88 s]
+0.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[0.28 s]
+0.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[0.29 s]
+0.0.J: Trace Attempt  1	[1.90 s]
+3.0.J: Trace Attempt  1	[0.29 s]
+0.0.J: Trace Attempt  1	[1.90 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[1.91 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[1.91 s]
+0.0.J: Trace Attempt  1	[1.91 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+0.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[0.31 s]
+0.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[0.31 s]
+0.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[1.93 s]
+3.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[1.93 s]
+0.0.J: Trace Attempt  1	[1.93 s]
+3.0.J: Trace Attempt  1	[0.32 s]
+0.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[0.33 s]
+0.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[1.95 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[1.95 s]
+0.0.J: Trace Attempt  1	[1.95 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+0.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[0.35 s]
+0.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[1.97 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[1.97 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+0.0.J: Trace Attempt  1	[1.97 s]
+0.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[0.37 s]
+0.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[0.37 s]
+0.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[0.38 s]
+0.0.J: Trace Attempt  1	[1.99 s]
+3.0.J: Trace Attempt  1	[0.38 s]
+0.0.J: Trace Attempt  1	[1.99 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[1.99 s]
+0.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+0.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[2.01 s]
+3.0.J: Trace Attempt  1	[0.40 s]
+0.0.J: Trace Attempt  1	[2.01 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[2.01 s]
+0.0.J: Trace Attempt  1	[2.02 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[2.02 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+0.0.J: Trace Attempt  1	[2.02 s]
+3.0.J: Trace Attempt  1	[0.42 s]
+0.0.J: Trace Attempt  1	[2.03 s]
+3.0.J: Trace Attempt  1	[0.42 s]
+0.0.J: Trace Attempt  1	[2.03 s]
+0.0.J: Trace Attempt  1	[2.03 s]
+3.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[0.43 s]
+0.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[2.05 s]
+0.0.J: Trace Attempt  1	[2.05 s]
+3.0.J: Trace Attempt  1	[0.44 s]
+0.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[0.45 s]
+0.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[0.45 s]
+0.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[2.07 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[2.07 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+0.0.J: Trace Attempt  1	[2.07 s]
+3.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[2.08 s]
+0.0.J: Trace Attempt  1	[2.08 s]
+3.0.J: Trace Attempt  1	[0.47 s]
+0.0.J: Trace Attempt  1	[2.08 s]
+3.0.J: Trace Attempt  1	[0.48 s]
+3.0.J: Trace Attempt  1	[0.48 s]
+0.0.J: Trace Attempt  1	[2.09 s]
+0.0.J: Trace Attempt  1	[2.09 s]
+3.0.J: Trace Attempt  1	[0.48 s]
+0.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[0.49 s]
+0.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[0.49 s]
+0.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[0.50 s]
+0.0.J: Trace Attempt  1	[2.11 s]
+3.0.J: Trace Attempt  1	[0.50 s]
+3.0.I: Trace Attempt  4	[0.50 s]
+0.0.J: Trace Attempt  1	[2.11 s]
+3.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[2.12 s]
+3.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[2.12 s]
+3.0.J: Trace Attempt  1	[0.51 s]
+0.0.J: Trace Attempt  1	[2.12 s]
+3.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[2.13 s]
+3.0.J: Trace Attempt  1	[0.52 s]
+0.0.J: Trace Attempt  1	[2.13 s]
+0.0.J: Trace Attempt  1	[2.13 s]
+3.0.J: Trace Attempt  1	[0.53 s]
+0.0.J: Trace Attempt  1	[2.14 s]
+3.0.J: Trace Attempt  1	[0.53 s]
+0.0.J: Trace Attempt  1	[2.14 s]
+3.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[2.15 s]
+3.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[2.15 s]
+3.0.J: Trace Attempt  1	[0.54 s]
+0.0.J: Trace Attempt  1	[2.15 s]
+0.0.J: Trace Attempt  1	[2.16 s]
+3.0.J: Trace Attempt  1	[0.55 s]
+0.0.J: Trace Attempt  1	[2.16 s]
+3.0.J: Trace Attempt  1	[0.55 s]
+0.0.J: Trace Attempt  1	[2.16 s]
+3.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[2.17 s]
+3.0.J: Trace Attempt  1	[0.56 s]
+0.0.J: Trace Attempt  1	[2.17 s]
+3.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[2.17 s]
+0.0.J: Trace Attempt  1	[2.18 s]
+3.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[2.18 s]
+3.0.J: Trace Attempt  1	[0.57 s]
+0.0.J: Trace Attempt  1	[2.18 s]
+3.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[0.58 s]
+0.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[2.20 s]
+3.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[2.20 s]
+0.0.J: Trace Attempt  1	[2.20 s]
+3.0.J: Trace Attempt  1	[0.59 s]
+0.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[0.60 s]
+0.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[0.60 s]
+0.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[0.61 s]
+0.0.J: Trace Attempt  1	[2.22 s]
+0.0.J: Trace Attempt  1	[2.22 s]
+3.0.J: Trace Attempt  1	[0.61 s]
+0.0.J: Trace Attempt  1	[2.22 s]
+3.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[0.62 s]
+0.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[0.63 s]
+0.0.J: Trace Attempt  1	[2.24 s]
+3.0.J: Trace Attempt  1	[0.63 s]
+0.0.J: Trace Attempt  1	[2.24 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+0.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[0.65 s]
+0.0.J: Trace Attempt  1	[2.26 s]
+3.0.J: Trace Attempt  1	[0.65 s]
+0.0.J: Trace Attempt  1	[2.26 s]
+0.0.J: Trace Attempt  1	[2.26 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+0.0.J: Trace Attempt  1	[2.27 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+0.0.J: Trace Attempt  1	[2.27 s]
+3.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[2.27 s]
+3.0.J: Trace Attempt  1	[0.67 s]
+0.0.J: Trace Attempt  1	[2.28 s]
+0.0.J: Trace Attempt  1	[2.28 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[2.29 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[2.29 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+0.0.J: Trace Attempt  1	[2.29 s]
+3.0.N: Trace Attempt  1	[0.68 s]
+3.0.N: Trace Attempt  2	[0.68 s]
+3.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[2.30 s]
+3.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[2.30 s]
+3.0.N: Trace Attempt  3	[0.69 s]
+3.0.J: Trace Attempt  1	[0.69 s]
+0.0.J: Trace Attempt  1	[2.30 s]
+0.0.J: Trace Attempt  1	[2.31 s]
+3.0.J: Trace Attempt  1	[0.70 s]
+3.0.J: Trace Attempt  1	[0.70 s]
+0.0.J: Trace Attempt  1	[2.31 s]
+0.0.J: Trace Attempt  1	[2.31 s]
+3.0.J: Trace Attempt  1	[0.71 s]
+0.0.J: Trace Attempt  1	[2.32 s]
+3.0.J: Trace Attempt  1	[0.71 s]
+0.0.J: Trace Attempt  1	[2.32 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+0.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+0.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+0.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[2.34 s]
+3.0.J: Trace Attempt  1	[0.73 s]
+0.0.J: Trace Attempt  1	[2.34 s]
+0.0.J: Trace Attempt  1	[2.34 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[2.35 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[2.35 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+0.0.J: Trace Attempt  1	[2.35 s]
+3.0.J: Trace Attempt  1	[0.75 s]
+0.0.J: Trace Attempt  1	[2.36 s]
+3.0.J: Trace Attempt  1	[0.75 s]
+0.0.J: Trace Attempt  1	[2.36 s]
+0.0.J: Trace Attempt  1	[2.37 s]
+3.0.J: Trace Attempt  1	[0.76 s]
+0.0.J: Trace Attempt  1	[2.37 s]
+3.0.J: Trace Attempt  1	[0.76 s]
+0.0.J: Trace Attempt  1	[2.37 s]
+3.0.J: Trace Attempt  1	[0.77 s]
+0.0.J: Trace Attempt  1	[2.38 s]
+3.0.J: Trace Attempt  1	[0.77 s]
+0.0.J: Trace Attempt  1	[2.38 s]
+3.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[2.38 s]
+3.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[2.39 s]
+3.0.J: Trace Attempt  1	[0.78 s]
+0.0.J: Trace Attempt  1	[2.39 s]
+0.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[0.79 s]
+0.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[0.79 s]
+0.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[0.80 s]
+0.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[0.80 s]
+0.0.J: Trace Attempt  1	[2.41 s]
+0.0.J: Trace Attempt  1	[2.41 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+0.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[0.82 s]
+0.0.J: Trace Attempt  1	[2.43 s]
+3.0.J: Trace Attempt  1	[0.82 s]
+0.0.J: Trace Attempt  1	[2.43 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[2.43 s]
+0.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+0.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[2.45 s]
+3.0.J: Trace Attempt  1	[0.84 s]
+0.0.J: Trace Attempt  1	[2.45 s]
+3.0.J: Trace Attempt  1	[0.85 s]
+0.0.J: Trace Attempt  1	[2.46 s]
+3.0.J: Trace Attempt  1	[0.85 s]
+0.0.J: Trace Attempt  1	[2.46 s]
+0.0.J: Trace Attempt  1	[2.46 s]
+3.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[2.47 s]
+3.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[2.47 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.J: Trace Attempt  1	[0.86 s]
+0.0.J: Trace Attempt  1	[2.47 s]
+3.0.N: Trace Attempt 20	[0.80 s]
+3.0.N: A proof was found: No trace exists. [0.86 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_19" was proven in 0.86 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_19"	[0.86 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_20"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.J: Trace Attempt  1	[0.87 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_19"	[0.87 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_20"	[0.00 s].
+0.0.J: Trace Attempt  1	[2.48 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+0.0.J: Trace Attempt  1	[2.48 s]
+3.0.J: Trace Attempt  1	[0.87 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  4	[0.00 s]
+3.0.I: Trace Attempt  5	[0.00 s]
+0.0.J: Trace Attempt  1	[2.48 s]
+3.0.J: Trace Attempt  1	[0.88 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+0.0.J: Trace Attempt  1	[2.49 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[0.88 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+0.0.J: Trace Attempt  1	[2.49 s]
+3.0.J: Trace Attempt  1	[0.89 s]
+0.0.J: Trace Attempt  1	[2.50 s]
+3.0.J: Trace Attempt  1	[0.89 s]
+0.0.J: Trace Attempt  1	[2.50 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+0.0.J: Trace Attempt  1	[2.50 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+0.0.J: Trace Attempt  1	[2.51 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+0.0.J: Trace Attempt  1	[2.51 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+0.0.J: Trace Attempt  1	[2.51 s]
+3.0.J: Trace Attempt  1	[0.91 s]
+0.0.J: Trace Attempt  1	[2.52 s]
+3.0.J: Trace Attempt  1	[0.91 s]
+0.0.J: Trace Attempt  1	[2.52 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[2.52 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[2.53 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+0.0.J: Trace Attempt  1	[2.53 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+0.0.J: Trace Attempt  1	[2.54 s]
+3.0.J: Trace Attempt  1	[0.93 s]
+0.0.J: Trace Attempt  1	[2.54 s]
+3.0.J: Trace Attempt  1	[0.93 s]
+0.0.J: Trace Attempt  1	[2.54 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[2.55 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[2.55 s]
+0.0.J: Trace Attempt  1	[2.55 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+0.0.J: Trace Attempt  1	[2.56 s]
+3.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[2.56 s]
+3.0.J: Trace Attempt  1	[0.95 s]
+0.0.J: Trace Attempt  1	[2.56 s]
+3.0.J: Trace Attempt  1	[0.96 s]
+0.0.J: Trace Attempt  1	[2.57 s]
+0.0.J: Trace Attempt  1	[2.57 s]
+3.0.J: Trace Attempt  1	[0.96 s]
+0.0.J: Trace Attempt  1	[2.57 s]
+3.0.J: Trace Attempt  1	[0.97 s]
+0.0.J: Trace Attempt  1	[2.58 s]
+3.0.J: Trace Attempt  1	[0.97 s]
+0.0.J: Trace Attempt  1	[2.58 s]
+3.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[2.58 s]
+0.0.J: Trace Attempt  1	[2.59 s]
+3.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[2.59 s]
+3.0.J: Trace Attempt  1	[0.98 s]
+0.0.J: Trace Attempt  1	[2.60 s]
+3.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[2.60 s]
+3.0.J: Trace Attempt  1	[0.99 s]
+0.0.J: Trace Attempt  1	[2.60 s]
+3.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[2.61 s]
+3.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[2.61 s]
+0.0.J: Trace Attempt  1	[2.61 s]
+3.0.J: Trace Attempt  1	[1.00 s]
+0.0.J: Trace Attempt  1	[2.62 s]
+3.0.J: Trace Attempt  1	[1.01 s]
+0.0.J: Trace Attempt  1	[2.62 s]
+3.0.J: Trace Attempt  1	[1.01 s]
+0.0.J: Trace Attempt  1	[2.62 s]
+3.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[2.63 s]
+3.0.J: Trace Attempt  1	[1.02 s]
+0.0.J: Trace Attempt  1	[2.63 s]
+0.0.J: Trace Attempt  1	[2.63 s]
+3.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[2.64 s]
+3.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[2.64 s]
+3.0.J: Trace Attempt  1	[1.03 s]
+0.0.J: Trace Attempt  1	[2.64 s]
+3.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[2.65 s]
+3.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[2.65 s]
+3.0.J: Trace Attempt  1	[1.04 s]
+0.0.J: Trace Attempt  1	[2.65 s]
+3.0.J: Trace Attempt  1	[1.05 s]
+0.0.J: Trace Attempt  1	[2.66 s]
+3.0.J: Trace Attempt  1	[1.05 s]
+0.0.J: Trace Attempt  1	[2.66 s]
+0.0.J: Trace Attempt  1	[2.67 s]
+3.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[2.67 s]
+3.0.J: Trace Attempt  1	[1.06 s]
+0.0.J: Trace Attempt  1	[2.67 s]
+3.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[2.67 s]
+0.0.J: Trace Attempt  1	[2.68 s]
+3.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[2.68 s]
+3.0.J: Trace Attempt  1	[1.07 s]
+0.0.J: Trace Attempt  1	[2.68 s]
+3.0.J: Trace Attempt  1	[1.08 s]
+0.0.J: Trace Attempt  1	[2.69 s]
+3.0.J: Trace Attempt  1	[1.08 s]
+0.0.J: Trace Attempt  1	[2.69 s]
+3.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[2.69 s]
+3.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[2.70 s]
+0.0.J: Trace Attempt  1	[2.70 s]
+3.0.J: Trace Attempt  1	[1.09 s]
+0.0.J: Trace Attempt  1	[2.71 s]
+3.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[2.71 s]
+3.0.J: Trace Attempt  1	[1.10 s]
+0.0.J: Trace Attempt  1	[2.71 s]
+3.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[2.71 s]
+3.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[2.72 s]
+0.0.J: Trace Attempt  1	[2.72 s]
+3.0.J: Trace Attempt  1	[1.11 s]
+0.0.J: Trace Attempt  1	[2.73 s]
+3.0.J: Trace Attempt  1	[1.12 s]
+0.0.J: Trace Attempt  1	[2.73 s]
+3.0.J: Trace Attempt  1	[1.12 s]
+0.0.J: Trace Attempt  1	[2.73 s]
+3.0.J: Trace Attempt  1	[1.13 s]
+0.0.J: Trace Attempt  1	[2.73 s]
+0.0.J: Trace Attempt  1	[2.74 s]
+3.0.J: Trace Attempt  1	[1.13 s]
+0.0.J: Trace Attempt  1	[2.74 s]
+3.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[2.75 s]
+3.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[2.75 s]
+3.0.J: Trace Attempt  1	[1.14 s]
+0.0.J: Trace Attempt  1	[2.75 s]
+3.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[2.76 s]
+3.0.J: Trace Attempt  1	[1.15 s]
+0.0.J: Trace Attempt  1	[2.76 s]
+0.0.J: Trace Attempt  1	[2.76 s]
+3.0.J: Trace Attempt  1	[1.16 s]
+0.0.J: Trace Attempt  1	[2.77 s]
+3.0.J: Trace Attempt  1	[1.16 s]
+0.0.J: Trace Attempt 200	[2.77 s]
+0.0.J: Reached length limit (200) [2.70 s]
+0.0.J: Exited with Success (@ 2.77 s)
+0.0.J: Completed, Restart ignored.
+3.0.J: Trace Attempt  1	[1.17 s]
+3.0.J: Trace Attempt  1	[1.17 s]
+3.0.J: Trace Attempt  1	[1.17 s]
+3.0.J: Trace Attempt  1	[1.18 s]
+3.0.J: Trace Attempt  1	[1.18 s]
+3.0.J: Trace Attempt  1	[1.19 s]
+3.0.J: Trace Attempt  1	[1.19 s]
+3.0.J: Trace Attempt  1	[1.19 s]
+3.0.J: Trace Attempt  1	[1.20 s]
+3.0.J: Trace Attempt  1	[1.20 s]
+3.0.J: Trace Attempt  1	[1.21 s]
+3.0.J: Trace Attempt  1	[1.21 s]
+3.0.J: Trace Attempt  1	[1.21 s]
+3.0.J: Trace Attempt  1	[1.22 s]
+3.0.J: Trace Attempt  1	[1.22 s]
+3.0.J: Trace Attempt  1	[1.23 s]
+3.0.J: Trace Attempt  1	[1.23 s]
+3.0.J: Trace Attempt  1	[1.24 s]
+3.0.J: Trace Attempt  1	[1.24 s]
+3.0.J: Trace Attempt  1	[1.24 s]
+3.0.J: Trace Attempt  1	[1.25 s]
+3.0.J: Trace Attempt  1	[1.25 s]
+3.0.J: Trace Attempt  1	[1.26 s]
+3.0.J: Trace Attempt  1	[1.26 s]
+3.0.J: Trace Attempt  1	[1.26 s]
+3.0.J: Trace Attempt  1	[1.27 s]
+3.0.J: Trace Attempt  1	[1.27 s]
+3.0.J: Trace Attempt  1	[1.28 s]
+3.0.J: Trace Attempt  1	[1.28 s]
+3.0.J: Trace Attempt  1	[1.29 s]
+3.0.J: Trace Attempt  1	[1.29 s]
+3.0.N: Trace Attempt  1	[0.43 s]
+3.0.N: Trace Attempt  2	[0.43 s]
+3.0.J: Trace Attempt  1	[1.29 s]
+3.0.N: Trace Attempt  3	[0.43 s]
+3.0.J: Trace Attempt  1	[1.30 s]
+3.0.J: Trace Attempt  1	[1.30 s]
+3.0.J: Trace Attempt  1	[1.31 s]
+3.0.J: Trace Attempt  1	[1.31 s]
+3.0.J: Trace Attempt  1	[1.31 s]
+3.0.J: Trace Attempt  1	[1.32 s]
+3.0.J: Trace Attempt  1	[1.32 s]
+3.0.J: Trace Attempt  1	[1.32 s]
+3.0.J: Trace Attempt  1	[1.33 s]
+3.0.J: Trace Attempt  1	[1.33 s]
+3.0.J: Trace Attempt  1	[1.33 s]
+3.0.J: Trace Attempt  1	[1.33 s]
+3.0.J: Trace Attempt  1	[1.34 s]
+3.0.J: Trace Attempt  1	[1.34 s]
+3.0.J: Trace Attempt  1	[1.34 s]
+3.0.J: Trace Attempt  1	[1.34 s]
+3.0.J: Trace Attempt  1	[1.35 s]
+3.0.J: Trace Attempt  1	[1.35 s]
+3.0.J: Trace Attempt  1	[1.35 s]
+3.0.J: Trace Attempt  1	[1.35 s]
+3.0.J: Trace Attempt  1	[1.36 s]
+3.0.J: Trace Attempt  1	[1.36 s]
+3.0.J: Trace Attempt  1	[1.36 s]
+3.0.J: Trace Attempt  1	[1.36 s]
+3.0.J: Trace Attempt  1	[1.36 s]
+3.0.J: Trace Attempt  1	[1.37 s]
+3.0.J: Trace Attempt  1	[1.37 s]
+3.0.J: Trace Attempt  1	[1.37 s]
+3.0.J: Trace Attempt  1	[1.38 s]
+3.0.J: Trace Attempt  1	[1.38 s]
+3.0.J: Trace Attempt  1	[1.38 s]
+3.0.J: Trace Attempt  1	[1.38 s]
+3.0.J: Trace Attempt  1	[1.39 s]
+3.0.J: Trace Attempt  1	[1.39 s]
+3.0.J: Trace Attempt  1	[1.39 s]
+3.0.J: Trace Attempt  1	[1.39 s]
+3.0.J: Trace Attempt  1	[1.40 s]
+3.0.J: Trace Attempt  1	[1.40 s]
+3.0.J: Trace Attempt  1	[1.40 s]
+3.0.J: Trace Attempt  1	[1.40 s]
+3.0.J: Trace Attempt  1	[1.41 s]
+3.0.J: Trace Attempt  1	[1.41 s]
+3.0.J: Trace Attempt  1	[1.41 s]
+3.0.J: Trace Attempt  1	[1.41 s]
+3.0.J: Trace Attempt  1	[1.42 s]
+3.0.J: Trace Attempt  1	[1.42 s]
+3.0.J: Trace Attempt  1	[1.42 s]
+3.0.J: Trace Attempt  1	[1.42 s]
+3.0.J: Trace Attempt  1	[1.43 s]
+3.0.J: Trace Attempt  1	[1.43 s]
+3.0.J: Trace Attempt  1	[1.43 s]
+3.0.J: Trace Attempt  1	[1.43 s]
+3.0.J: Trace Attempt  1	[1.44 s]
+3.0.J: Trace Attempt  1	[1.44 s]
+3.0.J: Trace Attempt  1	[1.44 s]
+3.0.J: Trace Attempt  1	[1.44 s]
+3.0.J: Trace Attempt  1	[1.45 s]
+3.0.J: Trace Attempt  1	[1.45 s]
+3.0.J: Trace Attempt  1	[1.45 s]
+3.0.J: Trace Attempt  1	[1.45 s]
+3.0.J: Trace Attempt  1	[1.46 s]
+3.0.J: Trace Attempt  1	[1.46 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.J: Trace Attempt  1	[1.46 s]
+3.0.N: Trace Attempt 24	[0.58 s]
+3.0.N: A proof was found: No trace exists. [0.60 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_20" was proven in 0.60 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_20"	[0.60 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_21"	[0.00 s].
+3.0.J: Trace Attempt  1	[1.46 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_20"	[0.59 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_21"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.J: Trace Attempt  1	[1.47 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[1.47 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[1.47 s]
+3.0.N: Trace Attempt  5	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[1.48 s]
+3.0.J: Trace Attempt  1	[1.48 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.J: Trace Attempt  1	[1.49 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.J: Trace Attempt  1	[1.49 s]
+3.0.J: Trace Attempt  1	[1.50 s]
+3.0.J: Trace Attempt  1	[1.50 s]
+3.0.J: Trace Attempt  1	[1.50 s]
+3.0.J: Trace Attempt  1	[1.51 s]
+3.0.J: Trace Attempt  1	[1.51 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+3.0.J: Trace Attempt  1	[1.51 s]
+3.0.J: Trace Attempt  1	[1.52 s]
+3.0.J: Trace Attempt  1	[1.52 s]
+3.0.J: Trace Attempt  1	[1.53 s]
+3.0.J: Trace Attempt  1	[1.53 s]
+3.0.J: Trace Attempt  1	[1.54 s]
+3.0.J: Trace Attempt  1	[1.54 s]
+3.0.J: Trace Attempt  1	[1.54 s]
+3.0.J: Trace Attempt  1	[1.55 s]
+3.0.J: Trace Attempt  1	[1.55 s]
+3.0.J: Trace Attempt  1	[1.56 s]
+3.0.J: Trace Attempt  1	[1.56 s]
+3.0.J: Trace Attempt  1	[1.56 s]
+3.0.J: Trace Attempt  1	[1.57 s]
+3.0.J: Trace Attempt  1	[1.57 s]
+3.0.J: Trace Attempt  1	[1.58 s]
+3.0.J: Trace Attempt  1	[1.58 s]
+3.0.J: Trace Attempt  1	[1.59 s]
+3.0.J: Trace Attempt  1	[1.59 s]
+3.0.J: Trace Attempt  1	[1.59 s]
+3.0.J: Trace Attempt  1	[1.60 s]
+3.0.J: Trace Attempt  1	[1.60 s]
+3.0.J: Trace Attempt  1	[1.61 s]
+3.0.J: Trace Attempt  1	[1.61 s]
+3.0.J: Trace Attempt  1	[1.62 s]
+3.0.J: Trace Attempt  1	[1.62 s]
+3.0.J: Trace Attempt  1	[1.62 s]
+3.0.J: Trace Attempt  1	[1.63 s]
+3.0.J: Trace Attempt  1	[1.63 s]
+3.0.J: Trace Attempt  1	[1.64 s]
+3.0.J: Trace Attempt  1	[1.64 s]
+3.0.J: Trace Attempt  1	[1.65 s]
+3.0.J: Trace Attempt  1	[1.65 s]
+3.0.J: Trace Attempt  1	[1.65 s]
+3.0.J: Trace Attempt  1	[1.66 s]
+3.0.J: Trace Attempt  1	[1.66 s]
+3.0.J: Trace Attempt  1	[1.67 s]
+3.0.J: Trace Attempt  1	[1.67 s]
+3.0.J: Trace Attempt  1	[1.68 s]
+3.0.J: Trace Attempt  1	[1.68 s]
+3.0.J: Trace Attempt  1	[1.68 s]
+3.0.J: Trace Attempt  1	[1.69 s]
+3.0.J: Trace Attempt  1	[1.69 s]
+3.0.J: Trace Attempt  1	[1.70 s]
+3.0.J: Trace Attempt  1	[1.70 s]
+3.0.J: Trace Attempt  1	[1.70 s]
+3.0.J: Trace Attempt  1	[1.71 s]
+3.0.J: Trace Attempt  1	[1.71 s]
+3.0.J: Trace Attempt  1	[1.72 s]
+3.0.J: Trace Attempt  1	[1.72 s]
+3.0.J: Trace Attempt  1	[1.73 s]
+3.0.J: Trace Attempt  1	[1.73 s]
+3.0.J: Trace Attempt  1	[1.73 s]
+3.0.J: Trace Attempt  1	[1.74 s]
+3.0.J: Trace Attempt  1	[1.74 s]
+3.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[1.75 s]
+3.0.J: Trace Attempt  1	[1.76 s]
+3.0.J: Trace Attempt  1	[1.76 s]
+3.0.J: Trace Attempt  1	[1.77 s]
+3.0.J: Trace Attempt  1	[1.77 s]
+3.0.J: Trace Attempt  1	[1.77 s]
+3.0.J: Trace Attempt  1	[1.78 s]
+3.0.J: Trace Attempt  1	[1.78 s]
+3.0.J: Trace Attempt  1	[1.79 s]
+3.0.J: Trace Attempt  1	[1.79 s]
+3.0.J: Trace Attempt  1	[1.79 s]
+3.0.J: Trace Attempt  1	[1.80 s]
+3.0.J: Trace Attempt  1	[1.80 s]
+3.0.J: Trace Attempt  1	[1.81 s]
+3.0.J: Trace Attempt  1	[1.81 s]
+3.0.J: Trace Attempt  1	[1.81 s]
+3.0.J: Trace Attempt  1	[1.82 s]
+3.0.J: Trace Attempt  1	[1.82 s]
+3.0.J: Trace Attempt  1	[1.83 s]
+3.0.J: Trace Attempt  1	[1.83 s]
+3.0.J: Trace Attempt  1	[1.83 s]
+3.0.J: Trace Attempt  1	[1.84 s]
+3.0.J: Trace Attempt  1	[1.84 s]
+3.0.J: Trace Attempt  1	[1.84 s]
+3.0.J: Trace Attempt  1	[1.85 s]
+3.0.J: Trace Attempt  1	[1.85 s]
+3.0.J: Trace Attempt  1	[1.85 s]
+3.0.J: Trace Attempt  1	[1.85 s]
+3.0.J: Trace Attempt  1	[1.86 s]
+3.0.J: Trace Attempt  1	[1.86 s]
+3.0.J: Trace Attempt  1	[1.86 s]
+3.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[1.87 s]
+3.0.J: Trace Attempt  1	[1.88 s]
+3.0.J: Trace Attempt  1	[1.88 s]
+3.0.J: Trace Attempt  1	[1.88 s]
+3.0.J: Trace Attempt  1	[1.88 s]
+3.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[1.89 s]
+3.0.J: Trace Attempt  1	[1.90 s]
+3.0.J: Trace Attempt  1	[1.90 s]
+3.0.J: Trace Attempt  1	[1.90 s]
+3.0.J: Trace Attempt  1	[1.90 s]
+3.0.J: Trace Attempt  1	[1.91 s]
+3.0.J: Trace Attempt  1	[1.91 s]
+3.0.J: Trace Attempt  1	[1.91 s]
+3.0.J: Trace Attempt  1	[1.91 s]
+3.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[1.92 s]
+3.0.J: Trace Attempt  1	[1.93 s]
+3.0.J: Trace Attempt  1	[1.93 s]
+3.0.J: Trace Attempt  1	[1.93 s]
+3.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[1.94 s]
+3.0.J: Trace Attempt  1	[1.95 s]
+3.0.J: Trace Attempt  1	[1.95 s]
+3.0.J: Trace Attempt  1	[1.95 s]
+3.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[1.96 s]
+3.0.J: Trace Attempt  1	[1.97 s]
+3.0.J: Trace Attempt  1	[1.97 s]
+3.0.J: Trace Attempt  1	[1.97 s]
+3.0.J: Trace Attempt  1	[1.97 s]
+3.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[1.98 s]
+3.0.J: Trace Attempt  1	[1.99 s]
+3.0.J: Trace Attempt  1	[1.99 s]
+3.0.J: Trace Attempt  1	[1.99 s]
+3.0.J: Trace Attempt  1	[1.99 s]
+3.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[2.00 s]
+3.0.J: Trace Attempt  1	[2.01 s]
+3.0.J: Trace Attempt  1	[2.01 s]
+3.0.J: Trace Attempt  1	[2.01 s]
+3.0.J: Trace Attempt  1	[2.02 s]
+3.0.J: Trace Attempt  1	[2.02 s]
+3.0.N: Trace Attempt  1	[0.56 s]
+3.0.N: Trace Attempt  2	[0.56 s]
+3.0.J: Trace Attempt  1	[2.02 s]
+3.0.J: Trace Attempt  1	[2.02 s]
+3.0.N: Trace Attempt  3	[0.56 s]
+3.0.J: Trace Attempt  1	[2.03 s]
+3.0.J: Trace Attempt  1	[2.03 s]
+3.0.J: Trace Attempt  1	[2.03 s]
+3.0.J: Trace Attempt  1	[2.03 s]
+3.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[2.04 s]
+3.0.J: Trace Attempt  1	[2.05 s]
+3.0.J: Trace Attempt  1	[2.05 s]
+3.0.J: Trace Attempt  1	[2.05 s]
+3.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[2.06 s]
+3.0.J: Trace Attempt  1	[2.07 s]
+3.0.J: Trace Attempt  1	[2.07 s]
+3.0.J: Trace Attempt  1	[2.07 s]
+3.0.J: Trace Attempt  1	[2.08 s]
+3.0.J: Trace Attempt  1	[2.08 s]
+3.0.J: Trace Attempt  1	[2.08 s]
+3.0.J: Trace Attempt  1	[2.08 s]
+3.0.J: Trace Attempt  1	[2.09 s]
+3.0.J: Trace Attempt  1	[2.09 s]
+3.0.J: Trace Attempt  1	[2.09 s]
+3.0.J: Trace Attempt  1	[2.09 s]
+3.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[2.10 s]
+3.0.J: Trace Attempt  1	[2.11 s]
+3.0.J: Trace Attempt  1	[2.11 s]
+3.0.J: Trace Attempt  1	[2.11 s]
+3.0.J: Trace Attempt  1	[2.11 s]
+3.0.J: Trace Attempt  1	[2.12 s]
+3.0.J: Trace Attempt  1	[2.12 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.J: Trace Attempt  1	[2.12 s]
+3.0.N: Trace Attempt 16	[0.65 s]
+3.0.N: A proof was found: No trace exists. [0.66 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_21" was proven in 0.66 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_21"	[0.66 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_22"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_21"	[0.66 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_22"	[0.00 s].
+3.0.J: Trace Attempt  1	[2.12 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.J: Trace Attempt  1	[2.13 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.J: Trace Attempt  1	[2.13 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[2.13 s]
+3.0.J: Trace Attempt  1	[2.13 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[2.14 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[2.14 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.J: Trace Attempt  1	[2.14 s]
+3.0.J: Trace Attempt  1	[2.15 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.J: Trace Attempt  1	[2.15 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.J: Trace Attempt  1	[2.15 s]
+3.0.J: Trace Attempt  1	[2.15 s]
+3.0.J: Trace Attempt  1	[2.16 s]
+3.0.J: Trace Attempt  1	[2.16 s]
+3.0.J: Trace Attempt  1	[2.16 s]
+3.0.I: Trace Attempt  5	[0.04 s]
+3.0.J: Trace Attempt  1	[2.16 s]
+3.0.J: Trace Attempt  1	[2.17 s]
+3.0.J: Trace Attempt  1	[2.17 s]
+3.0.J: Trace Attempt  1	[2.17 s]
+3.0.J: Trace Attempt  1	[2.17 s]
+3.0.J: Trace Attempt  1	[2.18 s]
+3.0.J: Trace Attempt  1	[2.18 s]
+3.0.J: Trace Attempt  1	[2.18 s]
+3.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[2.19 s]
+3.0.J: Trace Attempt  1	[2.20 s]
+3.0.J: Trace Attempt  1	[2.20 s]
+3.0.J: Trace Attempt  1	[2.20 s]
+3.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[2.21 s]
+3.0.J: Trace Attempt  1	[2.22 s]
+3.0.J: Trace Attempt  1	[2.22 s]
+3.0.J: Trace Attempt  1	[2.22 s]
+3.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[2.23 s]
+3.0.J: Trace Attempt  1	[2.24 s]
+3.0.J: Trace Attempt  1	[2.24 s]
+3.0.J: Trace Attempt  1	[2.24 s]
+3.0.J: Trace Attempt  1	[2.24 s]
+3.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[2.25 s]
+3.0.J: Trace Attempt  1	[2.26 s]
+3.0.J: Trace Attempt  1	[2.26 s]
+3.0.J: Trace Attempt  1	[2.26 s]
+3.0.J: Trace Attempt  1	[2.27 s]
+3.0.J: Trace Attempt  1	[2.27 s]
+3.0.J: Trace Attempt  1	[2.28 s]
+3.0.J: Trace Attempt  1	[2.28 s]
+3.0.J: Trace Attempt  1	[2.28 s]
+3.0.J: Trace Attempt  1	[2.29 s]
+3.0.J: Trace Attempt  1	[2.29 s]
+3.0.J: Trace Attempt  1	[2.30 s]
+3.0.J: Trace Attempt  1	[2.30 s]
+3.0.J: Trace Attempt  1	[2.31 s]
+3.0.J: Trace Attempt  1	[2.31 s]
+3.0.J: Trace Attempt  1	[2.31 s]
+3.0.J: Trace Attempt  1	[2.32 s]
+3.0.J: Trace Attempt  1	[2.32 s]
+3.0.J: Trace Attempt  1	[2.32 s]
+3.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[2.33 s]
+3.0.J: Trace Attempt  1	[2.34 s]
+3.0.J: Trace Attempt  1	[2.34 s]
+3.0.J: Trace Attempt  1	[2.35 s]
+3.0.J: Trace Attempt  1	[2.35 s]
+3.0.J: Trace Attempt  1	[2.35 s]
+3.0.J: Trace Attempt  1	[2.36 s]
+3.0.J: Trace Attempt  1	[2.36 s]
+3.0.J: Trace Attempt  1	[2.37 s]
+3.0.J: Trace Attempt  1	[2.37 s]
+3.0.J: Trace Attempt  1	[2.37 s]
+3.0.J: Trace Attempt  1	[2.38 s]
+3.0.J: Trace Attempt  1	[2.38 s]
+3.0.J: Trace Attempt  1	[2.39 s]
+3.0.J: Trace Attempt  1	[2.39 s]
+3.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[2.40 s]
+3.0.J: Trace Attempt  1	[2.41 s]
+3.0.J: Trace Attempt  1	[2.41 s]
+3.0.J: Trace Attempt  1	[2.41 s]
+3.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[2.42 s]
+3.0.J: Trace Attempt  1	[2.43 s]
+3.0.J: Trace Attempt  1	[2.43 s]
+3.0.J: Trace Attempt  1	[2.43 s]
+3.0.J: Trace Attempt  1	[2.43 s]
+3.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[2.44 s]
+3.0.J: Trace Attempt  1	[2.45 s]
+3.0.J: Trace Attempt  1	[2.45 s]
+3.0.J: Trace Attempt  1	[2.45 s]
+3.0.J: Trace Attempt  1	[2.45 s]
+3.0.J: Trace Attempt  1	[2.46 s]
+3.0.J: Trace Attempt  1	[2.46 s]
+3.0.J: Trace Attempt  1	[2.46 s]
+3.0.J: Trace Attempt  1	[2.46 s]
+3.0.J: Trace Attempt  1	[2.47 s]
+3.0.J: Trace Attempt  1	[2.47 s]
+3.0.J: Trace Attempt  1	[2.47 s]
+3.0.J: Trace Attempt  1	[2.47 s]
+3.0.J: Trace Attempt  1	[2.48 s]
+3.0.J: Trace Attempt  1	[2.48 s]
+3.0.J: Trace Attempt  1	[2.48 s]
+3.0.J: Trace Attempt  1	[2.48 s]
+3.0.J: Trace Attempt  1	[2.49 s]
+3.0.J: Trace Attempt  1	[2.49 s]
+3.0.J: Trace Attempt  1	[2.50 s]
+3.0.J: Trace Attempt  1	[2.50 s]
+3.0.J: Trace Attempt  1	[2.50 s]
+3.0.J: Trace Attempt  1	[2.51 s]
+3.0.J: Trace Attempt  1	[2.51 s]
+3.0.J: Trace Attempt  1	[2.52 s]
+3.0.J: Trace Attempt  1	[2.52 s]
+3.0.J: Trace Attempt  1	[2.53 s]
+3.0.J: Trace Attempt  1	[2.53 s]
+3.0.J: Trace Attempt  1	[2.53 s]
+3.0.J: Trace Attempt  1	[2.54 s]
+3.0.J: Trace Attempt  1	[2.54 s]
+3.0.J: Trace Attempt  1	[2.55 s]
+3.0.J: Trace Attempt  1	[2.55 s]
+3.0.J: Trace Attempt  1	[2.56 s]
+3.0.J: Trace Attempt  1	[2.56 s]
+3.0.J: Trace Attempt  1	[2.56 s]
+3.0.J: Trace Attempt  1	[2.57 s]
+3.0.J: Trace Attempt  1	[2.57 s]
+3.0.J: Trace Attempt  1	[2.58 s]
+3.0.J: Trace Attempt  1	[2.58 s]
+3.0.J: Trace Attempt  1	[2.59 s]
+3.0.J: Trace Attempt  1	[2.59 s]
+3.0.J: Trace Attempt  1	[2.59 s]
+3.0.J: Trace Attempt  1	[2.60 s]
+3.0.J: Trace Attempt  1	[2.60 s]
+3.0.J: Trace Attempt  1	[2.60 s]
+3.0.J: Trace Attempt  1	[2.61 s]
+0.0.L: Trace Attempt 17	[4.22 s]
+3.0.J: Trace Attempt  1	[2.61 s]
+3.0.J: Trace Attempt  1	[2.62 s]
+3.0.J: Trace Attempt  1	[2.62 s]
+3.0.J: Trace Attempt  1	[2.63 s]
+3.0.J: Trace Attempt  1	[2.63 s]
+3.0.J: Trace Attempt  1	[2.63 s]
+3.0.J: Trace Attempt  1	[2.64 s]
+3.0.J: Trace Attempt  1	[2.64 s]
+3.0.J: Trace Attempt  1	[2.65 s]
+3.0.J: Trace Attempt  1	[2.65 s]
+3.0.J: Trace Attempt  1	[2.65 s]
+3.0.N: Trace Attempt  1	[0.54 s]
+3.0.N: Trace Attempt  2	[0.54 s]
+3.0.J: Trace Attempt  1	[2.66 s]
+3.0.J: Trace Attempt  1	[2.66 s]
+3.0.N: Trace Attempt  3	[0.54 s]
+3.0.N: Trace Attempt  4	[0.55 s]
+3.0.J: Trace Attempt  1	[2.67 s]
+3.0.J: Trace Attempt  1	[2.67 s]
+3.0.J: Trace Attempt  1	[2.68 s]
+3.0.J: Trace Attempt  1	[2.68 s]
+3.0.J: Trace Attempt  1	[2.68 s]
+3.0.J: Trace Attempt  1	[2.69 s]
+3.0.J: Trace Attempt  1	[2.69 s]
+3.0.J: Trace Attempt  1	[2.70 s]
+3.0.J: Trace Attempt  1	[2.70 s]
+3.0.J: Trace Attempt  1	[2.70 s]
+3.0.J: Trace Attempt  1	[2.71 s]
+3.0.J: Trace Attempt  1	[2.71 s]
+3.0.J: Trace Attempt  1	[2.72 s]
+3.0.J: Trace Attempt  1	[2.72 s]
+3.0.J: Trace Attempt  1	[2.72 s]
+3.0.J: Trace Attempt  1	[2.73 s]
+3.0.J: Trace Attempt  1	[2.73 s]
+3.0.J: Trace Attempt  1	[2.74 s]
+3.0.J: Trace Attempt  1	[2.74 s]
+3.0.J: Trace Attempt  1	[2.74 s]
+3.0.J: Trace Attempt  1	[2.75 s]
+3.0.J: Trace Attempt  1	[2.75 s]
+3.0.J: Trace Attempt  1	[2.76 s]
+3.0.J: Trace Attempt  1	[2.76 s]
+3.0.J: Trace Attempt  1	[2.76 s]
+3.0.J: Trace Attempt  1	[2.77 s]
+3.0.J: Trace Attempt  1	[2.77 s]
+3.0.J: Trace Attempt  1	[2.78 s]
+3.0.J: Trace Attempt  1	[2.78 s]
+3.0.J: Trace Attempt  1	[2.78 s]
+3.0.J: Trace Attempt  1	[2.79 s]
+3.0.J: Trace Attempt  1	[2.79 s]
+3.0.J: Trace Attempt  1	[2.80 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 18	[0.67 s]
+3.0.N: A proof was found: No trace exists. [0.68 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_22" was proven in 0.68 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_22"	[0.68 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_23"	[0.00 s].
+3.0.J: Trace Attempt  1	[2.80 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_22"	[0.69 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_23"	[0.00 s].
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.J: Trace Attempt  1	[2.80 s]
+3.0.J: Trace Attempt  1	[2.81 s]
+3.0.J: Trace Attempt  1	[2.81 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[2.82 s]
+3.0.J: Trace Attempt  1	[2.82 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.J: Trace Attempt  1	[2.83 s]
+3.0.J: Trace Attempt  1	[2.83 s]
+3.0.J: Trace Attempt  1	[2.83 s]
+3.0.J: Trace Attempt  1	[2.84 s]
+3.0.J: Trace Attempt  1	[2.84 s]
+3.0.I: Trace Attempt  2	[0.04 s]
+3.0.J: Trace Attempt  1	[2.85 s]
+3.0.J: Trace Attempt  1	[2.85 s]
+3.0.I: Trace Attempt  4	[0.05 s]
+3.0.J: Trace Attempt  1	[2.85 s]
+3.0.I: Trace Attempt  5	[0.06 s]
+3.0.J: Trace Attempt  1	[2.86 s]
+3.0.J: Trace Attempt  1	[2.86 s]
+3.0.J: Trace Attempt  1	[2.87 s]
+3.0.J: Trace Attempt  1	[2.87 s]
+3.0.J: Trace Attempt  1	[2.87 s]
+3.0.J: Trace Attempt  1	[2.87 s]
+3.0.J: Trace Attempt  1	[2.88 s]
+3.0.J: Trace Attempt  1	[2.88 s]
+3.0.J: Trace Attempt  1	[2.89 s]
+3.0.J: Trace Attempt  1	[2.89 s]
+3.0.J: Trace Attempt  1	[2.89 s]
+3.0.J: Trace Attempt  1	[2.89 s]
+3.0.J: Trace Attempt  1	[2.90 s]
+3.0.J: Trace Attempt  1	[2.90 s]
+3.0.J: Trace Attempt  1	[2.91 s]
+3.0.J: Trace Attempt  1	[2.91 s]
+3.0.J: Trace Attempt  1	[2.91 s]
+3.0.J: Trace Attempt  1	[2.92 s]
+3.0.J: Trace Attempt  1	[2.92 s]
+3.0.J: Trace Attempt  1	[2.92 s]
+3.0.J: Trace Attempt  1	[2.92 s]
+3.0.J: Trace Attempt  1	[2.93 s]
+3.0.J: Trace Attempt  1	[2.93 s]
+3.0.J: Trace Attempt  1	[2.93 s]
+3.0.J: Trace Attempt  1	[2.94 s]
+3.0.J: Trace Attempt  1	[2.94 s]
+3.0.J: Trace Attempt  1	[2.94 s]
+3.0.J: Trace Attempt  1	[2.94 s]
+3.0.J: Trace Attempt  1	[2.95 s]
+3.0.J: Trace Attempt  1	[2.95 s]
+3.0.J: Trace Attempt  1	[2.95 s]
+3.0.J: Trace Attempt  1	[2.95 s]
+3.0.J: Trace Attempt  1	[2.96 s]
+3.0.J: Trace Attempt  1	[2.96 s]
+3.0.J: Trace Attempt  1	[2.96 s]
+3.0.J: Trace Attempt  1	[2.97 s]
+3.0.J: Trace Attempt  1	[2.97 s]
+3.0.J: Trace Attempt  1	[2.97 s]
+3.0.J: Trace Attempt  1	[2.97 s]
+3.0.J: Trace Attempt  1	[2.98 s]
+3.0.J: Trace Attempt  1	[2.98 s]
+3.0.J: Trace Attempt  1	[2.98 s]
+3.0.J: Trace Attempt  1	[2.98 s]
+3.0.J: Trace Attempt  1	[2.99 s]
+3.0.J: Trace Attempt  1	[2.99 s]
+3.0.J: Trace Attempt  1	[3.00 s]
+3.0.J: Trace Attempt  1	[3.00 s]
+3.0.J: Trace Attempt  1	[3.00 s]
+3.0.J: Trace Attempt  1	[3.01 s]
+3.0.J: Trace Attempt  1	[3.01 s]
+3.0.J: Trace Attempt  1	[3.01 s]
+3.0.J: Trace Attempt  1	[3.02 s]
+3.0.J: Trace Attempt  1	[3.02 s]
+3.0.J: Trace Attempt  1	[3.03 s]
+3.0.J: Trace Attempt  1	[3.03 s]
+3.0.J: Trace Attempt  1	[3.03 s]
+3.0.J: Trace Attempt  1	[3.04 s]
+3.0.J: Trace Attempt  1	[3.04 s]
+3.0.J: Trace Attempt  1	[3.05 s]
+3.0.J: Trace Attempt  1	[3.05 s]
+3.0.J: Trace Attempt  1	[3.06 s]
+3.0.J: Trace Attempt  1	[3.06 s]
+3.0.J: Trace Attempt  1	[3.06 s]
+3.0.J: Trace Attempt  1	[3.07 s]
+3.0.J: Trace Attempt  1	[3.07 s]
+3.0.J: Trace Attempt  1	[3.08 s]
+3.0.J: Trace Attempt  1	[3.08 s]
+3.0.J: Trace Attempt  1	[3.08 s]
+3.0.J: Trace Attempt  1	[3.09 s]
+3.0.J: Trace Attempt  1	[3.09 s]
+3.0.J: Trace Attempt  1	[3.10 s]
+3.0.J: Trace Attempt  1	[3.10 s]
+3.0.J: Trace Attempt  1	[3.11 s]
+3.0.J: Trace Attempt  1	[3.11 s]
+3.0.J: Trace Attempt  1	[3.12 s]
+3.0.J: Trace Attempt  1	[3.12 s]
+3.0.J: Trace Attempt  1	[3.12 s]
+3.0.J: Trace Attempt  1	[3.13 s]
+3.0.J: Trace Attempt  1	[3.13 s]
+3.0.J: Trace Attempt  1	[3.14 s]
+3.0.J: Trace Attempt  1	[3.14 s]
+3.0.J: Trace Attempt  1	[3.14 s]
+3.0.J: Trace Attempt  1	[3.15 s]
+3.0.J: Trace Attempt  1	[3.15 s]
+3.0.J: Trace Attempt  1	[3.16 s]
+3.0.J: Trace Attempt  1	[3.16 s]
+3.0.J: Trace Attempt  1	[3.17 s]
+3.0.J: Trace Attempt  1	[3.17 s]
+3.0.J: Trace Attempt  1	[3.17 s]
+3.0.J: Trace Attempt  1	[3.18 s]
+3.0.J: Trace Attempt  1	[3.18 s]
+3.0.J: Trace Attempt  1	[3.19 s]
+3.0.J: Trace Attempt  1	[3.19 s]
+3.0.J: Trace Attempt  1	[3.19 s]
+3.0.J: Trace Attempt  1	[3.20 s]
+3.0.J: Trace Attempt  1	[3.20 s]
+3.0.J: Trace Attempt  1	[3.21 s]
+3.0.J: Trace Attempt  1	[3.21 s]
+3.0.J: Trace Attempt  1	[3.22 s]
+3.0.J: Trace Attempt  1	[3.22 s]
+3.0.J: Trace Attempt  1	[3.22 s]
+3.0.J: Trace Attempt  1	[3.23 s]
+3.0.J: Trace Attempt  1	[3.23 s]
+3.0.J: Trace Attempt  1	[3.23 s]
+3.0.J: Trace Attempt  1	[3.23 s]
+3.0.J: Trace Attempt  1	[3.24 s]
+3.0.J: Trace Attempt  1	[3.24 s]
+3.0.J: Trace Attempt  1	[3.24 s]
+3.0.J: Trace Attempt  1	[3.25 s]
+3.0.J: Trace Attempt  1	[3.25 s]
+3.0.J: Trace Attempt  1	[3.25 s]
+3.0.J: Trace Attempt  1	[3.25 s]
+3.0.J: Trace Attempt  1	[3.26 s]
+3.0.J: Trace Attempt  1	[3.26 s]
+3.0.J: Trace Attempt  1	[3.26 s]
+3.0.J: Trace Attempt  1	[3.27 s]
+3.0.J: Trace Attempt  1	[3.27 s]
+3.0.J: Trace Attempt  1	[3.28 s]
+3.0.J: Trace Attempt  1	[3.28 s]
+3.0.J: Trace Attempt  1	[3.29 s]
+3.0.J: Trace Attempt  1	[3.29 s]
+3.0.J: Trace Attempt  1	[3.29 s]
+3.0.J: Trace Attempt  1	[3.30 s]
+3.0.J: Trace Attempt  1	[3.30 s]
+3.0.J: Trace Attempt  1	[3.31 s]
+3.0.J: Trace Attempt  1	[3.31 s]
+3.0.J: Trace Attempt  1	[3.31 s]
+3.0.J: Trace Attempt  1	[3.32 s]
+3.0.J: Trace Attempt  1	[3.32 s]
+3.0.J: Trace Attempt  1	[3.33 s]
+3.0.J: Trace Attempt  1	[3.33 s]
+3.0.J: Trace Attempt  1	[3.34 s]
+3.0.J: Trace Attempt  1	[3.34 s]
+3.0.J: Trace Attempt  1	[3.35 s]
+3.0.J: Trace Attempt  1	[3.35 s]
+3.0.J: Trace Attempt  1	[3.35 s]
+3.0.J: Trace Attempt  1	[3.36 s]
+3.0.J: Trace Attempt  1	[3.36 s]
+3.0.J: Trace Attempt  1	[3.37 s]
+3.0.J: Trace Attempt  1	[3.37 s]
+3.0.J: Trace Attempt  1	[3.37 s]
+3.0.J: Trace Attempt  1	[3.38 s]
+3.0.J: Trace Attempt  1	[3.38 s]
+3.0.J: Trace Attempt  1	[3.39 s]
+3.0.J: Trace Attempt  1	[3.39 s]
+3.0.J: Trace Attempt  1	[3.40 s]
+3.0.J: Trace Attempt  1	[3.40 s]
+3.0.J: Trace Attempt  1	[3.40 s]
+3.0.J: Trace Attempt  1	[3.41 s]
+3.0.J: Trace Attempt  1	[3.41 s]
+3.0.J: Trace Attempt  1	[3.42 s]
+3.0.J: Trace Attempt  1	[3.42 s]
+3.0.J: Trace Attempt  1	[3.42 s]
+3.0.J: Trace Attempt  1	[3.43 s]
+3.0.J: Trace Attempt  1	[3.43 s]
+3.0.J: Trace Attempt  1	[3.44 s]
+3.0.J: Trace Attempt  1	[3.44 s]
+3.0.J: Trace Attempt  1	[3.45 s]
+3.0.J: Trace Attempt  1	[3.45 s]
+3.0.J: Trace Attempt  1	[3.45 s]
+3.0.J: Trace Attempt  1	[3.46 s]
+3.0.J: Trace Attempt  1	[3.46 s]
+3.0.J: Trace Attempt  1	[3.47 s]
+3.0.J: Trace Attempt  1	[3.47 s]
+3.0.J: Trace Attempt  1	[3.48 s]
+3.0.J: Trace Attempt  1	[3.48 s]
+3.0.J: Trace Attempt  1	[3.48 s]
+3.0.J: Trace Attempt  1	[3.49 s]
+3.0.J: Trace Attempt  1	[3.49 s]
+3.0.J: Trace Attempt  1	[3.50 s]
+3.0.J: Trace Attempt  1	[3.50 s]
+3.0.J: Trace Attempt  1	[3.50 s]
+3.0.J: Trace Attempt  1	[3.51 s]
+3.0.J: Trace Attempt  1	[3.51 s]
+3.0.J: Trace Attempt  1	[3.52 s]
+3.0.J: Trace Attempt  1	[3.52 s]
+3.0.J: Trace Attempt  1	[3.53 s]
+3.0.J: Trace Attempt  1	[3.53 s]
+3.0.J: Trace Attempt  1	[3.53 s]
+3.0.N: Trace Attempt  1	[0.73 s]
+3.0.N: Trace Attempt  2	[0.73 s]
+3.0.J: Trace Attempt  1	[3.54 s]
+3.0.J: Trace Attempt  1	[3.54 s]
+3.0.N: Trace Attempt  3	[0.74 s]
+3.0.J: Trace Attempt  1	[3.55 s]
+3.0.J: Trace Attempt  1	[3.55 s]
+3.0.J: Trace Attempt  1	[3.56 s]
+3.0.J: Trace Attempt  1	[3.56 s]
+3.0.J: Trace Attempt  1	[3.56 s]
+3.0.J: Trace Attempt  1	[3.57 s]
+3.0.J: Trace Attempt  1	[3.57 s]
+3.0.J: Trace Attempt  1	[3.58 s]
+3.0.J: Trace Attempt  1	[3.58 s]
+3.0.J: Trace Attempt  1	[3.58 s]
+3.0.J: Trace Attempt  1	[3.59 s]
+3.0.J: Trace Attempt  1	[3.59 s]
+3.0.J: Trace Attempt  1	[3.60 s]
+3.0.J: Trace Attempt  1	[3.60 s]
+3.0.J: Trace Attempt  1	[3.61 s]
+3.0.J: Trace Attempt  1	[3.61 s]
+3.0.J: Trace Attempt  1	[3.61 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 15	[0.81 s]
+3.0.N: A proof was found: No trace exists. [0.82 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_23" was proven in 0.82 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_23"	[0.82 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_24"	[0.00 s].
+3.0.J: Trace Attempt  1	[3.62 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.J: Trace Attempt  1	[3.62 s]
+3.0.J: Trace Attempt  1	[3.63 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_23"	[0.82 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_24"	[0.00 s].
+3.0.J: Trace Attempt  1	[3.63 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.J: Trace Attempt  1	[3.63 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.J: Trace Attempt  1	[3.64 s]
+3.0.J: Trace Attempt  1	[3.64 s]
+3.0.J: Trace Attempt 200	[3.65 s]
+3.0.J: Reached length limit (200) [3.64 s]
+3.0.J: Exited with Success (@ 3.65 s)
+3.0.J: Completed, Restart ignored.
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.I: Trace Attempt  5	[0.06 s]
+3.0.N: Trace Attempt  1	[0.73 s]
+3.0.N: Trace Attempt  2	[0.73 s]
+3.0.N: Trace Attempt  3	[0.74 s]
+0.0.N: Trace Attempt 22	[6.04 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 16	[0.84 s]
+3.0.N: A proof was found: No trace exists. [0.88 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_24" was proven in 0.88 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_24"	[0.88 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_26"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_24"	[0.87 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_26"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  3	[0.02 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  4	[0.04 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+3.0.I: Trace Attempt  5	[0.07 s]
+0.0.Ht: Trace Attempt 16	[6.28 s]
+3.0.L: Trace Attempt 39	[4.82 s]
+3.0.N: Trace Attempt  1	[0.78 s]
+3.0.N: Trace Attempt  2	[0.78 s]
+3.0.N: Trace Attempt  3	[0.79 s]
+3.0.Ht: Trace Attempt 29	[5.43 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 18	[0.94 s]
+3.0.N: A proof was found: No trace exists. [0.97 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_26" was proven in 0.97 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_26"	[0.97 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_27"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_26"	[0.98 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_27"	[0.00 s].
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.I: Trace Attempt  5	[0.06 s]
+3.0.N: Trace Attempt  1	[0.78 s]
+3.0.N: Trace Attempt  2	[0.78 s]
+3.0.N: Trace Attempt  3	[0.79 s]
+3.0.N: Trace Attempt  4	[0.79 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 25	[1.00 s]
+3.0.N: A proof was found: No trace exists. [1.02 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_27" was proven in 1.02 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_27"	[1.02 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_28"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_27"	[1.01 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_28"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  3	[0.02 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  4	[0.04 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+3.0.I: Trace Attempt  5	[0.07 s]
+3.0.N: Trace Attempt  1	[0.83 s]
+3.0.N: Trace Attempt  2	[0.83 s]
+3.0.N: Trace Attempt  3	[0.84 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 20	[0.99 s]
+3.0.N: A proof was found: No trace exists. [1.00 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_28" was proven in 1.00 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_28"	[1.00 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_29"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_28"	[1.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_29"	[0.00 s].
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  3	[0.02 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.I: Trace Attempt  4	[0.04 s]
+3.0.I: Trace Attempt  5	[0.04 s]
+3.0.I: Trace Attempt  5	[0.07 s]
+3: ProofGrid usable level: 9
+3.0.N: Trace Attempt  1	[0.69 s]
+3.0.N: Trace Attempt  2	[0.70 s]
+3.0.N: Trace Attempt  3	[0.70 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 17	[0.79 s]
+3.0.N: A proof was found: No trace exists. [0.83 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_29" was proven in 0.83 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_29"	[0.83 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_30"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_29"	[0.83 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_30"	[0.00 s].
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  5	[0.04 s]
+0.0.N: Trace Attempt 23	[7.40 s]
+0.0.N: Per property time limit expired (10.00 s) [10.02 s]
+0.0.I: Trace Attempt  7	[0.79 s]
+0.0.I: Per property time limit expired (10.00 s) [10.02 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_CNTDONE_prop_3"	[10.02 s].
+0.0.I: Stopped processing property "fsm_state_cover_STATE_CNTDONE_prop_3"	[10.02 s].
+0.0.I: Starting proof for property "fsm_state_cover_STATE_ENCODE_prop_7"	[0.00 s].
+0.0.N: Starting proof for property "fsm_state_cover_STATE_ENCODE_prop_7"	[0.00 s].
+0.0.I: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.00 s]
+0.0.I: Trace Attempt  2	[0.01 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  5	[0.01 s]
+0.0.N: Trace Attempt  4	[0.01 s]
+0.0.N: Trace Attempt  5	[0.01 s]
+0.0.I: Trace Attempt  4	[0.03 s]
+0.0.I: Trace Attempt  5	[0.03 s]
+0.0.I: Trace Attempt  1	[0.10 s]
+0.0.I: Trace Attempt  2	[0.10 s]
+0.0.I: Trace Attempt  4	[0.11 s]
+0.0.N: Trace Attempt  1	[0.11 s]
+0.0.N: Trace Attempt  2	[0.11 s]
+0.0.N: Trace Attempt  3	[0.12 s]
+0.0.N: Trace Attempt  1	[0.34 s]
+0.0.N: Trace Attempt  2	[0.34 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.19 s]
+0.0.N: Trace Attempt  3	[0.34 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_CNTDONE_prop_12"	[10.19 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_ENCODE_prop_16"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt  1	[0.34 s]
+0.0.I: Trace Attempt  2	[0.34 s]
+1.0.Tri:   10.06" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.I: Trace Attempt  4	[0.35 s]
+3.0.N: Trace Attempt  1	[0.57 s]
+3.0.N: Trace Attempt  2	[0.57 s]
+3.0.N: Trace Attempt  3	[0.58 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 22	[0.71 s]
+3.0.N: A proof was found: No trace exists. [0.71 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_30" was proven in 0.71 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_30"	[0.71 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_31"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_30"	[0.71 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_31"	[0.00 s].
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  5	[0.04 s]
+3: ProofGrid usable level: 11
+3.0.I: Trace Attempt  4	[0.39 s]
+3.0.N: Trace Attempt  1	[0.72 s]
+3.0.N: Trace Attempt  2	[0.72 s]
+3.0.N: Trace Attempt  3	[0.73 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Trace Attempt 14	[0.80 s]
+3.0.N: A proof was found: No trace exists. [0.81 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_31" was proven in 0.81 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_31"	[0.81 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_34"	[0.00 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_35"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_31"	[0.82 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_34"	[0.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_35"	[0.00 s].
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.N: Trace Attempt  5	[0.04 s]
+3.0.I: Trace Attempt  5	[0.04 s]
+3: ProofGrid usable level: 12
+3.0.N: Trace Attempt  1	[0.25 s]
+3.0.N: Trace Attempt  2	[0.25 s]
+3.0.N: Trace Attempt  3	[0.26 s]
+3.0.N: Trace Attempt  5	[0.26 s]
+3.0.I: Trace Attempt  1	[0.68 s]
+3.0.I: Trace Attempt  2	[0.68 s]
+3.0.I: Trace Attempt  5	[0.72 s]
+3.0.L: Trace Attempt 42	[11.98 s]
+0.0.N: Trace Attempt  1	[3.88 s]
+0.0.N: Trace Attempt  2	[3.89 s]
+0.0.N: Trace Attempt  3	[3.89 s]
+3.0.Ht: Trace Attempt 30	[13.25 s]
+3.0.I: Trace Attempt  1	[3.44 s]
+3.0.I: Trace Attempt  2	[3.44 s]
+3.0.I: Trace Attempt  5	[3.46 s]
+0.0.I: Trace Attempt 32	[5.49 s]
+0.0.L: Trace Attempt 18	[15.53 s]
+3.0.N: Trace Attempt 33	[4.36 s]
+3.0.N: Trace Attempt  1	[4.88 s]
+3.0.N: Trace Attempt  2	[4.88 s]
+3.0.N: Trace Attempt  3	[4.89 s]
+3.0.N: Trace Attempt  5	[4.89 s]
+0.0.N: Trace Attempt 39	[9.86 s]
+0.0.N: Per property time limit expired (10.00 s) [10.01 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_ENCODE_prop_7"	[10.01 s].
+0.0.N: Starting proof for property "fsm_state_cover_STATE_FINISH_prop_8"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.00 s]
+0.0.N: Trace Attempt  3	[0.00 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.01 s]
+0.0.N: Trace Attempt  5	[0.01 s]
+0.0.I: Stopped processing property "fsm_state_cover_STATE_ENCODE_prop_7"	[10.05 s].
+0.0.I: Starting proof for property "fsm_state_cover_STATE_FINISH_prop_8"	[0.00 s].
+0.0.I: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  5	[0.01 s]
+0.0.N: Trace Attempt  1	[0.18 s]
+0.0.N: Trace Attempt  2	[0.18 s]
+0.0.N: Trace Attempt  3	[0.19 s]
+0.0.N: Trace Attempt  5	[0.19 s]
+0.0.I: Trace Attempt  1	[0.27 s]
+0.0.I: Trace Attempt  2	[0.27 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.05 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_ENCODE_prop_16"	[10.05 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_FINISH_prop_17"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   20.11" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.I: Trace Attempt  1	[0.40 s]
+0.0.I: Trace Attempt  2	[0.40 s]
+0.0.I: Trace Attempt  4	[0.41 s]
+3.0.N: Trace Attempt 37	[9.23 s]
+3.0.N: Trace Attempt 42	[9.97 s]
+3.0.N: Per property time limit expired (10.00 s) [10.01 s]
+3.0.N: Per property time limit expired (10.00 s) [10.01 s]
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_34"	[10.01 s].
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_35"	[10.01 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_36"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt 30	[6.28 s]
+3.0.I: Per property time limit expired (10.00 s) [10.02 s]
+3.0.I: Per property time limit expired (10.00 s) [10.02 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_34"	[10.02 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_35"	[10.02 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_36"	[0.00 s].
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  4	[0.01 s]
+3.0.N: Trace Attempt  5	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.L: Trace Attempt 43	[19.99 s]
+3.0.I: Trace Attempt  1	[0.30 s]
+3.0.I: Trace Attempt  2	[0.30 s]
+3.0.I: Trace Attempt  4	[0.31 s]
+3.0.I: A proof was found: No trace exists. [0.34 s]
+INFO (IPF057): 3.0.I: The property "out_of_bound_indexing_prop_36" was proven in 0.34 s.
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_36"	[0.34 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_37"	[0.00 s].
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  4	[0.00 s]
+3.0.I: Trace Attempt  5	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_36"	[0.36 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_37"	[0.00 s].
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.I: Trace Attempt  5	[0.02 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3: ProofGrid usable level: 13
+0.0.N: Trace Attempt  1	[2.57 s]
+0.0.N: Trace Attempt  2	[2.57 s]
+0.0.N: Trace Attempt  3	[2.57 s]
+0.0.N: Trace Attempt  5	[2.57 s]
+0.0.I: Trace Attempt  1	[3.24 s]
+0.0.I: Trace Attempt  2	[3.24 s]
+0.0.I: Trace Attempt  4	[3.25 s]
+0.0.Ht: Trace Attempt 17	[23.32 s]
+3.0.N: Trace Attempt  1	[2.54 s]
+3.0.N: Trace Attempt  2	[2.54 s]
+3.0.N: Trace Attempt  3	[2.54 s]
+0.0.N: Trace Attempt 40	[7.20 s]
+0.0.I: Trace Attempt 37	[7.45 s]
+3.0.I: Trace Attempt 22	[5.90 s]
+0.0.N: Trace Attempt  1	[8.14 s]
+0.0.N: Trace Attempt  2	[8.14 s]
+0.0.N: Trace Attempt  3	[8.14 s]
+0.0.N: Trace Attempt  5	[8.15 s]
+0.0.N: Trace Attempt 20	[9.28 s]
+0.0.N: Per property time limit expired (10.00 s) [10.00 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_FINISH_prop_8"	[10.00 s].
+0.0.N: Starting proof for property "fsm_state_cover_STATE_RESORT_prop_6"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.N: Trace Attempt  2	[0.00 s]
+0.0.N: Trace Attempt  3	[0.00 s]
+0.0.I: Stopped processing property "fsm_state_cover_STATE_FINISH_prop_8"	[9.98 s].
+0.0.I: Starting proof for property "fsm_state_cover_STATE_RESORT_prop_6"	[0.00 s].
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.00 s]
+0.0.I: Trace Attempt  4	[0.00 s]
+0.0.I: Trace Attempt  5	[0.00 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.01 s]
+0.0.N: Trace Attempt  5	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  4	[0.02 s]
+0.0.I: Trace Attempt  5	[0.02 s]
+0.0.I: Trace Attempt  5	[0.03 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.04 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_FINISH_prop_17"	[10.04 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_GETCNT_prop_11"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   30.15" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.N: Trace Attempt  1	[1.07 s]
+0.0.N: Trace Attempt  2	[1.07 s]
+0.0.N: Trace Attempt  3	[1.07 s]
+3.0.I: Trace Attempt 21	[8.12 s]
+3.0.I: Per property time limit expired (10.00 s) [10.00 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_37"	[10.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_38"	[0.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_41"	[0.00 s].
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.I: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.I: The property "out_of_bound_indexing_prop_38" was proven in 0.00 s.
+3.0.I: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.I: The property "out_of_bound_indexing_prop_41" was proven in 0.00 s.
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_38"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_41"	[0.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_39"	[0.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_40"	[0.00 s].
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  4	[0.00 s]
+3.0.I: Trace Attempt  5	[0.00 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.I: Trace Attempt  3	[0.02 s]
+3.0.I: Trace Attempt  4	[0.02 s]
+3.0.I: Trace Attempt  5	[0.02 s]
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_37"	[10.01 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_39"	[0.00 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_40"	[0.00 s].
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.I: Trace Attempt  5	[0.04 s]
+3: ProofGrid usable level: 14
+3.0.Ht: Trace Attempt 31	[31.27 s]
+0.0.I: Trace Attempt 11	[4.69 s]
+3.0.N: Trace Attempt  1	[3.18 s]
+3.0.N: Trace Attempt  2	[3.18 s]
+3.0.N: Trace Attempt  3	[3.20 s]
+3.0.N: Trace Attempt  4	[3.20 s]
+0.0.N: Trace Attempt 20	[5.29 s]
+0.0.L: Trace Attempt 19	[36.11 s]
+0.0.N: Trace Attempt  1	[6.14 s]
+0.0.N: Trace Attempt  2	[6.14 s]
+0.0.N: Trace Attempt  3	[6.15 s]
+3.0.L: Trace Attempt 44	[35.87 s]
+0.0.N: Trace Attempt 20	[8.04 s]
+0.0.N: Per property time limit expired (10.00 s) [10.01 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_RESORT_prop_6"	[10.01 s].
+0.0.N: Starting proof for property "fsm_state_cover_STATE_SORT_prop_4"	[0.00 s].
+0.0.N: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt 20	[8.05 s]
+0.0.I: Per property time limit expired (10.00 s) [10.01 s]
+0.0.I: Stopped processing property "fsm_state_cover_STATE_RESORT_prop_6"	[10.01 s].
+0.0.I: Starting proof for property "fsm_state_cover_STATE_SORT_prop_4"	[0.00 s].
+0.0.N: Trace Attempt  2	[0.00 s]
+0.0.N: Trace Attempt  3	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.00 s]
+0.0.I: Trace Attempt  4	[0.00 s]
+0.0.N: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.N: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  4	[0.02 s]
+0.0.N: Trace Attempt  4	[0.02 s]
+0.0.I: Trace Attempt  5	[0.02 s]
+0.0.N: Trace Attempt  5	[0.03 s]
+0.0.I: Trace Attempt  5	[0.04 s]
+0.0.N: Trace Attempt  5	[0.05 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.02 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_GETCNT_prop_11"	[10.02 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_INIT_prop_10"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   40.17" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.I: Trace Attempt  4	[0.62 s]
+3.0.N: Trace Attempt 22	[8.96 s]
+0.0.N: Trace Attempt  1	[1.31 s]
+0.0.N: Trace Attempt  2	[1.31 s]
+0.0.N: Trace Attempt  3	[1.31 s]
+0.0.N: Trace Attempt  5	[1.33 s]
+3.0.I: Trace Attempt 21	[4.02 s]
+3.0.I: Per property time limit expired (10.00 s) [10.01 s]
+3.0.I: Per property time limit expired (10.00 s) [10.01 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_39"	[10.01 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_40"	[10.01 s].
+3.0.I: Next scan (1) will use per property time limit: 10s * 10 ^ 1 = 100s
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_34"	[0.00 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_35"	[0.00 s].
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_39"	[10.00 s].
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_40"	[10.00 s].
+3.0.N: Next scan (1) will use per property time limit: 10s * 10 ^ 1 = 100s
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_34"	[0.00 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_35"	[0.00 s].
+3.0.I: Trace Attempt 28	[0.07 s]
+3.0.N: Trace Attempt  1	[2.69 s]
+3.0.N: Trace Attempt  2	[2.69 s]
+3.0.N: Trace Attempt  3	[2.70 s]
+3.0.N: Trace Attempt  5	[2.70 s]
+3.0.I: Trace Attempt  1	[2.73 s]
+3.0.I: Trace Attempt  2	[2.73 s]
+3.0.I: Trace Attempt  5	[2.74 s]
+0.0.N: Trace Attempt 21	[5.86 s]
+3.0.N: Trace Attempt 37	[6.82 s]
+0.0.I: Trace Attempt 12	[2.08 s]
+0.0.I: Per property time limit expired (10.00 s) [10.00 s]
+0.0.I: Stopped processing property "fsm_state_cover_STATE_SORT_prop_4"	[10.00 s].
+0.0.I: Starting proof for property "fsm_state_cover_STATE_TREE_prop_5"	[0.00 s].
+0.0.I: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.I: Trace Attempt  4	[0.01 s]
+0.0.I: Trace Attempt  5	[0.01 s]
+0.0.N: Trace Attempt 23	[6.38 s]
+0.0.N: Per property time limit expired (10.00 s) [10.02 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_SORT_prop_4"	[10.02 s].
+0.0.N: Starting proof for property "fsm_state_cover_STATE_TREE_prop_5"	[0.00 s].
+0.0.I: Trace Attempt  4	[0.02 s]
+0.0.I: Trace Attempt  5	[0.02 s]
+0.0.N: Trace Attempt  5	[0.01 s]
+0.0.I: Trace Attempt  5	[0.04 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.05 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_INIT_prop_10"	[10.05 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_RESORT_prop_15"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   50.22" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.N: Trace Attempt  1	[1.90 s]
+0.0.N: Trace Attempt  2	[1.90 s]
+0.0.N: Trace Attempt  3	[1.91 s]
+0.0.N: Trace Attempt  5	[1.91 s]
+3.0.N: Trace Attempt 45	[13.16 s]
+0.0.N: Trace Attempt 24	[7.53 s]
+0.0.N: Per property time limit expired (10.00 s) [10.02 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_TREE_prop_5"	[10.02 s].
+0.0.N: Next scan (1) will use per property time limit: 10s * 10 ^ 1 = 100s
+0.0.N: Starting proof for property "fsm_state_cover_STATE_CNTDONE_prop_3"	[0.00 s].
+0.0.I: Trace Attempt 15	[2.37 s]
+0.0.I: Per property time limit expired (10.00 s) [10.04 s]
+0.0.I: Stopped processing property "fsm_state_cover_STATE_TREE_prop_5"	[10.04 s].
+0.0.I: Next scan (1) will use per property time limit: 10s * 10 ^ 1 = 100s
+0.0.I: Starting proof for property "fsm_state_cover_STATE_CNTDONE_prop_3"	[0.00 s].
+0.0.I: Trace Attempt  5	[0.01 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.04 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_RESORT_prop_15"	[10.04 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_SORT_prop_13"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   60.26" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.I: Trace Attempt  1	[0.62 s]
+0.0.I: Trace Attempt  2	[0.62 s]
+0.0.I: Trace Attempt  3	[0.62 s]
+0.0.I: Trace Attempt  5	[0.63 s]
+0.0.N: Trace Attempt  1	[0.85 s]
+0.0.N: Trace Attempt  2	[0.85 s]
+0.0.N: Trace Attempt  3	[0.86 s]
+0.0.N: Trace Attempt  5	[0.87 s]
+3.0.N: Trace Attempt 46	[21.43 s]
+0.0.N: Trace Attempt 22	[5.23 s]
+3.0.Ht: Trace Attempt 32	[66.41 s]
+0.0.N: Trace Attempt 24	[9.24 s]
+3.0.N: Trace Attempt 47	[27.51 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.04 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_SORT_prop_13"	[10.05 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_TREE_prop_14"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   70.31" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+0.0.Ht: Trace Attempt 18	[78.79 s]
+0.0.N: Trace Attempt 25	[19.61 s]
+1.0.Tri: Per property time limit expired (10.00 s) [10.03 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_TREE_prop_14"	[10.03 s].
+1.0.Tri: Next scan (1) will use per property time limit: 10s * 10 ^ 1 = 100s
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_CNTDONE_prop_12"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   80.34" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+3.0.I: Trace Attempt 31	[40.42 s]
+3.0.N: Trace Attempt 47	[40.50 s]
+3.0.I: Trace Attempt  1	[44.14 s]
+3.0.I: Trace Attempt  2	[44.14 s]
+3.0.I: Trace Attempt  5	[44.17 s]
+0.0.N: Trace Attempt 26	[29.36 s]
+0.0.I: Trace Attempt  8	[29.89 s]
+0.0.I: Trace Attempt  1	[31.05 s]
+0.0.I: Trace Attempt  2	[31.05 s]
+0.0.I: Trace Attempt  3	[31.05 s]
+0.0.I: Trace Attempt  5	[31.06 s]
+3.0.L: Trace Attempt 45	[89.85 s]
+0.0.L: Trace Attempt 20	[105.59 s]
+3.0.I: Trace Attempt 30	[47.19 s]
+3.0.I: Per property time limit expired (100.00 s) [100.05 s]
+3.0.I: Per property time limit expired (100.00 s) [100.05 s]
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_34"	[100.05 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_35"	[100.05 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_37"	[0.00 s].
+3.0.N: Per property time limit expired (100.00 s) [100.08 s]
+3.0.N: Per property time limit expired (100.00 s) [100.08 s]
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_34"	[100.08 s].
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_35"	[100.08 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_37"	[0.00 s].
+3.0.I: Trace Attempt 22	[0.07 s]
+0.0.N: Trace Attempt 27	[83.05 s]
+3.0.I: Trace Attempt  1	[1.97 s]
+3.0.I: Trace Attempt  2	[1.97 s]
+3.0.I: Trace Attempt  5	[1.98 s]
+0.0.N: Trace Attempt  1	[84.17 s]
+0.0.N: Trace Attempt  2	[84.17 s]
+0.0.N: Trace Attempt  3	[84.17 s]
+0.0.N: Trace Attempt  4	[84.19 s]
+0.0.N: Trace Attempt  5	[84.19 s]
+0.0.N: Trace Attempt 21	[88.56 s]
+3.0.N: Trace Attempt  1	[7.15 s]
+3.0.N: Trace Attempt  2	[7.15 s]
+3.0.N: Trace Attempt  3	[7.16 s]
+0.0.N: Trace Attempt 23	[93.73 s]
+3.0.N: Trace Attempt 29	[15.95 s]
+0.0.N: Trace Attempt 24	[95.49 s]
+0.0.N: Per property time limit expired (100.00 s) [100.04 s]
+0.0.N: Stopped processing property "fsm_state_cover_STATE_CNTDONE_prop_3"	[100.04 s].
+0.0.N: Starting proof for property "fsm_state_cover_STATE_ENCODE_prop_7"	[0.00 s].
+0.0.N: Trace Attempt 31	[0.10 s]
+0.0.I: Stopped processing property "fsm_state_cover_STATE_CNTDONE_prop_3"	[100.20 s].
+0.0.I: Starting proof for property "fsm_state_cover_STATE_ENCODE_prop_7"	[0.00 s].
+0.0.N: Trace Attempt  1	[2.26 s]
+0.0.N: Trace Attempt  2	[2.26 s]
+0.0.N: Trace Attempt  3	[2.26 s]
+0.0.I: Trace Attempt  1	[2.46 s]
+0.0.I: Trace Attempt  2	[2.46 s]
+0.0.I: Trace Attempt  4	[2.47 s]
+3.0.N: Trace Attempt 35	[23.14 s]
+0.0.N: Trace Attempt 38	[6.28 s]
+3.0.Ht: Trace Attempt 33	[165.96 s]
+3.0.N: Trace Attempt 37	[27.54 s]
+0.0.N: Trace Attempt 42	[10.59 s]
+0.0.N: Trace Attempt 46	[15.63 s]
+0.0.N: Trace Attempt 47	[20.48 s]
+1.0.Tri: Per property time limit expired (100.00 s) [100.19 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_CNTDONE_prop_12"	[100.19 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_STATE_ENCODE_prop_16"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:  180.53" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+3.0.N: Trace Attempt 38	[44.26 s]
+0.0.N: Trace Attempt 48	[31.26 s]
+3.0.N: Trace Attempt 39	[53.16 s]
+0.0.N: Trace Attempt 49	[45.49 s]
+3.0.N: Trace Attempt 40	[64.89 s]
+0.0.N: Trace Attempt 50	[63.73 s]
+3.0.N: Trace Attempt 41	[84.53 s]
+INFO (IIM002): *** Stopping all proof jobs ***
+3.0.Ht: Interrupted (multi)
+0.0.Ht: Interrupted (multi)
+2.0.Tri: Stopped processing property "fsm_state_livelock_STATE_INIT_prop_9"	[227.75 s].
+INFO (IPF144): 1: Initiating shutdown of proof [228.89]
+2.0.Tri: Terminated by signal SIGINT (@ 227.75 s)
+2.0.Tri: Engine should be restarted (starts=1, unexpected_terminations=1)
+2.0.Tri: Restarting engine (local)
+1.0.Tri: Stopped processing property "fsm_state_deadlock_STATE_ENCODE_prop_16"	[48.22 s].
+1.0.Tri: Terminated by signal SIGINT (@ 228.89 s)
+1: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   1
+     engine jobs started                     :   1
+     unexpected terminations                 :   1
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+    Tri        0.02      228.89        0.00       99.99 %
+    all        0.02      228.89        0.00       99.99 %
+
+    Data read    : 3.00 kiB
+    Data written : 654.00 B
+
+1: ProofGrid usable level: 0
+0.0.Ht: Terminated by signal SIGINT (@ 229.06 s)
+0.0.Ht: Engine should be restarted (starts=1, unexpected_terminations=1)
+0.0.Ht: Restarting engine (local)
+3.0.Ht: Terminated by signal SIGINT (@ 227.45 s)
+3.0.Ht: Engine should be restarted (starts=1, unexpected_terminations=1)
+3.0.Ht: Restarting engine (local)
+1: All pending notifications were processed.
+INFO (IPF144): 0: Initiating shutdown of proof [229.08]
+INFO (IPF144): 2: Initiating shutdown of proof [227.78]
+INFO (IPF144): 3: Initiating shutdown of proof [227.47]
+0.0.L: Terminated by signal SIGINT (@ 229.08 s)
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Interrupted.
+INFO (IPF127): No more actions.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 8
+                 assertions                   : 8
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 8 (100%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+3.0.L: Terminated by signal SIGINT (@ 227.50 s)
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_37"	[87.23 s].
+3.0.I: Trace Attempt 21	[2.44 s]
+3.0.I: Terminated by signal SIGINT (@ 227.50 s)
+0.0.I: Stopped processing property "fsm_state_cover_STATE_ENCODE_prop_7"	[68.82 s].
+0.0.I: Trace Attempt 31	[3.60 s]
+0.0.I: Terminated by signal SIGINT (@ 229.12 s)
+2.0.Tri: Proofgrid shell started at 31020@ideal125(local) jg_29161_ideal125_3
+2.0.Tri: Preventing job from starting because proof is shutting down.
+3.0.Ht: Proofgrid shell started at 31022@ideal125(local) jg_29161_ideal125_4
+2.0.Tri: Requesting engine job to terminate
+3.0.Ht: Preventing job from starting because proof is shutting down.
+3.0.Ht: Requesting engine job to terminate
+2.0.Tri: Interrupted. [0.00 s]
+3.0.Ht: Interrupted. [0.00 s]
+2.0.Tri: Exited with Success (@ 227.86 s)
+0.0.Ht: Proofgrid shell started at 31021@ideal125(local) jg_29161_ideal125_1
+2: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   1
+     engine jobs started                     :   1
+     unexpected terminations                 :   1
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+    Tri        0.13      227.75        0.00       99.94 %
+    all        0.13      227.75        0.00       99.94 %
+
+    Data read    : 2.04 kiB
+    Data written : 615.00 B
+
+3.0.Ht: Exited with Success (@ 227.55 s)
+0.0.Ht: Preventing job from starting because proof is shutting down.
+2: ProofGrid usable level: 0
+0.0.Ht: Requesting engine job to terminate
+2: All pending notifications were processed.
+0.0.Ht: Interrupted. [0.00 s]
+0.0.Ht: Exited with Success (@ 229.16 s)
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Interrupted.
+INFO (IPF127): No more actions.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 1
+                 assertions                   : 1
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 1 (100%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+0.0.N: Stopped processing property "fsm_state_cover_STATE_ENCODE_prop_7"	[69.04 s].
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_37"	[87.25 s].
+0.0.N: Terminated by signal SIGINT (@ 229.18 s)
+0: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   5
+     engine jobs started                     :   5
+     unexpected terminations                 :   4
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Ht        0.15      229.06        0.00       99.94 %
+      J        0.04        2.77        0.00       98.45 %
+      N        0.04      229.18        0.00       99.98 %
+      I        0.04      229.12        0.00       99.98 %
+      L        0.04      229.08        0.00       99.98 %
+    all        0.06      183.84        0.00       99.97 %
+
+    Data read    : 139.98 kiB
+    Data written : 6.94 kiB
+
+0: ProofGrid usable level: 0
+0: All pending notifications were processed.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Interrupted.
+INFO (IPF127): No more actions.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 8
+                 assertions                   : 0
+                  - proven                    : 0
+                  - bounded_proven (user)     : 0
+                  - bounded_proven (auto)     : 0
+                  - marked_proven             : 0
+                  - cex                       : 0
+                  - ar_cex                    : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+                 covers                       : 8
+                  - unreachable               : 0 (0%)
+                  - bounded_unreachable (user): 0 (0%)
+                  - covered                   : 2 (25%)
+                  - ar_covered                : 0 (0%)
+                  - undetermined              : 6 (75%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+3.0.N: Terminated by signal SIGINT (@ 227.58 s)
+3: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   5
+     engine jobs started                     :   5
+     unexpected terminations                 :   4
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Ht        0.13      227.45        0.00       99.94 %
+      J        0.02        3.65        0.00       99.37 %
+      N        0.02      227.58        0.00       99.99 %
+      I        0.02      227.51        0.00       99.99 %
+      L        0.02      227.50        0.00       99.99 %
+    all        0.04      182.74        0.00       99.98 %
+
+    Data read    : 207.87 kiB
+    Data written : 15.65 kiB
+
+3: ProofGrid usable level: 0
+3: All pending notifications were processed.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Interrupted.
+INFO (IPF127): No more actions.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 24
+                 assertions                   : 24
+                  - proven                    : 17 (70.8333%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 2 (8.33333%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 5 (20.8333%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+INFO (IIM002): *** Stopping all proof jobs ***
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

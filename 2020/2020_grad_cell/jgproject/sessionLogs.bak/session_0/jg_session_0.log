@@ -1,0 +1,234 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2018.03
+# platform  : Linux 2.6.32-431.el6.x86_64
+# version   : 2018.03p001 64 bits
+# build date: 2018.04.24 18:13:05 PDT
+#----------------------------------------
+# started Thu Jan 28 18:37:03 CST 2021
+# hostname  : ideal125
+# pid       : 27575
+# arguments : '-label' 'session_0' '-console' 'ideal125:47446' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/max.chen/ICCONTEST/2020/2020_grad_cell/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/max.chen/ICCONTEST/2020/2020_grad_cell/jgproject/.tmp/.initCmds.tcl' 'superlint.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2018 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/max.chen/ICCONTEST/2020/2020_grad_cell/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_afl".
+INFO: reading configuration file "/home/max.chen/.config/jasper/jaspergold.conf".
+% check_superlint -init
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% # Config rules
+% config_rtlds -rule -enable -domain { LINT AUTO_FORMAL }
+% config_rtlds -rule -disable -tag { CAS_IS_DFRC SIG_IS_DLCK SIG_NO_TGFL SIG_NO_TGRS SIG_NO_TGST FSM_NO_MTRN FSM_NO_TRRN }
+% # vsd2018_constrain //
+% config_rtlds -rule  -disable -category { NAMING AUTO_FORMAL_DEAD_CODE AUTO_FORMAL_SIGNALS AUTO_FORMAL_ARITHMETIC_OVERFLOW }
+% config_rtlds -rule  -disable -tag { IDN_NR_SVKY ARY_MS_DRNG IDN_NR_AMKY IDN_NR_CKYW IDN_NR_SVKW ARY_NR_LBND VAR_NR_INDL INS_NR_PTEX INP_NO_USED OTP_NR_ASYA FLP_NR_MXCS OTP_UC_INST OTP_NR_UDRV REG_NR_TRRC INS_NR_INPR MOD_NS_GLGC } 
+% config_rtlds -rule  -disable -tag { REG_NR_RWRC }
+% # vsd2018_constrain //
+% 
+% analyze -sv  ./SME.v
+[-- (VERI-1482)] Analyzing Verilog file '/home/nfs_cad/cadence/JASPER/jasper_2018.03p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './SME.v'
+% elaborate -bbox true -top SME
+INFO (ISW003): Top module name is "SME".
+[WARN (VERI-2336)] ./SME.v(117): variable 'current_state' may be used before assigned in always_comb or always @* block : might cause synthesis - simulation differences
+[WARN (VERI-2336)] ./SME.v(120): variable 'current_state' may be used before assigned in always_comb or always @* block : might cause synthesis - simulation differences
+[INFO (VERI-1018)] ./SME.v(1): compiling module 'SME'
+[INFO (VERI-1018)] ./SME.v(293): compiling module 'Counter32'
+[WARN (VERI-9003)] ./SME.v(299): invert of if-condition matches sensitivity list edge, this is unconventional
+[WARN (VERI-1209)] ./SME.v(305): expression size 32 truncated to fit in target size 5
+[WARN (VERI-2334)] ./SME.v(310): unsupported use of clock signal 'isstring', clock used as data
+[INFO (VERI-1018)] ./SME.v(317): compiling module 'Compare'
+[WARN (VERI-1209)] ./SME.v(49): expression size 32 truncated to fit in target size 1
+[WARN (VERI-9005)] ./SME.v(149): 5 bit index expression cnt_num truncated to 3 bits
+[WARN (VERI-1209)] ./SME.v(150): expression size 5 truncated to fit in target size 3
+[WARN (VERI-9005)] ./SME.v(190): 32 bit index expression (current_cp_bit + 1) truncated to 3 bits
+[WARN (VERI-1209)] ./SME.v(195): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./SME.v(199): expression size 32 truncated to fit in target size 5
+[WARN (VERI-1209)] ./SME.v(228): expression size 32 truncated to fit in target size 5
+[WARN (VERI-9005)] ./SME.v(256): 32 bit index expression (idx - (current_cp_bit + 1)) truncated to 3 bits
+[WARN (VERI-1209)] ./SME.v(260): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] ./SME.v(265): expression size 32 truncated to fit in target size 3
+SME
+[<embedded>] % 
+[<embedded>] % # Setup clock and reset
+[<embedded>] % clock clk
+[<embedded>] % reset reset
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "reset".
+[<embedded>] % 
+[<embedded>] % # Setup for CTL check
+[<embedded>] % set_superlint_fsm_ctl_livelock true
+WARNING (WG002): "superlint_fsm_ctl_livelock" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+[<embedded>] % set_superlint_fsm_ctl_deadlock true
+WARNING (WG002): "superlint_fsm_ctl_deadlock" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+[<embedded>] % 
+[<embedded>] % # Setup for LTL check
+[<embedded>] % #set_superlint_fsm_ctl_livelock false
+[<embedded>] % #set_superlint_fsm_ctl_deadlock false
+[<embedded>] % #set_superlint_add_automatic_task_assumption true
+[<embedded>] % 
+[<embedded>] % # Extract checks
+[<embedded>] % check_superlint -extract
+INFO (ISL009): Started detection of ASG_IS_XRCH, ARY_IS_OOBI, CAS_NO_PRIO checks
+INFO (ISL009): Started detection of FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB checks
+INFO (ISL009): Started detection of BUS_IS_CONT,BUS_IS_FLOT checks
+INFO (ISL014): Started extracting properties for ASG_IS_XRCH,ARY_IS_OOBI,CAS_NO_PRIO checks
+INFO (ISL015): Extracted 11 properties of ASG_IS_XRCH,ARY_IS_OOBI,CAS_NO_PRIO
+INFO (ISL014): Started extracting properties for BUS_IS_CONT,BUS_IS_FLOT checks
+INFO (ISL015): Extracted 8 properties of BUS_IS_CONT,BUS_IS_FLOT
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL016): Extracted 436 STRUCTURAL checks.
+INFO (ISL016): Extracted 16 SYNTH checks.
+INFO (ISL016): Extracted 70 BASIC LINT checks.
+541
+[<embedded>] % 
+[<embedded>] % # Prove
+[<embedded>] % set_superlint_prove_parallel_tasks on
+[<embedded>] % set_prove_no_traces true
+[<embedded>] % check_superlint -prove -time_limit 10m -bg
+INFO (ISL008): Running multiple proof threads in parallel, one per task.
+    Expect high resource allocation.
+WARNING (WG002): "superlint_prove_parallel_tasks" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+WARNING (WSL054): "superlint_prove_parallel_tasks" is enabled, overriding the following settings: proofgrid_per_engine_max_jobs, proofgrid_max_jobs.
+    For message help, type "help -message WSL054"
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_BUS>", 8 properties to prove with 0 already proven/unreachable
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+WARNING (WNL023): Expression sizes mismatch.
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 20 of 25 design flops, 0 of 269 design latches, 388 of 474 internal elements.
+ERROR (ENL024): Combinational loop found within the cone of influence for "GET.count_out[0]".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Action result: failed.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 8
+                 assertions                   : 8
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 8 (100%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_OUT_OF_BOUND_INDEXING>", 11 properties to prove with 0 already proven/unreachable
+background (thread 1)
+ERROR (ENL024): Combinational loop found within the cone of influence for "GET.count_out[0]".
+    Do one of the following to learn more about the problematic combinational loops:
+    - Use "check_loop <signal>" to show loops in the COI of the specified signal.
+    - Open the Combo Loop Viewer to see all loops in the design: "check_loop -viewer".
+    - Use "help check_loop -gui" and/or the "Combo Loop Viewer" chapter in the user guide for guidance.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Action result: failed.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 11
+                 assertions                   : 11
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 11 (100%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+INFO (IIM002): *** Stopping all proof jobs ***
+INFO (IIM002): *** Stopping all proof jobs ***
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

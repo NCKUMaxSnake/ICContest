@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IOTDF
+Version: Q-2019.12
+Date   : Fri Mar 19 18:23:28 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: READ/comp_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: READ/sum_reg[130]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  READ/comp_data_reg[27]/CK (DFFRX1)                      0.00       1.00 r
+  READ/comp_data_reg[27]/Q (DFFRX1)                       0.64       1.64 r
+  READ/add_162/B[27] (READ_DW01_add_1)                    0.00       1.64 r
+  READ/add_162/U1781/Y (NOR2X1)                           0.14       1.78 f
+  READ/add_162/U1699/Y (OAI21XL)                          0.21       2.00 r
+  READ/add_162/U1698/Y (AOI21X1)                          0.09       2.08 f
+  READ/add_162/U1093/Y (OAI21XL)                          0.18       2.26 r
+  READ/add_162/U1213/Y (AOI21XL)                          0.08       2.34 f
+  READ/add_162/U1159/Y (OAI21X1)                          0.10       2.44 r
+  READ/add_162/U1209/Y (AOI21XL)                          0.12       2.56 f
+  READ/add_162/U1164/Y (CLKINVX1)                         0.08       2.63 r
+  READ/add_162/U1208/Y (NAND2X2)                          0.05       2.68 f
+  READ/add_162/U1163/Y (NAND2X2)                          0.05       2.74 r
+  READ/add_162/U1193/Y (AOI21X1)                          0.09       2.82 f
+  READ/add_162/U1115/Y (CLKINVX1)                         0.06       2.88 r
+  READ/add_162/U1191/Y (NAND2X1)                          0.05       2.93 f
+  READ/add_162/U1116/Y (NAND2X1)                          0.08       3.01 r
+  READ/add_162/U1100/Y (AOI21X1)                          0.11       3.12 f
+  READ/add_162/U1118/Y (OAI21XL)                          0.21       3.33 r
+  READ/add_162/U1140/Y (AOI21X1)                          0.13       3.46 f
+  READ/add_162/U1113/Y (OAI21XL)                          0.24       3.69 r
+  READ/add_162/U1252/Y (AOI21XL)                          0.15       3.84 f
+  READ/add_162/U1132/Y (CLKINVX1)                         0.07       3.91 r
+  READ/add_162/U1131/Y (NAND2X1)                          0.05       3.97 f
+  READ/add_162/U1117/Y (NAND2X1)                          0.09       4.05 r
+  READ/add_162/U1136/Y (AOI21X1)                          0.09       4.15 f
+  READ/add_162/U1652/Y (OAI21XL)                          0.23       4.38 r
+  READ/add_162/U1253/Y (AOI21XL)                          0.16       4.53 f
+  READ/add_162/U1653/Y (OAI21XL)                          0.25       4.78 r
+  READ/add_162/U1254/Y (AOI21XL)                          0.16       4.94 f
+  READ/add_162/U1654/Y (OAI21XL)                          0.25       5.18 r
+  READ/add_162/U1255/Y (AOI21XL)                          0.16       5.34 f
+  READ/add_162/U1655/Y (OAI21XL)                          0.25       5.59 r
+  READ/add_162/U1256/Y (AOI21XL)                          0.16       5.74 f
+  READ/add_162/U1656/Y (OAI21XL)                          0.25       5.99 r
+  READ/add_162/U1257/Y (AOI21XL)                          0.16       6.14 f
+  READ/add_162/U1657/Y (OAI21XL)                          0.25       6.39 r
+  READ/add_162/U1258/Y (AOI21XL)                          0.16       6.55 f
+  READ/add_162/U1658/Y (OAI21XL)                          0.25       6.80 r
+  READ/add_162/U1259/Y (AOI21XL)                          0.16       6.95 f
+  READ/add_162/U1659/Y (OAI21XL)                          0.25       7.20 r
+  READ/add_162/U1260/Y (AOI21XL)                          0.16       7.35 f
+  READ/add_162/U1660/Y (OAI21XL)                          0.25       7.60 r
+  READ/add_162/U1261/Y (AOI21XL)                          0.16       7.76 f
+  READ/add_162/U1661/Y (OAI21XL)                          0.25       8.01 r
+  READ/add_162/U1262/Y (AOI21XL)                          0.16       8.16 f
+  READ/add_162/U1662/Y (OAI21XL)                          0.25       8.41 r
+  READ/add_162/U1263/Y (AOI21XL)                          0.16       8.56 f
+  READ/add_162/U1114/Y (OAI21XL)                          0.25       8.81 r
+  READ/add_162/U1141/Y (AND2X2)                           0.17       8.98 r
+  READ/add_162/U1130/Y (NOR2X1)                           0.06       9.03 f
+  READ/add_162/U1106/Y (OAI21X1)                          0.14       9.18 r
+  READ/add_162/U1158/Y (AOI21X1)                          0.09       9.27 f
+  READ/add_162/U1171/Y (CLKINVX1)                         0.05       9.32 r
+  READ/add_162/U1169/Y (NAND2X1)                          0.05       9.37 f
+  READ/add_162/U1170/Y (NAND2X1)                          0.10       9.47 r
+  READ/add_162/U1203/Y (AOI21X1)                          0.09       9.56 f
+  READ/add_162/U1335/Y (CLKINVX1)                         0.05       9.61 r
+  READ/add_162/U1333/Y (NAND2X1)                          0.05       9.66 f
+  READ/add_162/U1334/Y (NAND2X1)                          0.08       9.74 r
+  READ/add_162/U1682/Y (AOI21X1)                          0.10       9.84 f
+  READ/add_162/U1647/Y (OAI21XL)                          0.22      10.06 r
+  READ/add_162/U1368/Y (NAND2XL)                          0.14      10.21 f
+  READ/add_162/U1774/Y (NOR2X1)                           0.10      10.31 r
+  READ/add_162/U1415/Y (XNOR2XL)                          0.14      10.44 f
+  READ/add_162/SUM[130] (READ_DW01_add_1)                 0.00      10.44 f
+  READ/U56/Y (AO22XL)                                     0.23      10.68 f
+  READ/sum_reg[130]/D (DFFRX1)                            0.00      10.68 f
+  data arrival time                                                 10.68
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             1.00      11.00
+  clock uncertainty                                      -0.10      10.90
+  READ/sum_reg[130]/CK (DFFRX1)                           0.00      10.90 r
+  library setup time                                     -0.21      10.69
+  data required time                                                10.69
+  --------------------------------------------------------------------------
+  data required time                                                10.69
+  data arrival time                                                -10.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

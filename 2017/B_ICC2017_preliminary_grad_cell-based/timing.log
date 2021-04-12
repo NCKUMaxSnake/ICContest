@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : DT
+Version: Q-2019.12
+Date   : Sun Feb  7 22:12:31 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: WRRES/res_data_reg[2][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: res_do[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  DT                 tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  WRRES/res_data_reg[2][1]/CK (DFFRX1)                    0.00       0.50 r
+  WRRES/res_data_reg[2][1]/Q (DFFRX1)                     0.86       1.36 r
+  WRRES/GETSMALLEST/element3[1] (getSmallest)             0.00       1.36 r
+  WRRES/GETSMALLEST/U83/Y (AOI21X4)                       0.20       1.56 f
+  WRRES/GETSMALLEST/U84/Y (AOI2BB2X4)                     0.15       1.71 r
+  WRRES/GETSMALLEST/U86/Y (OAI22X2)                       0.14       1.85 f
+  WRRES/GETSMALLEST/U115/Y (OAI221X2)                     0.26       2.11 r
+  WRRES/GETSMALLEST/U121/Y (AO22X4)                       0.25       2.36 r
+  WRRES/GETSMALLEST/U120/Y (OAI21X4)                      0.10       2.46 f
+  WRRES/GETSMALLEST/U20/Y (BUFX20)                        0.16       2.62 f
+  WRRES/GETSMALLEST/U26/Y (INVX12)                        0.09       2.70 r
+  WRRES/GETSMALLEST/U8/Y (CLKAND2X2)                      0.20       2.90 r
+  WRRES/GETSMALLEST/U44/Y (OR2X4)                         0.17       3.07 r
+  WRRES/GETSMALLEST/U41/Y (CLKINVX1)                      0.24       3.31 f
+  WRRES/GETSMALLEST/U88/Y (AOI21X4)                       0.20       3.50 r
+  WRRES/GETSMALLEST/U32/Y (AOI2BB2X2)                     0.12       3.62 f
+  WRRES/GETSMALLEST/U97/Y (OR2X4)                         0.20       3.82 f
+  WRRES/GETSMALLEST/U98/Y (NAND2X4)                       0.07       3.90 r
+  WRRES/GETSMALLEST/U38/Y (OR2X6)                         0.13       4.03 r
+  WRRES/GETSMALLEST/U91/Y (NAND3X6)                       0.08       4.11 f
+  WRRES/GETSMALLEST/U123/Y (AO22X4)                       0.28       4.39 f
+  WRRES/GETSMALLEST/U122/Y (OAI21X4)                      0.11       4.50 r
+  WRRES/GETSMALLEST/U104/Y (BUFX16)                       0.15       4.65 r
+  WRRES/GETSMALLEST/U54/Y (INVX8)                         0.08       4.74 f
+  WRRES/GETSMALLEST/U55/Y (AO22X2)                        0.40       5.14 f
+  WRRES/GETSMALLEST/final_result[2] (getSmallest)         0.00       5.14 f
+  WRRES/r372/A[2] (wrRes_DW01_inc_1_DW01_inc_3)           0.00       5.14 f
+  WRRES/r372/U1_1_2/CO (ADDHX4)                           0.21       5.35 f
+  WRRES/r372/U1_1_3/CO (ADDHX2)                           0.21       5.56 f
+  WRRES/r372/U1_1_4/S (ADDHX4)                            0.15       5.70 f
+  WRRES/r372/SUM[4] (wrRes_DW01_inc_1_DW01_inc_3)         0.00       5.70 f
+  WRRES/U8/Y (NAND2BX4)                                   0.19       5.89 f
+  WRRES/U14/Y (OAI222X2)                                  0.36       6.26 r
+  WRRES/U5/Y (OR2X1)                                      0.29       6.55 r
+  WRRES/U15/Y (NAND3X2)                                   0.14       6.69 f
+  WRRES/U124/Y (AO22X4)                                   0.26       6.95 f
+  WRRES/U123/Y (OAI21X4)                                  0.12       7.07 r
+  WRRES/U26/Y (NOR2BX4)                                   0.13       7.20 f
+  WRRES/U11/Y (CLKINVX8)                                  0.08       7.28 r
+  WRRES/U12/Y (INVX16)                                    0.06       7.34 f
+  WRRES/U22/Y (AOI222X2)                                  0.35       7.69 r
+  WRRES/U18/Y (INVX6)                                     0.21       7.90 f
+  WRRES/res_do[1] (wrRes)                                 0.00       7.90 f
+  res_do[1] (out)                                         0.00       7.90 f
+  data arrival time                                                  7.90
+
+  clock clk (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.50       8.50
+  clock uncertainty                                      -0.10       8.40
+  output external delay                                  -0.50       7.90
+  data required time                                                 7.90
+  --------------------------------------------------------------------------
+  data required time                                                 7.90
+  data arrival time                                                 -7.90
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

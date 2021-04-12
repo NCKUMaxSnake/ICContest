@@ -1,0 +1,117 @@
+Magic 271485
+Revision Verdi_O-2018.09
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1280 657 199 149
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/max.chen/ICCONTEST/2014/STI_DAC.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 18398227.409502 18727420.000000
+cursor 18316000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 12
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/home/max.chen/ICCONTEST/2014/STI_DAC.fsdb"
+addSignal -h 15 /testfixture1/u_rtl/DAC/clk
+addSignal -h 15 -holdScope reset
+addSignal -h 15 -holdScope cur_state[2:0]
+addSignal -h 15 -holdScope so_data
+addSignal -h 15 -holdScope so_valid
+addSignal -h 15 -holdScope oem_dataout[7:0]
+addSignal -h 15 -holdScope wr_cnt[7:0]
+addSignal -h 15 -holdScope oem_addr[4:0]
+addSignal -h 15 /testfixture1/u_rtl/pi_end
+addSignal -h 15 -holdScope pi_data[15:0]
+addSignal -h 15 /testfixture1/u_rtl/DAC/mem_sel[7:0]
+addSignal -h 15 -holdScope cnt_bits[2:0]
+addGroup "G2"
+addSignal -h 15 -UNSIGNED -HEX /testfixture1/ODD1_MEM[0:31]
+addSignal -h 15 -UNSIGNED -HEX -holdScope EVEN1_MEM[0:31]
+addSignal -h 15 -UNSIGNED -HEX -holdScope ODD2_MEM[0:31]
+addSignal -h 15 -UNSIGNED -HEX -holdScope EVEN2_MEM[0:31]
+addSignal -h 15 -UNSIGNED -HEX -holdScope ODD3_MEM[0:31]
+addSignal -h 15 -UNSIGNED -HEX -holdScope EVEN3_MEM[0:31]
+addSignal -h 15 -holdScope ODD4_MEM[0:31]
+addSignal -h 15 -holdScope EVEN4_MEM[0:31]
+addGroup "G3"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/home/max.chen/ICCONTEST/2014/STI_DAC.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/testfixture1"
+"/testfixture1/u_rtl"
+"/testfixture1/u_rtl/DAC"
+
+SCOPE_LIST_BEGIN
+"/testfixture1"
+"/testfixture1/u_rtl"
+"/testfixture1/u_rtl/DAC"
+"/testfixture1/u_rtl/CTRL"
+"/testfixture1/u_rtl/PROC"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+
+
+FILTER_SIGNAL_BEGIN
+
+"*"
+
+FILTER_STRING_LIST_BEGIN
+FILTER_STRING_LIST_END
+
+FILTER_TYPE_LIST_BEGIN
+"All"
+"Input"
+"Output"
+"Inout"
+"Net"
+"Register"
+"Buffer"
+"Linkage"
+"ClassTransaction"
+"Property"
+"Others"
+FILTER_TYPE_LIST_END
+
+FILTER_SIGNAL_END

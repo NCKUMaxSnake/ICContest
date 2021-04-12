@@ -1,0 +1,1090 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2018.03
+# platform  : Linux 2.6.32-431.el6.x86_64
+# version   : 2018.03p001 64 bits
+# build date: 2018.04.24 18:13:05 PDT
+#----------------------------------------
+# started Sat Jan 30 15:27:25 CST 2021
+# hostname  : ideal125
+# pid       : 5986
+# arguments : '-label' 'session_0' '-console' 'ideal125:53367' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEU=' '-proj' '/home/max.chen/ICCONTEST/2020/2020_grad_cell/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/max.chen/ICCONTEST/2020/2020_grad_cell/jgproject/.tmp/.initCmds.tcl' 'superlint.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2018 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/max.chen/ICCONTEST/2020/2020_grad_cell/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_afl".
+INFO: reading configuration file "/home/max.chen/.config/jasper/jaspergold.conf".
+% check_superlint -init
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% # Config rules
+% config_rtlds -rule -enable -domain { LINT AUTO_FORMAL }
+% config_rtlds -rule -disable -tag { CAS_IS_DFRC SIG_IS_DLCK SIG_NO_TGFL SIG_NO_TGRS SIG_NO_TGST FSM_NO_MTRN FSM_NO_TRRN }
+% # vsd2018_constrain //
+% config_rtlds -rule  -disable -category { NAMING AUTO_FORMAL_DEAD_CODE AUTO_FORMAL_SIGNALS AUTO_FORMAL_ARITHMETIC_OVERFLOW }
+% config_rtlds -rule  -disable -tag { IDN_NR_SVKY ARY_MS_DRNG IDN_NR_AMKY IDN_NR_CKYW IDN_NR_SVKW ARY_NR_LBND VAR_NR_INDL INS_NR_PTEX INP_NO_USED OTP_NR_ASYA FLP_NR_MXCS OTP_UC_INST OTP_NR_UDRV REG_NR_TRRC INS_NR_INPR MOD_NS_GLGC } 
+% config_rtlds -rule  -disable -tag { REG_NR_RWRC }
+% # vsd2018_constrain //
+% 
+% analyze -sv  ./SME.v
+[-- (VERI-1482)] Analyzing Verilog file '/home/nfs_cad/cadence/JASPER/jasper_2018.03p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file './SME.v'
+% elaborate -bbox true -top SME
+INFO (ISW003): Top module name is "SME".
+[INFO (VERI-1018)] ./SME.v(1): compiling module 'SME'
+[INFO (VERI-1018)] ./SME.v(322): compiling module 'Counter32'
+[WARN (VERI-1209)] ./SME.v(337): expression size 32 truncated to fit in target size 5
+[INFO (VERI-1018)] ./SME.v(366): compiling module 'Compare'
+[WARN (VERI-1209)] ./SME.v(51): expression size 32 truncated to fit in target size 1
+[WARN (VERI-9005)] ./SME.v(189): 32 bit index expression (current_cp_bit + 1) truncated to 3 bits
+[WARN (VERI-1209)] ./SME.v(194): expression size 32 truncated to fit in target size 1
+[WARN (VERI-1209)] ./SME.v(198): expression size 32 truncated to fit in target size 5
+[WARN (VERI-1209)] ./SME.v(233): expression size 32 truncated to fit in target size 5
+[WARN (VERI-9005)] ./SME.v(255): 32 bit index expression (idx - (current_cp_bit + 1)) truncated to 3 bits
+[WARN (VERI-1209)] ./SME.v(259): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] ./SME.v(264): expression size 32 truncated to fit in target size 3
+[WARN (VERI-1209)] ./SME.v(287): expression size 5 truncated to fit in target size 3
+[WARN (VERI-1209)] ./SME.v(307): expression size 5 truncated to fit in target size 3
+[WARN (VERI-9005)] ./SME.v(311): 5 bit index expression cnt_num truncated to 3 bits
+[WARN (VERI-1209)] ./SME.v(312): expression size 5 truncated to fit in target size 3
+SME
+[<embedded>] % 
+[<embedded>] % # Setup clock and reset
+[<embedded>] % clock clk
+[<embedded>] % reset reset
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "reset".
+[<embedded>] % 
+[<embedded>] % # Setup for CTL check
+[<embedded>] % set_superlint_fsm_ctl_livelock true
+WARNING (WG002): "superlint_fsm_ctl_livelock" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+[<embedded>] % set_superlint_fsm_ctl_deadlock true
+WARNING (WG002): "superlint_fsm_ctl_deadlock" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+[<embedded>] % 
+[<embedded>] % # Setup for LTL check
+[<embedded>] % #set_superlint_fsm_ctl_livelock false
+[<embedded>] % #set_superlint_fsm_ctl_deadlock false
+[<embedded>] % #set_superlint_add_automatic_task_assumption true
+[<embedded>] % 
+[<embedded>] % # Extract checks
+[<embedded>] % check_superlint -extract
+INFO (ISL009): Started detection of ASG_IS_XRCH, ARY_IS_OOBI, CAS_NO_PRIO checks
+INFO (ISL009): Started detection of FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB checks
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis: phase 2 of 4.
+INFO (IRS031): Running reset analysis: phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 3 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 2 iterations. Assigned values for 359 of 367 design flops, 1 of 3 design latches, 18 of 18 internal elements.
+INFO (ISL009): Started detection of BUS_IS_CONT,BUS_IS_FLOT checks
+INFO (ISL014): Started extracting properties for ASG_IS_XRCH,ARY_IS_OOBI,CAS_NO_PRIO checks
+INFO (ISL015): Extracted 11 properties of ASG_IS_XRCH,ARY_IS_OOBI,CAS_NO_PRIO
+INFO (ISL014): Started extracting properties for FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB checks
+INFO (ISL015): Extracted 17 properties of FSM_IS_DLCK,FSM_IS_LLCK,FSM_NO_RCHB
+INFO (ISL014): Started extracting properties for BUS_IS_CONT,BUS_IS_FLOT checks
+INFO (ISL015): Extracted 0 properties of BUS_IS_CONT,BUS_IS_FLOT
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL016): Extracted 13 STRUCTURAL checks.
+INFO (ISL016): Extracted 6 SYNTH checks.
+INFO (ISL016): Extracted 70 BASIC LINT checks.
+117
+[<embedded>] % 
+[<embedded>] % # Prove
+[<embedded>] % set_superlint_prove_parallel_tasks on
+[<embedded>] % set_prove_no_traces true
+[<embedded>] % check_superlint -prove -time_limit 10m -bg
+INFO (ISL008): Running multiple proof threads in parallel, one per task.
+    Expect high resource allocation.
+WARNING (WG002): "superlint_prove_parallel_tasks" is included as an initial release to gather feedback from early adopters and finalize implementation for an upcoming release.
+WARNING (WSL054): "superlint_prove_parallel_tasks" is enabled, overriding the following settings: proofgrid_per_engine_max_jobs, proofgrid_max_jobs.
+    For message help, type "help -message WSL054"
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_FSM>", 7 properties to prove with 0 already proven/unreachable
+INFO (IPF031): Settings used for proof thread 0:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Ht J N I L 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Ht J N I L, total 5 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+0: Using multistage preprocessing
+0: Starting reduce
+0: Finished reduce in 0.009s
+0.0.PRE: Performing Proof Simplification...
+0.0.Ht: clocks: 2, declared: 1, disabling: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: Proof Simplification Iteration 1	[0.00 s]
+0.0.Ht: Proof Simplification Iteration 2	[0.00 s]
+0.0.Ht: Proof Simplification Iteration 3	[0.00 s]
+0.0.Ht: Proof Simplification Iteration 4	[0.01 s]
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+0.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 0.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+0.0.PRE: Proof Simplification completed in 0.03 s
+0: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+0: =============================== ProofGrid start ===============================
+0: ProofGrid usable level: 10
+0: ProofGrid is starting event handling
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_FSM_CTL_DEADLOCK>", 7 properties to prove with 0 already proven/unreachable
+0.0.L: Proofgrid shell started at 6215@ideal125(local) jg_5986_ideal125_1
+0.0.Ht: Proofgrid shell started at 6211@ideal125(local) jg_5986_ideal125_1
+0.0.J: Proofgrid shell started at 6212@ideal125(local) jg_5986_ideal125_1
+0.0.N: Proofgrid shell started at 6213@ideal125(local) jg_5986_ideal125_1
+0.0.I: Proofgrid shell started at 6214@ideal125(local) jg_5986_ideal125_1
+0.0.L: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.I: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.J: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.0.L: Using trace diversification with seed 1 (0.05)
+0.0.L: Using LRU state removal heuristic
+0.0.I: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+0.0.I: Starting proof for property "fsm_state_cover_1_prop_13"	[0.00 s].
+0.0.L: Using states from traces to { (reset) }
+0.0.N: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+0.0.N: Starting proof for property "fsm_state_cover_1_prop_13"	[0.00 s].
+0.0.I: Trace Attempt  1	[0.00 s]
+0.0.I: Trace Attempt  2	[0.00 s]
+0.0.I: Trace Attempt  3	[0.00 s]
+0.0.L: Trace Attempt  1	[0.01 s]
+INFO (IPF031): Settings used for proof thread 1:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Tri 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Tri, total 1 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+1: Using multistage preprocessing
+1: Starting reduce
+INFO (IPF047): 0.0.L: The cover property "fsm_state_cover_255_prop_9" was covered in 1 cycles in 0.04 s.
+INFO (IPF047): 0.0.L: The cover property "fsm_state_cover_STATE_GETSTRPAT_prop_1" was covered in 1 cycles in 0.04 s.
+0.0.L: Using states from traces to { (reset) }
+0.0.Ht: Trace Attempt  1	[0.01 s]
+0.0.Ht: Trace Attempt  2	[0.01 s]
+INFO (IPF047): 0.0.Ht: The cover property "fsm_state_cover_2_prop_14" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "fsm_state_cover_94_prop_8" was covered in 2 cycles in 0.04 s.
+INFO (IPF047): 0.0.Ht: The cover property "fsm_state_cover_STATE_COMPARE_prop_2" was covered in 2 cycles in 0.04 s.
+0.0.Ht: Trace Attempt  3	[0.01 s]
+INFO (IPF047): 0.0.Ht: The cover property "fsm_state_cover_1_prop_13" was covered in 3 cycles in 0.05 s.
+0.0.N: Requesting engine job to stop
+0.0.I: Requesting engine job to stop
+0.0.Ht: Requesting engine job to terminate
+0.0.J: Requesting engine job to terminate
+0.0.L: Requesting engine job to terminate
+INFO (IPF144): 0: Initiating shutdown of proof [0.01]
+INFO (IPF047): 0.0.Ht: The cover property "fsm_state_cover_STATE_OUTPUT_prop_3" was covered in 3 cycles in 0.05 s.
+0.0.Ht: All properties determined. [0.01 s]
+0.0.I: Trace Attempt  2	[0.01 s]
+0.0.Ht: Exited with Success (@ 0.01 s)
+0: ProofGrid usable level: 0
+0.0.L: Trace Attempt  1	[0.01 s]
+0.0.I: Trace Attempt  3	[0.01 s]
+0.0.N: Stopped processing property "fsm_state_cover_1_prop_13"	[0.05 s].
+0.0.N: All properties either determined or skipped. [0.01 s]
+0.0.N: Exited with Success (@ 0.01 s)
+0.0.I: Stopped processing property "fsm_state_cover_1_prop_13"	[0.05 s].
+1: Finished reduce in 0.009s
+0.0.I: All properties either determined or skipped. [0.01 s]
+0.0.L: All properties determined. [0.01 s]
+0.0.I: Exited with Success (@ 0.02 s)
+0.0.L: Exited with Success (@ 0.02 s)
+0.0.J: Trace Attempt  1	[0.02 s]
+0.0.J: Interrupted (multi)
+0.0.J: All properties determined. [0.02 s]
+0.0.J: Exited with Success (@ 0.02 s)
+0: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   5
+     engine jobs started                     :   5
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Ht        0.18        0.01        0.00        4.37 %
+      J        0.16        0.01        0.00        4.79 %
+      N        0.16        0.01        0.00        4.75 %
+      I        0.16        0.01        0.00        4.74 %
+      L        0.16        0.01        0.00        5.03 %
+    all        0.17        0.01        0.00        4.73 %
+
+    Data read    : 2.20 kiB
+    Data written : 3.00 kiB
+
+1.0.PRE: Performing Proof Simplification...
+0: ProofGrid usable level: 0
+0: All pending notifications were processed.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Final state reached.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 7
+                 assertions                   : 0
+                  - proven                    : 0
+                  - bounded_proven (user)     : 0
+                  - bounded_proven (auto)     : 0
+                  - marked_proven             : 0
+                  - cex                       : 0
+                  - ar_cex                    : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+                 covers                       : 7
+                  - unreachable               : 0 (0%)
+                  - bounded_unreachable (user): 0 (0%)
+                  - covered                   : 7 (100%)
+                  - ar_covered                : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+1.0.Tri: clocks: 2, declared: 1, disabling: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+1.0.Tri: Proof Simplification Iteration 1	[0.00 s]
+1.0.Tri: Proof Simplification Iteration 2	[0.00 s]
+1.0.Tri: Proof Simplification Iteration 3	[0.00 s]
+1.0.Tri: Proof Simplification Iteration 4	[0.01 s]
+1.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 1.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+1.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 1.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+1.0.PRE: Proof Simplification completed in 0.03 s
+1: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+1: =============================== ProofGrid start ===============================
+1: ProofGrid usable level: 7
+1: ProofGrid is starting event handling
+1.0.Tri: Proofgrid shell started at 6263@ideal125(local) jg_5986_ideal125_2
+1.0.Tri: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+1.0.Tri: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+1.0.Tri: Starting proof for property "fsm_state_deadlock_1_prop_16"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_FSM_CTL_LIVELOCK>", 3 properties to prove with 0 already proven/unreachable
+background (thread 3)
+INFO (IPF031): Settings used for proof thread 2:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Tri 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Tri, total 1 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+2: Using multistage preprocessing
+2: Starting reduce
+INFO (IPF127): Verbosity level: 6
+INFO (IPF127): Using Proof Grid in local mode, with 1 licenses
+INFO (IPF127): Trace generation: Suppressing
+INFO (IPF127): Engine C/G memory limit: 2048MB
+INFO (IPF127): Using rule superlint_chunking_rule.
+INFO (IPF127): Using action: prove_action.
+INFO (IPF036): Starting proof on task: "<SL_AUTO_FORMAL_OUT_OF_BOUND_INDEXING>", 11 properties to prove with 0 already proven/unreachable
+2: Finished reduce in 0.01s
+2.0.PRE: Performing Proof Simplification...
+2.0.Tri: clocks: 2, declared: 1, disabling: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+2.0.Tri: Proof Simplification Iteration 1	[0.00 s]
+2.0.Tri: Proof Simplification Iteration 2	[0.01 s]
+2.0.Tri: Proof Simplification Iteration 3	[0.01 s]
+2.0.Tri: Proof Simplification Iteration 4	[0.02 s]
+2.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 2.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+2.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 2.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+2.0.PRE: Proof Simplification completed in 0.06 s
+2: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+2: =============================== ProofGrid start ===============================
+2: ProofGrid usable level: 3
+2: ProofGrid is starting event handling
+INFO (IPF031): Settings used for proof thread 3:
+    orchestration                 = off
+    time_limit                    = 599s
+    per_property_time_limit       = 10s * 10 ^ scan
+    engine_mode                   = Ht J N I L 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 35
+    max engine jobs               = Ht J N I L, total 5 (max 35)
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+    trace_generation              = off
+WARNING (WTR001): Trace generation is disabled. This proof will not generate nor store any trace data.
+    For message help, type "help -message WTR001".
+3: Using multistage preprocessing
+3: Starting reduce
+2.0.Tri: Proofgrid shell started at 6294@ideal125(local) jg_5986_ideal125_3
+2.0.Tri: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+2.0.Tri: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+2.0.Tri: Starting proof for property "fsm_state_livelock_0_prop_15"	[0.00 s].
+2.0.Tri: Trace Attempt  1	[0.00 s]
+3: Finished reduce in 0.008s
+3.0.PRE: Performing Proof Simplification...
+3.0.Ht: clocks: 2, declared: 1, disabling: 0, posedge: 2, negedge: 0, noedge: 0, bothedge: 0
+3.0.Ht: Proof Simplification Iteration 1	[0.00 s]
+3.0.Ht: Proof Simplification Iteration 2	[0.00 s]
+3.0.Ht: Proof Simplification Iteration 3	[0.00 s]
+3.0.Ht: Proof Simplification Iteration 4	[0.01 s]
+3.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.PRE: The property ":noDeadEnd" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+3.0.PRE: A proof was found: No trace exists. [0.00 s]
+INFO (IPF057): 3.0.PRE: The property ":noConflict" was proven in 0.00 s.
+use check_assumptions -show to show this property in the property table
+3.0.PRE: Proof Simplification completed in 0.03 s
+3: About to start centralized ProofGrid in its own thread with a limit of 10000 pending notifications and a limit of 10 traces.
+3: =============================== ProofGrid start ===============================
+3: ProofGrid usable level: 8
+3: ProofGrid is starting event handling
+1.0.Tri:    0.00" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+3.0.J: Proofgrid shell started at 6306@ideal125(local) jg_5986_ideal125_4
+3.0.Ht: Proofgrid shell started at 6305@ideal125(local) jg_5986_ideal125_4
+3.0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.J: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.N: Proofgrid shell started at 6307@ideal125(local) jg_5986_ideal125_4
+3.0.I: Proofgrid shell started at 6308@ideal125(local) jg_5986_ideal125_4
+3.0.L: Proofgrid shell started at 6309@ideal125(local) jg_5986_ideal125_4
+3.0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.I: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.L: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+3.0.L: Using trace diversification with seed 1 (0.05)
+3.0.L: Using LRU state removal heuristic
+3.0.N: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_18"	[0.00 s].
+3.0.I: Next scan (0) will use per property time limit: 10s * 10 ^ 0 = 10s
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_18"	[0.00 s].
+3.0.L: Using states from traces to { (reset) }
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.L: Trace Attempt  1	[0.01 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  3	[0.00 s]
+3.0.Ht: Trace Attempt  1	[0.01 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.Ht: Trace Attempt  2	[0.01 s]
+3.0.Ht: Trace Attempt  3	[0.01 s]
+3.0.L: Trace Attempt  2	[0.01 s]
+3.0.Ht: Trace Attempt  4	[0.01 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 4 cycles was found for the property "out_of_bound_indexing_prop_21" in 0.01 s.
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  2	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.01 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.Ht: Trace Attempt  5	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.L: Trace Attempt  3	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.J: Trace Attempt  1	[0.02 s]
+3.0.N: Trace Attempt  4	[0.02 s]
+3.0.N: Trace Attempt  5	[0.02 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 6 cycles was found for the property "out_of_bound_indexing_prop_25" in 0.02 s.
+3.0.I: Trace Attempt  3	[0.02 s]
+3.0.J: Trace Attempt  1	[0.03 s]
+3.0.J: Trace Attempt  1	[0.03 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.J: Trace Attempt  1	[0.03 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+3.0.L: Trace Attempt  4	[0.04 s]
+3.0.N: Trace Attempt  5	[0.04 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+3.0.I: Trace Attempt  4	[0.04 s]
+3.0.J: Trace Attempt  1	[0.04 s]
+3.0.J: Trace Attempt  1	[0.05 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 8 cycles was found for the property "out_of_bound_indexing_prop_24" in 0.05 s.
+3.0.J: Trace Attempt  1	[0.05 s]
+3.0.J: Trace Attempt  1	[0.05 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+3.0.J: Trace Attempt  1	[0.06 s]
+INFO (IPF055): 3.0.J: A counterexample (cex) with 21 cycles was found for the property "out_of_bound_indexing_prop_28" in 0.05 s.
+3.0.J: Trace Attempt  1	[0.06 s]
+3.0.J: Trace Attempt  1	[0.06 s]
+3.0.J: Trace Attempt  1	[0.06 s]
+3.0.L: Using states from traces to { out_of_bound_indexing_prop_21 <3> }
+3.0.L: Trace Attempt  1	[0.06 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+3.0.L: Trace Attempt  2	[0.07 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+3.0.L: Trace Attempt  3	[0.07 s]
+3.0.L: Trace Attempt  4	[0.07 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+2.0.Tri:    0.00" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+3.0.L: Trace Attempt  5	[0.07 s]
+3.0.J: Trace Attempt  1	[0.07 s]
+3.0.J: Trace Attempt  1	[0.08 s]
+3.0.I: Trace Attempt  4	[0.07 s]
+3.0.J: Trace Attempt  1	[0.08 s]
+3.0.J: Trace Attempt  1	[0.08 s]
+3.0.J: Trace Attempt  1	[0.09 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 10 cycles was found for the property "out_of_bound_indexing_prop_20" in 0.08 s.
+3.0.J: Trace Attempt  1	[0.09 s]
+3.0.J: Trace Attempt  1	[0.09 s]
+3.0.J: Trace Attempt  1	[0.10 s]
+3.0.J: Trace Attempt  1	[0.10 s]
+3.0.J: Trace Attempt  1	[0.10 s]
+3.0.J: Trace Attempt  1	[0.10 s]
+3.0.N: Trace Attempt  1	[0.10 s]
+3.0.N: Trace Attempt  2	[0.10 s]
+3.0.J: Trace Attempt  1	[0.11 s]
+3.0.J: Trace Attempt  1	[0.11 s]
+3.0.J: Trace Attempt  1	[0.11 s]
+3.0.N: Trace Attempt  3	[0.11 s]
+3.0.N: Trace Attempt  4	[0.11 s]
+3.0.J: Trace Attempt  1	[0.12 s]
+3.0.N: Trace Attempt  5	[0.11 s]
+3.0.J: Trace Attempt  1	[0.12 s]
+3.0.J: Trace Attempt  1	[0.12 s]
+3.0.J: Trace Attempt  1	[0.12 s]
+3.0.J: Trace Attempt  1	[0.13 s]
+3.0.J: Trace Attempt  1	[0.13 s]
+3.0.J: Trace Attempt  1	[0.13 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 12 cycles was found for the property "out_of_bound_indexing_prop_26" in 0.13 s.
+3.0.J: Trace Attempt  1	[0.14 s]
+3.0.J: Trace Attempt  1	[0.14 s]
+3.0.J: Trace Attempt  1	[0.14 s]
+3.0.J: Trace Attempt  1	[0.14 s]
+3.0.J: Trace Attempt  1	[0.15 s]
+3.0.J: Trace Attempt  1	[0.15 s]
+3.0.J: Trace Attempt  1	[0.15 s]
+3.0.J: Trace Attempt  1	[0.16 s]
+3.0.J: Trace Attempt  1	[0.16 s]
+3.0.J: Trace Attempt  1	[0.16 s]
+3.0.J: Trace Attempt  1	[0.17 s]
+3.0.L: Using states from traces to { out_of_bound_indexing_prop_25 <11> }
+3.0.L: Trace Attempt  1	[0.17 s]
+3.0.J: Trace Attempt  1	[0.17 s]
+3.0.L: Trace Attempt  2	[0.17 s]
+3.0.J: Trace Attempt  1	[0.17 s]
+3.0.L: Trace Attempt  3	[0.17 s]
+3.0.L: Trace Attempt  4	[0.17 s]
+3.0.J: Trace Attempt  1	[0.17 s]
+3.0.L: Trace Attempt  5	[0.17 s]
+3.0.J: Trace Attempt  1	[0.18 s]
+3.0.J: Trace Attempt  1	[0.18 s]
+3.0.J: Trace Attempt  1	[0.18 s]
+3.0.J: Trace Attempt  1	[0.19 s]
+3.0.J: Trace Attempt  1	[0.19 s]
+3.0.J: Trace Attempt  1	[0.19 s]
+3.0.J: Trace Attempt  1	[0.19 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 14 cycles was found for the property "out_of_bound_indexing_prop_23" in 0.19 s.
+3.0.J: Trace Attempt  1	[0.20 s]
+3.0.J: Trace Attempt  1	[0.20 s]
+3.0.J: Trace Attempt  1	[0.20 s]
+3.0.J: Trace Attempt  1	[0.21 s]
+3.0.J: Trace Attempt  1	[0.21 s]
+3.0.J: Trace Attempt  1	[0.21 s]
+3.0.J: Trace Attempt  1	[0.21 s]
+3.0.J: Trace Attempt  1	[0.22 s]
+3.0.J: Trace Attempt  1	[0.22 s]
+3.0.J: Trace Attempt  1	[0.22 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+3.0.J: Trace Attempt  1	[0.23 s]
+3.0.J: Trace Attempt  1	[0.24 s]
+3.0.J: Trace Attempt  1	[0.24 s]
+3.0.J: Trace Attempt  1	[0.24 s]
+3.0.J: Trace Attempt  1	[0.25 s]
+3.0.J: Trace Attempt  1	[0.25 s]
+3.0.J: Trace Attempt  1	[0.25 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+3.0.J: Trace Attempt  1	[0.26 s]
+3.0.J: Trace Attempt  1	[0.27 s]
+3.0.J: Trace Attempt  1	[0.27 s]
+3.0.J: Trace Attempt  1	[0.27 s]
+3.0.J: Trace Attempt  1	[0.28 s]
+3.0.J: Trace Attempt  1	[0.28 s]
+3.0.J: Trace Attempt  1	[0.28 s]
+INFO (IPF055): 3.0.Ht: A counterexample (cex) with 16 cycles was found for the property "out_of_bound_indexing_prop_27" in 0.28 s.
+3.0.J: Trace Attempt  1	[0.28 s]
+3.0.J: Trace Attempt  1	[0.29 s]
+3.0.J: Trace Attempt  1	[0.29 s]
+3.0.J: Trace Attempt  1	[0.29 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+3.0.J: Trace Attempt  1	[0.30 s]
+3.0.J: Trace Attempt  1	[0.31 s]
+3.0.J: Trace Attempt  1	[0.31 s]
+3.0.J: Trace Attempt  1	[0.31 s]
+3.0.J: Trace Attempt  1	[0.32 s]
+3.0.J: Trace Attempt  1	[0.32 s]
+3.0.J: Trace Attempt  1	[0.32 s]
+3.0.J: Trace Attempt  1	[0.33 s]
+3.0.J: Trace Attempt  1	[0.33 s]
+3.0.J: Trace Attempt  1	[0.33 s]
+3.0.J: Trace Attempt  1	[0.33 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+3.0.J: Trace Attempt  1	[0.34 s]
+3.0.L: Using states from traces to { out_of_bound_indexing_prop_24 <20> }
+3.0.J: Trace Attempt  1	[0.35 s]
+3.0.L: Trace Attempt  1	[0.35 s]
+3.0.L: Trace Attempt  2	[0.35 s]
+3.0.J: Trace Attempt  1	[0.35 s]
+3.0.L: Trace Attempt  3	[0.35 s]
+3.0.J: Trace Attempt  1	[0.35 s]
+3.0.L: Trace Attempt  4	[0.35 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+3.0.L: Trace Attempt  5	[0.35 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+3.0.J: Trace Attempt  1	[0.36 s]
+3.0.J: Trace Attempt  1	[0.37 s]
+3.0.J: Trace Attempt  1	[0.37 s]
+3.0.J: Trace Attempt  1	[0.37 s]
+3.0.J: Trace Attempt  1	[0.38 s]
+3.0.J: Trace Attempt  1	[0.38 s]
+3.0.J: Trace Attempt  1	[0.38 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+3.0.J: Trace Attempt  1	[0.39 s]
+3.0.J: Trace Attempt  1	[0.40 s]
+3.0.J: Trace Attempt  1	[0.40 s]
+3.0.J: Trace Attempt  1	[0.40 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+3.0.J: Trace Attempt  1	[0.41 s]
+3.0.J: Trace Attempt  1	[0.42 s]
+3.0.J: Trace Attempt  1	[0.42 s]
+3.0.J: Trace Attempt  1	[0.42 s]
+3.0.J: Trace Attempt  1	[0.43 s]
+3.0.J: Trace Attempt  1	[0.43 s]
+3.0.J: Trace Attempt  1	[0.43 s]
+3.0.J: Trace Attempt  1	[0.43 s]
+3.0.J: Trace Attempt  1	[0.44 s]
+3.0.J: Trace Attempt  1	[0.44 s]
+3.0.J: Trace Attempt  1	[0.44 s]
+3.0.J: Trace Attempt  1	[0.45 s]
+3.0.J: Trace Attempt  1	[0.45 s]
+3.0.J: Trace Attempt  1	[0.45 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+3.0.J: Trace Attempt  1	[0.46 s]
+3.0.J: Trace Attempt  1	[0.47 s]
+3.0.J: Trace Attempt  1	[0.47 s]
+INFO (IPF055): 3.0.J: A counterexample (cex) with 129 cycles was found for the property "out_of_bound_indexing_prop_18" in 0.46 s.
+3.0.J: Trace Attempt  1	[0.47 s]
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_18"	[0.46 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_19"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_18"	[0.47 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_19"	[0.00 s].
+3.0.J: Trace Attempt  1	[0.47 s]
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.J: Trace Attempt  1	[0.48 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.J: Trace Attempt  1	[0.48 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.J: Trace Attempt  1	[0.48 s]
+3.0.N: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[0.49 s]
+3.0.N: Trace Attempt  5	[0.01 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[0.49 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[0.49 s]
+3.0.J: Trace Attempt  1	[0.50 s]
+3.0.J: Trace Attempt  1	[0.50 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.J: Trace Attempt  1	[0.50 s]
+3.0.J: Trace Attempt  1	[0.50 s]
+3.0.J: Trace Attempt  1	[0.51 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.J: Trace Attempt  1	[0.51 s]
+3.0.J: Trace Attempt  1	[0.51 s]
+3.0.J: Trace Attempt  1	[0.52 s]
+3.0.J: Trace Attempt  1	[0.52 s]
+3.0.J: Trace Attempt  1	[0.52 s]
+3.0.J: Trace Attempt  1	[0.53 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+3.0.J: Trace Attempt  1	[0.53 s]
+3.0.J: Trace Attempt  1	[0.53 s]
+3.0.J: Trace Attempt  1	[0.53 s]
+3.0.J: Trace Attempt  1	[0.54 s]
+3.0.J: Trace Attempt  1	[0.54 s]
+3.0.J: Trace Attempt  1	[0.54 s]
+3.0.J: Trace Attempt  1	[0.55 s]
+3.0.J: Trace Attempt  1	[0.55 s]
+3.0.J: Trace Attempt  1	[0.55 s]
+3.0.J: Trace Attempt  1	[0.55 s]
+3.0.J: Trace Attempt  1	[0.56 s]
+3.0.J: Trace Attempt  1	[0.56 s]
+3.0.J: Trace Attempt  1	[0.56 s]
+3.0.J: Trace Attempt  1	[0.56 s]
+3.0.J: Trace Attempt  1	[0.57 s]
+3.0.J: Trace Attempt  1	[0.57 s]
+3.0.J: Trace Attempt  1	[0.57 s]
+3.0.J: Trace Attempt  1	[0.58 s]
+3.0.J: Trace Attempt  1	[0.58 s]
+3.0.J: Trace Attempt  1	[0.58 s]
+3.0.J: Trace Attempt  1	[0.58 s]
+3.0.J: Trace Attempt  1	[0.59 s]
+3.0.J: Trace Attempt  1	[0.59 s]
+3.0.J: Trace Attempt  1	[0.59 s]
+3.0.J: Trace Attempt  1	[0.60 s]
+3.0.J: Trace Attempt  1	[0.60 s]
+3.0.J: Trace Attempt  1	[0.60 s]
+3.0.J: Trace Attempt  1	[0.61 s]
+3.0.J: Trace Attempt  1	[0.61 s]
+3.0.J: Trace Attempt  1	[0.61 s]
+3.0.J: Trace Attempt  1	[0.61 s]
+3.0.J: Trace Attempt  1	[0.62 s]
+3.0.J: Trace Attempt  1	[0.62 s]
+3.0.J: Trace Attempt  1	[0.62 s]
+3.0.J: Trace Attempt  1	[0.63 s]
+3.0.J: Trace Attempt  1	[0.63 s]
+3.0.J: Trace Attempt  1	[0.63 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+3.0.J: Trace Attempt  1	[0.64 s]
+3.0.N: Trace Attempt  1	[0.17 s]
+3.0.N: Trace Attempt  2	[0.17 s]
+3.0.J: Trace Attempt  1	[0.65 s]
+3.0.J: Trace Attempt  1	[0.65 s]
+3.0.J: Trace Attempt  1	[0.65 s]
+3.0.I: Trace Attempt  2	[0.18 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+3.0.N: Trace Attempt  3	[0.18 s]
+3.0.N: Trace Attempt  5	[0.18 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+3.0.I: Trace Attempt  3	[0.19 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+3.0.J: Trace Attempt  1	[0.66 s]
+3.0.J: Trace Attempt  1	[0.67 s]
+3.0.J: Trace Attempt  1	[0.67 s]
+3.0.J: Trace Attempt  1	[0.67 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+3.0.J: Trace Attempt  1	[0.68 s]
+3.0.J: Trace Attempt  1	[0.69 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.J: Trace Attempt  1	[0.69 s]
+3.0.N: Trace Attempt  9	[0.20 s]
+3.0.N: A proof was found: No trace exists. [0.22 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_19" was proven in 0.22 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_19"	[0.22 s].
+3.0.N: Starting proof for property "out_of_bound_indexing_prop_22"	[0.00 s].
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_19"	[0.22 s].
+3.0.I: Starting proof for property "out_of_bound_indexing_prop_22"	[0.00 s].
+3.0.N: Trace Attempt  1	[0.00 s]
+3.0.J: Trace Attempt  1	[0.69 s]
+3.0.N: Trace Attempt  2	[0.00 s]
+3.0.I: Trace Attempt  1	[0.00 s]
+3.0.N: Trace Attempt  3	[0.00 s]
+3.0.I: Trace Attempt  2	[0.00 s]
+3.0.J: Trace Attempt  1	[0.70 s]
+3.0.J: Trace Attempt  1	[0.70 s]
+3.0.I: Trace Attempt  2	[0.01 s]
+3.0.N: Trace Attempt  3	[0.01 s]
+3.0.J: Trace Attempt  1	[0.70 s]
+3.0.I: Trace Attempt  3	[0.01 s]
+3.0.I: Trace Attempt  4	[0.01 s]
+3.0.J: Trace Attempt  1	[0.70 s]
+3.0.N: Trace Attempt  4	[0.01 s]
+3.0.I: Trace Attempt  5	[0.01 s]
+3.0.N: Trace Attempt  5	[0.01 s]
+3.0.J: Trace Attempt  1	[0.71 s]
+3.0.J: Trace Attempt  1	[0.71 s]
+3.0.J: Trace Attempt  1	[0.71 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+3.0.I: Trace Attempt  4	[0.03 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+3.0.J: Trace Attempt  1	[0.72 s]
+3.0.I: Trace Attempt  5	[0.03 s]
+3.0.J: Trace Attempt  1	[0.73 s]
+3.0.J: Trace Attempt  1	[0.73 s]
+3.0.J: Trace Attempt  1	[0.73 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+3.0.I: Trace Attempt  5	[0.05 s]
+3.0.J: Trace Attempt  1	[0.74 s]
+3.0.J: Trace Attempt  1	[0.75 s]
+3.0.J: Trace Attempt  1	[0.75 s]
+3.0.J: Trace Attempt  1	[0.75 s]
+3.0.J: Trace Attempt  1	[0.76 s]
+3.0.J: Trace Attempt  1	[0.76 s]
+3.0.J: Trace Attempt  1	[0.76 s]
+3.0.J: Trace Attempt  1	[0.77 s]
+3.0.J: Trace Attempt  1	[0.77 s]
+3.0.J: Trace Attempt  1	[0.77 s]
+3.0.J: Trace Attempt  1	[0.77 s]
+3.0.J: Trace Attempt  1	[0.78 s]
+3.0.J: Trace Attempt  1	[0.78 s]
+3.0.J: Trace Attempt  1	[0.78 s]
+3.0.L: Using states from traces to { out_of_bound_indexing_prop_28 <61> }
+3.0.L: Trace Attempt  1	[0.78 s]
+3.0.J: Trace Attempt  1	[0.79 s]
+3.0.L: Trace Attempt  2	[0.78 s]
+3.0.J: Trace Attempt  1	[0.79 s]
+3.0.L: Trace Attempt  3	[0.79 s]
+3.0.J: Trace Attempt  1	[0.79 s]
+3.0.J: Trace Attempt  1	[0.79 s]
+3.0.L: Trace Attempt  4	[0.79 s]
+3.0.J: Trace Attempt  1	[0.80 s]
+3.0.J: Trace Attempt  1	[0.80 s]
+3.0.J: Trace Attempt  1	[0.80 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+3.0.J: Trace Attempt  1	[0.81 s]
+3.0.L: Trace Attempt  5	[0.81 s]
+3.0.J: Trace Attempt  1	[0.82 s]
+3.0.J: Trace Attempt  1	[0.82 s]
+3.0.J: Trace Attempt  1	[0.82 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+3.0.J: Trace Attempt  1	[0.83 s]
+3.0.J: Trace Attempt  1	[0.84 s]
+3.0.J: Trace Attempt  1	[0.84 s]
+3.0.J: Trace Attempt  1	[0.84 s]
+3.0.J: Trace Attempt  1	[0.85 s]
+3.0.J: Trace Attempt  1	[0.85 s]
+3.0.J: Trace Attempt  1	[0.85 s]
+3.0.J: Trace Attempt  1	[0.85 s]
+3.0.J: Trace Attempt  1	[0.86 s]
+3.0.I: Trace Attempt  2	[0.17 s]
+3.0.J: Trace Attempt  1	[0.86 s]
+3.0.J: Trace Attempt  1	[0.86 s]
+3.0.J: Trace Attempt  1	[0.87 s]
+3.0.J: Trace Attempt  1	[0.87 s]
+3.0.I: Trace Attempt  4	[0.18 s]
+3.0.J: Trace Attempt  1	[0.87 s]
+3.0.J: Trace Attempt  1	[0.88 s]
+3.0.J: Trace Attempt  1	[0.88 s]
+3.0.J: Trace Attempt  1	[0.88 s]
+3.0.J: Trace Attempt  1	[0.88 s]
+3.0.J: Trace Attempt  1	[0.89 s]
+3.0.J: Trace Attempt  1	[0.89 s]
+3.0.J: Trace Attempt  1	[0.89 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+3.0.N: Trace Attempt  1	[0.20 s]
+3.0.N: Trace Attempt  2	[0.21 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+3.0.J: Trace Attempt  1	[0.90 s]
+3.0.J: Trace Attempt  1	[0.91 s]
+3.0.J: Trace Attempt  1	[0.91 s]
+3.0.J: Trace Attempt  1	[0.91 s]
+3.0.N: Trace Attempt  3	[0.22 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+3.0.N: Trace Attempt  5	[0.23 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+3.0.J: Trace Attempt  1	[0.92 s]
+3.0.J: Trace Attempt  1	[0.93 s]
+3.0.J: Trace Attempt  1	[0.93 s]
+3.0.J: Trace Attempt  1	[0.93 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+3.0.J: Trace Attempt  1	[0.94 s]
+3.0.J: Trace Attempt  1	[0.95 s]
+3.0.J: Trace Attempt  1	[0.95 s]
+3.0.N: Validation of fixpoint was successful. Time = 0.00
+3.0.N: Requesting engine job to stop
+3.0.I: Requesting engine job to stop
+3.0.Ht: Requesting engine job to terminate
+3.0.J: Requesting engine job to terminate
+3.0.L: Requesting engine job to terminate
+INFO (IPF144): 3: Initiating shutdown of proof [0.95]
+3.0.N: Trace Attempt  9	[0.25 s]
+3.0.N: A proof was found: No trace exists. [0.26 s]
+INFO (IPF057): 3.0.N: The property "out_of_bound_indexing_prop_22" was proven in 0.26 s.
+3.0.N: Stopped processing property "out_of_bound_indexing_prop_22"	[0.26 s].
+3.0.J: Interrupted (multi)
+3.0.N: All properties either determined or skipped. [0.94 s]
+3.0.J: Trace Attempt 104	[0.95 s]
+3.0.J: All properties determined. [0.95 s]
+3.0.Ht: Interrupted (multi)
+3.0.Ht: Trace Attempt 64	[0.95 s]
+3.0.Ht: All properties determined. [0.95 s]
+3.0.J: Exited with Success (@ 0.95 s)
+3: ProofGrid usable level: 0
+3.0.I: Stopped processing property "out_of_bound_indexing_prop_22"	[0.26 s].
+3.0.I: Trace Attempt  8	[0.21 s]
+3.0.I: All properties either determined or skipped. [0.95 s]
+3.0.N: Exited with Success (@ 0.95 s)
+3.0.I: Exited with Success (@ 0.95 s)
+3.0.Ht: Exited with Success (@ 0.96 s)
+3.0.L: Trace Attempt  9	[0.95 s]
+3.0.L: All properties determined. [0.98 s]
+3.0.L: Exited with Success (@ 0.99 s)
+3: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   5
+     engine jobs started                     :   5
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+     Ht        0.02        0.95        0.00       97.44 %
+      J        0.02        0.95        0.00       97.90 %
+      N        0.02        0.95        0.00       97.72 %
+      I        0.02        0.95        0.00       97.78 %
+      L        0.02        0.95        0.00       97.82 %
+    all        0.02        0.95        0.00       97.73 %
+
+    Data read    : 32.33 kiB
+    Data written : 6.29 kiB
+
+3: ProofGrid usable level: 0
+3: All pending notifications were processed.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Final state reached.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 11
+                 assertions                   : 11
+                  - proven                    : 2 (18.1818%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 9 (81.8182%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 0 (0%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+1.0.Tri: Per property time limit expired (10.00 s) [10.15 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_1_prop_16"	[10.15 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_255_prop_12"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:    9.86" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+2.0.Tri: Per property time limit expired (10.00 s) [10.18 s]
+2.0.Tri: Stopped processing property "fsm_state_livelock_0_prop_15"	[10.18 s].
+2.0.Tri: Starting proof for property "fsm_state_livelock_255_prop_10"	[0.00 s].
+2.0.Tri: Trace Attempt  1	[0.00 s]
+2.0.Tri:   10.06" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+1.0.Tri: Per property time limit expired (10.00 s) [10.05 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_255_prop_12"	[10.05 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_2_prop_17"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   19.91" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+2.0.Tri: Per property time limit expired (10.00 s) [10.05 s]
+2.0.Tri: Stopped processing property "fsm_state_livelock_255_prop_10"	[10.05 s].
+2.0.Tri: Starting proof for property "fsm_state_livelock_STATE_GETSTRPAT_prop_4"	[0.00 s].
+2.0.Tri: Trace Attempt  1	[0.00 s]
+2.0.Tri:   20.11" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+1.0.Tri: Per property time limit expired (10.00 s) [10.06 s]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_2_prop_17"	[10.06 s].
+1.0.Tri: Starting proof for property "fsm_state_deadlock_94_prop_11"	[0.00 s].
+1.0.Tri: Trace Attempt  1	[0.00 s]
+1.0.Tri:   29.97" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+2.0.Tri: Per property time limit expired (10.00 s) [10.05 s]
+2.0.Tri: Stopped processing property "fsm_state_livelock_STATE_GETSTRPAT_prop_4"	[10.05 s].
+2.0.Tri: Next scan (1) will use per property time limit: 10s * 10 ^ 1 = 100s
+2.0.Tri: Starting proof for property "fsm_state_livelock_0_prop_15"	[0.00 s].
+2.0.Tri: Trace Attempt  1	[0.00 s]
+2.0.Tri:   30.16" Running 'thunk' script "bdd_reach -bdd_opts=-#omega,-#escapeb3= @@"
+INFO (IPL005): Received request to exit from the console.
+INFO: Waiting for proof threads to stop...
+INFO (IPF144): 1: Initiating shutdown of proof [33.28]
+1.0.Tri: Stopped processing property "fsm_state_deadlock_94_prop_11"	[3.02 s].
+1.0.Tri: All properties either determined or skipped. [0.01 s]
+1.0.Tri: Exited with Success (@ 33.29 s)
+1: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   1
+     engine jobs started                     :   1
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+    Tri        0.04       33.29        0.00       99.89 %
+    all        0.04       33.29        0.00       99.89 %
+
+    Data read    : 889.00 B
+    Data written : 560.00 B
+
+1: ProofGrid usable level: 0
+1: All pending notifications were processed.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Interrupted.
+INFO (IPF127): No more actions.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 7
+                 assertions                   : 7
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 4 (57.1429%)
+                  - unknown                   : 3 (42.8571%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+INFO (IPF144): 2: Initiating shutdown of proof [33.29]
+2.0.Tri: Stopped processing property "fsm_state_livelock_0_prop_15"	[3.01 s].
+2.0.Tri: All properties either determined or skipped. [0.01 s]
+2.0.Tri: Exited with Success (@ 33.30 s)
+2: --------------------------------------------------------------
+ProofGrid Summary
+--------------------------------------------------------------
+     engines started                         :   1
+     engine jobs started                     :   1
+
+    Average time in state (seconds)
+    ------------------------------------------------------
+    Engine  Pending     Running        Dead    Utilization
+    ------------------------------------------------------
+    Tri        0.03       33.30        0.00       99.92 %
+    all        0.03       33.30        0.00       99.92 %
+
+    Data read    : 892.00 B
+    Data written : 561.00 B
+
+2: ProofGrid usable level: 0
+2: All pending notifications were processed.
+INFO (IPF127): Done using action: prove_action.
+INFO (IPF127): Interrupted.
+INFO (IPF127): No more actions.
+
+==============================================================
+SUMMARY
+==============================================================
+           Properties Considered              : 3
+                 assertions                   : 3
+                  - proven                    : 0 (0%)
+                  - bounded_proven (user)     : 0 (0%)
+                  - bounded_proven (auto)     : 0 (0%)
+                  - marked_proven             : 0 (0%)
+                  - cex                       : 0 (0%)
+                  - ar_cex                    : 0 (0%)
+                  - undetermined              : 3 (100%)
+                  - unknown                   : 0 (0%)
+                  - error                     : 0 (0%)
+                 covers                       : 0
+                  - unreachable               : 0
+                  - bounded_unreachable (user): 0
+                  - covered                   : 0
+                  - ar_covered                : 0
+                  - undetermined              : 0
+                  - unknown                   : 0
+                  - error                     : 0
+INFO: Proof threads stopped.

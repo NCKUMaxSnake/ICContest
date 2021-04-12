@@ -1,0 +1,274 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : geofence
+Version: Q-2019.12
+Date   : Wed Mar 24 22:48:36 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: READ/side_cnt_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: READ/hept_area_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  READ/side_cnt_reg[0]/CK (DFFRHQX1)                      0.00       0.50 r
+  READ/side_cnt_reg[0]/Q (DFFRHQX1)                       0.38       0.88 r
+  READ/U217/Y (BUFX12)                                    0.22       1.09 r
+  READ/U114/Y (OR3XL)                                     0.34       1.43 r
+  READ/U113/Y (BUFX3)                                     0.20       1.63 r
+  READ/U187/Y (INVX6)                                     0.10       1.73 f
+  READ/U122/Y (CLKINVX20)                                 0.06       1.79 r
+  READ/U80/Y (INVX20)                                     0.07       1.86 f
+  READ/U105/Y (AOI222X2)                                  0.19       2.05 r
+  READ/U1886/Y (OAI211X4)                                 0.40       2.45 f
+  READ/add_1_root_add_0_root_add_403_2/B[0] (READ_DW01_add_2)
+                                                          0.00       2.45 f
+  READ/add_1_root_add_0_root_add_403_2/U2/Y (CLKAND2X12)
+                                                          0.15       2.60 f
+  READ/add_1_root_add_0_root_add_403_2/U1_1/CO (ADDFHX4)
+                                                          0.20       2.79 f
+  READ/add_1_root_add_0_root_add_403_2/U1_2/CO (ADDFHX4)
+                                                          0.19       2.99 f
+  READ/add_1_root_add_0_root_add_403_2/U1_3/CO (ADDFX2)
+                                                          0.34       3.33 f
+  READ/add_1_root_add_0_root_add_403_2/U1_4/CO (ADDFHX2)
+                                                          0.26       3.59 f
+  READ/add_1_root_add_0_root_add_403_2/U1_5/CO (ADDFHX4)
+                                                          0.21       3.81 f
+  READ/add_1_root_add_0_root_add_403_2/U1_6/CO (ADDFHX4)
+                                                          0.19       4.00 f
+  READ/add_1_root_add_0_root_add_403_2/U1_7/CO (ADDFX2)
+                                                          0.34       4.34 f
+  READ/add_1_root_add_0_root_add_403_2/U1_8/S (ADDFHX2)
+                                                          0.33       4.68 r
+  READ/add_1_root_add_0_root_add_403_2/SUM[8] (READ_DW01_add_2)
+                                                          0.00       4.68 r
+  READ/add_0_root_add_0_root_add_403_2/A[8] (READ_DW01_add_1)
+                                                          0.00       4.68 r
+  READ/add_0_root_add_0_root_add_403_2/U1_8/CO (ADDFHX4)
+                                                          0.32       5.00 r
+  READ/add_0_root_add_0_root_add_403_2/U1_9/S (ADDFHX2)
+                                                          0.32       5.32 r
+  READ/add_0_root_add_0_root_add_403_2/SUM[9] (READ_DW01_add_1)
+                                                          0.00       5.32 r
+  READ/U25/Y (BUFX20)                                     0.16       5.48 r
+  READ/U89/Y (INVX20)                                     0.07       5.55 f
+  READ/U153/Y (OAI222X2)                                  0.24       5.79 r
+  READ/U92/Y (BUFX6)                                      0.18       5.97 r
+  READ/U102/Y (OAI222X2)                                  0.21       6.18 f
+  READ/U90/Y (NAND3BX4)                                   0.16       6.35 r
+  READ/U344/Y (BUFX8)                                     0.26       6.60 r
+  READ/U131/Y (INVX20)                                    0.11       6.71 f
+  READ/U930/Y (AO22X1)                                    0.48       7.19 f
+  READ/mult_427/b[3] (READ_DW_mult_uns_2)                 0.00       7.19 f
+  READ/mult_427/U404/Y (CLKINVX8)                         0.16       7.35 r
+  READ/mult_427/U350/Y (XOR2X4)                           0.16       7.51 f
+  READ/mult_427/U370/Y (OAI22X1)                          0.32       7.83 r
+  READ/mult_427/U374/S (ADDHX1)                           0.27       8.10 f
+  READ/mult_427/U450/CO (ADDFX1)                          0.45       8.55 f
+  READ/mult_427/U307/CO (ADDFHX2)                         0.27       8.82 f
+  READ/mult_427/U328/CO (ADDFHX4)                         0.21       9.02 f
+  READ/mult_427/U333/CO (ADDFHX2)                         0.22       9.25 f
+  READ/mult_427/U412/CO (ADDFHX2)                         0.23       9.48 f
+  READ/mult_427/U288/CO (ADDFHX2)                         0.25       9.73 f
+  READ/mult_427/U287/CO (ADDFHX4)                         0.21       9.94 f
+  READ/mult_427/U337/CO (ADDFHX4)                         0.20      10.15 f
+  READ/mult_427/U338/CO (ADDFHX4)                         0.25      10.40 f
+  READ/mult_427/U322/Y (NAND2X4)                          0.11      10.51 r
+  READ/mult_427/U321/Y (NAND3X4)                          0.10      10.61 f
+  READ/mult_427/U323/CO (ADDFHX4)                         0.22      10.83 f
+  READ/mult_427/U340/CO (ADDFHX4)                         0.20      11.03 f
+  READ/mult_427/U339/CO (ADDFHX4)                         0.20      11.24 f
+  READ/mult_427/U308/CO (ADDFHX4)                         0.20      11.44 f
+  READ/mult_427/U342/CO (ADDFHX4)                         0.20      11.64 f
+  READ/mult_427/U341/CO (ADDFHX4)                         0.20      11.85 f
+  READ/mult_427/U344/CO (ADDFHX4)                         0.20      12.05 f
+  READ/mult_427/U343/CO (ADDFHX4)                         0.20      12.25 f
+  READ/mult_427/U290/CO (ADDFHX4)                         0.20      12.45 f
+  READ/mult_427/U411/Y (XNOR2X4)                          0.12      12.57 r
+  READ/mult_427/U406/Y (XOR2X4)                           0.26      12.83 f
+  READ/mult_427/product[22] (READ_DW_mult_uns_2)          0.00      12.83 f
+  READ/U2/a[22] (READ_DW_sqrt_2)                          0.00      12.83 f
+  READ/U2/U4/Y (INVX16)                                   0.18      13.01 r
+  READ/U2/U26/Y (AND2X8)                                  0.23      13.24 r
+  READ/U2/U21/Y (CLKINVX20)                               0.14      13.38 f
+  READ/U2/U18/Y (XNOR2X4)                                 0.20      13.58 f
+  READ/U2/u_fa_PartRem_9_2/CO (ADDFHX4)                   0.33      13.91 f
+  READ/U2/u_fa_PartRem_9_3/CO (CMPR32X2)                  0.37      14.27 f
+  READ/U2/U12/Y (AOI21X4)                                 0.17      14.44 r
+  READ/U2/U11/Y (BUFX20)                                  0.18      14.62 r
+  READ/U2/U71/Y (INVX3)                                   0.19      14.81 f
+  READ/U2/U34/Y (NAND2X6)                                 0.12      14.93 r
+  READ/U2/U33/Y (NAND2X6)                                 0.07      15.00 f
+  READ/U2/u_fa_PartRem_8_2/CO (ADDFX2)                    0.46      15.46 f
+  READ/U2/u_fa_PartRem_8_3/CO (ADDFHX4)                   0.22      15.68 f
+  READ/U2/u_fa_PartRem_8_4/CO (ADDFHX2)                   0.24      15.92 f
+  READ/U2/U136/Y (NOR2BX4)                                0.16      16.08 r
+  READ/U2/U31/Y (CLKBUFX20)                               0.21      16.29 r
+  READ/U2/U27/Y (INVX12)                                  0.07      16.36 f
+  READ/U2/U96/Y (NAND2X6)                                 0.07      16.43 r
+  READ/U2/U97/Y (NAND2X6)                                 0.08      16.51 f
+  READ/U2/u_fa_PartRem_7_2/CO (ADDFHX4)                   0.31      16.82 f
+  READ/U2/u_fa_PartRem_7_3/CO (ADDFX2)                    0.36      17.18 f
+  READ/U2/u_fa_PartRem_7_4/CO (ADDFHX4)                   0.22      17.40 f
+  READ/U2/u_fa_PartRem_7_5/CO (CMPR32X2)                  0.37      17.76 f
+  READ/U2/U131/Y (NOR2BX4)                                0.15      17.92 r
+  READ/U2/U81/Y (BUFX20)                                  0.18      18.10 r
+  READ/U2/U48/Y (XNOR2X4)                                 0.16      18.26 f
+  READ/U2/u_fa_PartRem_6_2/CO (ADDFHX2)                   0.39      18.65 f
+  READ/U2/u_fa_PartRem_6_3/CO (ADDFHX2)                   0.23      18.88 f
+  READ/U2/u_fa_PartRem_6_4/CO (ADDFXL)                    0.48      19.36 f
+  READ/U2/u_fa_PartRem_6_5/CO (ADDFXL)                    0.52      19.88 f
+  READ/U2/u_fa_PartRem_6_6/CO (ADDFHX1)                   0.39      20.27 f
+  READ/U2/U117/Y (NOR2BX4)                                0.16      20.43 r
+  READ/U2/U78/Y (BUFX20)                                  0.18      20.61 r
+  READ/U2/U46/Y (XNOR2X4)                                 0.15      20.76 f
+  READ/U2/u_fa_PartRem_5_2/CO (ADDFX1)                    0.46      21.22 f
+  READ/U2/u_fa_PartRem_5_3/CO (ADDFX1)                    0.37      21.59 f
+  READ/U2/u_fa_PartRem_5_4/CO (ADDFHX2)                   0.25      21.84 f
+  READ/U2/u_fa_PartRem_5_5/CO (ADDFXL)                    0.48      22.32 f
+  READ/U2/u_fa_PartRem_5_6/CO (ADDFXL)                    0.53      22.85 f
+  READ/U2/u_fa_PartRem_5_7/CO (CMPR32X2)                  0.43      23.28 f
+  READ/U2/U130/Y (NOR2BX4)                                0.15      23.43 r
+  READ/U2/U74/Y (BUFX20)                                  0.19      23.62 r
+  READ/U2/U39/Y (XNOR2X4)                                 0.17      23.79 f
+  READ/U2/u_fa_PartRem_4_2/CO (ADDFHX4)                   0.34      24.12 f
+  READ/U2/u_fa_PartRem_4_3/CO (ADDFXL)                    0.48      24.60 f
+  READ/U2/u_fa_PartRem_4_4/CO (ADDFX2)                    0.40      25.00 f
+  READ/U2/u_fa_PartRem_4_5/CO (ADDFHX2)                   0.25      25.25 f
+  READ/U2/u_fa_PartRem_4_6/CO (ADDFX1)                    0.34      25.59 f
+  READ/U2/u_fa_PartRem_4_7/CO (ADDFXL)                    0.51      26.10 f
+  READ/U2/u_fa_PartRem_4_8/CO (CMPR32X2)                  0.43      26.52 f
+  READ/U2/U126/Y (NOR2BX4)                                0.15      26.68 r
+  READ/U2/U36/Y (BUFX20)                                  0.17      26.85 r
+  READ/U2/U35/Y (XNOR2X4)                                 0.15      27.00 f
+  READ/U2/u_fa_PartRem_3_2/CO (ADDFX1)                    0.44      27.44 f
+  READ/U2/u_fa_PartRem_3_3/CO (ADDFXL)                    0.51      27.95 f
+  READ/U2/u_fa_PartRem_3_4/CO (ADDFX1)                    0.39      28.34 f
+  READ/U2/u_fa_PartRem_3_5/CO (ADDFXL)                    0.51      28.85 f
+  READ/U2/u_fa_PartRem_3_6/CO (ADDFHX2)                   0.28      29.12 f
+  READ/U2/u_fa_PartRem_3_7/CO (ADDFHX1)                   0.33      29.46 f
+  READ/U2/u_fa_PartRem_3_8/CO (ADDFHX4)                   0.23      29.68 f
+  READ/U2/u_fa_PartRem_3_9/CO (CMPR32X2)                  0.37      30.05 f
+  READ/U2/U128/Y (NOR2BX4)                                0.15      30.20 r
+  READ/U2/U93/Y (BUFX20)                                  0.18      30.38 r
+  READ/U2/U51/Y (CLKINVX1)                                0.13      30.51 f
+  READ/U2/U56/Y (NAND2X1)                                 0.23      30.74 r
+  READ/U2/U17/Y (NAND2X4)                                 0.12      30.86 f
+  READ/U2/u_fa_PartRem_2_2/CO (ADDFX1)                    0.43      31.29 f
+  READ/U2/u_fa_PartRem_2_3/CO (ADDFXL)                    0.50      31.79 f
+  READ/U2/u_fa_PartRem_2_4/CO (ADDFXL)                    0.53      32.32 f
+  READ/U2/u_fa_PartRem_2_5/CO (ADDFXL)                    0.54      32.85 f
+  READ/U2/u_fa_PartRem_2_6/CO (CMPR32X2)                  0.40      33.25 f
+  READ/U2/u_fa_PartRem_2_7/CO (ADDFHX2)                   0.25      33.50 f
+  READ/U2/u_fa_PartRem_2_8/CO (ADDFX2)                    0.35      33.85 f
+  READ/U2/u_fa_PartRem_2_9/CO (ADDFHX2)                   0.25      34.10 f
+  READ/U2/u_fa_PartRem_2_10/CO (ADDFHX2)                  0.25      34.35 f
+  READ/U2/U127/Y (NOR2BX4)                                0.14      34.50 r
+  READ/U2/U15/Y (BUFX20)                                  0.18      34.68 r
+  READ/U2/U14/Y (XNOR2X4)                                 0.17      34.85 f
+  READ/U2/u_fa_PartRem_1_2/CO (ADDFHX4)                   0.33      35.18 f
+  READ/U2/u_fa_PartRem_1_3/CO (ADDFXL)                    0.48      35.66 f
+  READ/U2/u_fa_PartRem_1_4/CO (ADDFX4)                    0.52      36.18 f
+  READ/U2/U87/Y (NAND2X2)                                 0.14      36.32 r
+  READ/U2/U68/Y (NAND3X1)                                 0.17      36.49 f
+  READ/U2/u_fa_PartRem_1_6/CO (CMPR32X2)                  0.39      36.87 f
+  READ/U2/u_fa_PartRem_1_7/CO (ADDFXL)                    0.50      37.38 f
+  READ/U2/u_fa_PartRem_1_8/CO (ADDFHX2)                   0.28      37.65 f
+  READ/U2/u_fa_PartRem_1_9/CO (ADDFXL)                    0.48      38.13 f
+  READ/U2/u_fa_PartRem_1_10/CO (ADDFXL)                   0.53      38.67 f
+  READ/U2/u_fa_PartRem_1_11/CO (ADDFX2)                   0.43      39.09 f
+  READ/U2/U44/Y (NOR2BX4)                                 0.13      39.23 r
+  READ/U2/U41/Y (BUFX12)                                  0.14      39.37 r
+  READ/U2/U43/Y (OAI21X2)                                 0.09      39.47 f
+  READ/U2/U42/Y (OA21X4)                                  0.19      39.65 f
+  READ/U2/U114/Y (OAI2BB1XL)                              0.31      39.96 f
+  READ/U2/U113/Y (OA21X4)                                 0.22      40.18 f
+  READ/U2/U153/Y (OAI2BB1X1)                              0.25      40.43 f
+  READ/U2/U105/Y (OAI21X2)                                0.18      40.61 r
+  READ/U2/U152/Y (NOR2X1)                                 0.16      40.77 f
+  READ/U2/U151/Y (AOI2BB2X1)                              0.32      41.10 f
+  READ/U2/U25/Y (BUFX6)                                   0.18      41.27 f
+  READ/U2/U65/Y (AND2X2)                                  0.19      41.46 f
+  READ/U2/U115/Y (OA22X4)                                 0.28      41.74 f
+  READ/U2/U108/Y (OAI2BB1XL)                              0.32      42.05 f
+  READ/U2/U107/Y (OA21X4)                                 0.22      42.27 f
+  READ/U2/U150/Y (OAI2BB1X1)                              0.25      42.52 f
+  READ/U2/U109/Y (OAI21X2)                                0.21      42.74 r
+  READ/U2/U86/Y (NOR2X4)                                  0.12      42.86 f
+  READ/U2/U83/Y (AOI2BB2X1)                               0.32      43.18 f
+  READ/U2/U16/Y (BUFX8)                                   0.17      43.34 f
+  READ/U2/U75/Y (AND2X2)                                  0.18      43.53 f
+  READ/U2/U106/Y (OA22X4)                                 0.28      43.81 f
+  READ/U2/U85/Y (OAI2BB1X4)                               0.16      43.97 f
+  READ/U2/U116/Y (OA21X4)                                 0.17      44.14 f
+  READ/U2/U72/Y (OAI2BB1X1)                               0.25      44.39 f
+  READ/U2/U110/Y (OAI211X2)                               0.16      44.54 r
+  READ/U2/root[0] (READ_DW_sqrt_2)                        0.00      44.54 r
+  READ/mult_441/a[0] (READ_DW_mult_uns_4)                 0.00      44.54 r
+  READ/mult_441/U315/Y (CLKINVX6)                         0.13      44.67 f
+  READ/mult_441/U366/Y (BUFX20)                           0.16      44.83 f
+  READ/mult_441/U333/Y (NAND2X4)                          0.10      44.94 r
+  READ/mult_441/U320/Y (BUFX20)                           0.15      45.09 r
+  READ/mult_441/U361/Y (OR2X1)                            0.24      45.33 r
+  READ/mult_441/U314/Y (NAND2X2)                          0.18      45.51 f
+  READ/mult_441/U306/S (ADDHX4)                           0.17      45.67 r
+  READ/mult_441/U331/CO (ADDFHX4)                         0.32      46.00 r
+  READ/mult_441/U327/S (ADDFHX2)                          0.34      46.34 f
+  READ/mult_441/product[4] (READ_DW_mult_uns_4)           0.00      46.34 f
+  READ/add_441/B[4] (READ_DW01_add_4)                     0.00      46.34 f
+  READ/add_441/U15/Y (NAND2X1)                            0.22      46.56 r
+  READ/add_441/U7/Y (NAND3X2)                             0.16      46.72 f
+  READ/add_441/U1_5/CO (ADDFHX4)                          0.23      46.95 f
+  READ/add_441/U1_6/CO (ADDFHX4)                          0.20      47.16 f
+  READ/add_441/U1_7/CO (ADDFHX4)                          0.25      47.40 f
+  READ/add_441/U11/Y (NAND2X2)                            0.12      47.52 r
+  READ/add_441/U10/Y (NAND3X2)                            0.12      47.65 f
+  READ/add_441/U1_9/CO (ADDFHX4)                          0.23      47.87 f
+  READ/add_441/U1_10/CO (ADDFHX4)                         0.26      48.13 f
+  READ/add_441/U24/Y (NAND2X6)                            0.11      48.24 r
+  READ/add_441/U25/Y (NAND3X8)                            0.12      48.36 f
+  READ/add_441/U9/Y (NAND2X4)                             0.10      48.47 r
+  READ/add_441/U8/Y (NAND3X4)                             0.11      48.58 f
+  READ/add_441/U1_13/CO (ADDFHX4)                         0.22      48.80 f
+  READ/add_441/U1_14/CO (ADDFHX4)                         0.20      49.00 f
+  READ/add_441/U1_15/CO (ADDFHX4)                         0.20      49.20 f
+  READ/add_441/U1_16/CO (ADDFHX4)                         0.20      49.41 f
+  READ/add_441/U1_17/CO (ADDFHX4)                         0.20      49.61 f
+  READ/add_441/U1_18/CO (ADDFHX4)                         0.21      49.82 f
+  READ/add_441/U1_19/Y (XOR3X4)                           0.23      50.05 f
+  READ/add_441/SUM[19] (READ_DW01_add_4)                  0.00      50.05 f
+  READ/U398/Y (AO22X4)                                    0.24      50.28 f
+  READ/hept_area_reg[19]/D (DFFRX2)                       0.00      50.28 f
+  data arrival time                                                 50.28
+
+  clock clk (rise edge)                                  50.00      50.00
+  clock network delay (ideal)                             0.50      50.50
+  clock uncertainty                                      -0.10      50.40
+  READ/hept_area_reg[19]/CK (DFFRX2)                      0.00      50.40 r
+  library setup time                                     -0.11      50.29
+  data required time                                                50.29
+  --------------------------------------------------------------------------
+  data required time                                                50.29
+  data arrival time                                                -50.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

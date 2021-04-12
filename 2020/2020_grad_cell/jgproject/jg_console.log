@@ -1,0 +1,58 @@
+2021-01-30 15:27:22.731866 (5939) main____ INFO    ----------------------------------------
+2021-01-30 15:27:22.732112 (5939) main____ INFO    JasperGold version info
+2021-01-30 15:27:22.732153 (5939) main____ INFO      tool      : JasperGold 2018.03
+2021-01-30 15:27:22.732186 (5939) main____ INFO      version   : 2018.03p001 64 bits
+2021-01-30 15:27:22.732212 (5939) main____ INFO      build date: 2018.04.24 18:13:05 PDT
+2021-01-30 15:27:22.732232 (5939) main____ INFO    ----------------------------------------
+2021-01-30 15:27:22.732250 (5939) main____ INFO    Runtime info:
+2021-01-30 15:27:22.732273 (5939) main____ INFO      platform  : Linux 2.6.32-431.el6.x86_64 x86_64
+2021-01-30 15:27:22.732298 (5939) main____ INFO      hostname  : ideal125
+2021-01-30 15:27:22.732318 (5939) main____ INFO      pid       : 5939
+2021-01-30 15:27:22.732339 (5939) main____ INFO      arguments : '-style' 'windows' '-superlint' 'superlint.tcl'
+2021-01-30 15:27:22.732359 (5939) main____ INFO    ----------------------------------------
+2021-01-30 15:27:22.732377 (5939) main____ INFO    System resource limits info:
+2021-01-30 15:27:22.732398 (5939) main____ INFO      virtual memory: unlimited
+2021-01-30 15:27:22.732419 (5939) main____ INFO      cpu time      : unlimited
+2021-01-30 15:27:22.732460 (5939) main____ INFO      stack size    : 10485760 B
+2021-01-30 15:27:22.732496 (5939) main____ INFO      core file size: 0 B
+2021-01-30 15:27:22.732531 (5939) main____ INFO      open files    : 1024
+2021-01-30 15:27:22.732557 (5939) main____ INFO      file size     : unlimited
+2021-01-30 15:27:22.732576 (5939) main____ INFO    ----------------------------------------
+2021-01-30 15:27:22.732593 (5939) main____ INFO    Memory statistics:
+2021-01-30 15:27:22.732611 (5939) main____ INFO      total physical memory  : 8031152 kB
+2021-01-30 15:27:22.732629 (5939) main____ INFO      free physical memory   : 2293956 kB
+2021-01-30 15:27:22.732647 (5939) main____ INFO      committed address space: 2489300 kB
+2021-01-30 15:27:22.732664 (5939) main____ INFO    ----------------------------------------
+2021-01-30 15:27:22.732744 (5939) main____ INFO    Important environment variables:
+2021-01-30 15:27:22.732781 (5939) main____ INFO      DISPLAY        : 'localhost:10.0'
+2021-01-30 15:27:22.732813 (5939) main____ INFO      LM_LICENSE_FILE: '1717@lsncku:26585@lsncku:5280@lsncku:5280@lsnchu:5280@lscic'
+2021-01-30 15:27:22.732834 (5939) main____ INFO    ----------------------------------------
+2021-01-30 15:27:22.735082 (5939) lic_core INFO    Initializing license system ...
+2021-01-30 15:27:22.738818 (5939) lic_core INFO    ... license system initialized.
+2021-01-30 15:27:22.741839 (5939) lic__man INFO    Claim 'main' for <ui>.
+2021-01-30 15:27:22.741956 (5939) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2021-01-30 15:27:23.074779 (5939) lic_core INFO    ... (1) checkout succeeded
+2021-01-30 15:27:23.074939 (5939) lic__man INFO    Claim 'superlint' for <ui>.
+2021-01-30 15:27:23.074994 (5939) lic_core INFO    (2) checking out 'jasper_afl' ...
+2021-01-30 15:27:23.282069 (5939) lic_core INFO    ... (2) checkout succeeded
+2021-01-30 15:27:24.585041 (5939) lic__man INFO    Claim 'superlint' for <ui>.
+2021-01-30 15:27:25.142645 (5939) lic__man INFO    Unclaim 'superlint' for <ui>.
+2021-01-30 15:27:25.142715 (5939) lic__man INFO    Claim 'superlint' for <ui>.
+2021-01-30 15:27:25.157150 (5939) session_ INFO    Starting analysis session with session id 'session_0' ...
+2021-01-30 15:27:25.160382 (5939) session_ INFO    Analysis session with session id 'session_0' started (pid: 5986)
+2021-01-30 15:27:32.126855 (5939) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:60141)
+2021-01-30 15:27:33.363208 (5939) lic__man INFO    Unclaim everything for 'session_0'.
+2021-01-30 15:27:33.948925 (5939) lic__man INFO    Unclaim everything for 'session_0'.
+2021-01-30 15:27:34.114643 (5939) lic__man INFO    Claim 'superlint' for 'session_0'.
+2021-01-30 15:27:35.230782 (5939) lic__man INFO    Claim 'superlint' for 'session_0/prove-0'.
+2021-01-30 15:27:35.275210 (5939) lic__man INFO    Claim 'superlint' for 'session_0/prove-1'.
+2021-01-30 15:27:35.275308 (5939) lic_core INFO    (3) checking out 'jasper_afl' ...
+2021-01-30 15:27:35.481354 (5939) lic_core INFO    ... (3) checkout succeeded
+2021-01-30 15:27:35.555257 (5939) lic__man INFO    Claim 'superlint' for 'session_0/prove-2'.
+2021-01-30 15:27:35.555348 (5939) lic_core INFO    (4) checking out 'jasper_afl' ...
+2021-01-30 15:27:35.767760 (5939) lic_core INFO    ... (4) checkout succeeded
+2021-01-30 15:27:35.784432 (5939) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2021-01-30 15:27:35.839117 (5939) lic__man INFO    Claim 'superlint' for 'session_0/prove-3'.
+2021-01-30 15:27:36.982834 (5939) lic__man INFO    Unclaim everything for 'session_0/prove-3'.
+2021-01-30 15:28:07.839425 (5939) main____ INFO    About to exit: requested from GUI
+2021-01-30 15:28:08.160702 (5939) main____ INFO    Exiting with status 0.

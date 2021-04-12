@@ -1,0 +1,23 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++access+r
++define+SDF
++nc64bit
++ncmaxdelays
+-noshowtop
+-ACCESS
++r
+-MAXDELAYS
+-MESSAGES
+-XLMODE
+./INCA_libs/irun.lnx8664.14.10.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.14.10.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.14.10.nc/hdl.var
+-WORK
+worklib
+-HASXLMODE
