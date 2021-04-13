@@ -1,0 +1,243 @@
+ncsim(64) 14.10-s005
+Linux 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64
+CPU cores: 24
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		10240 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			1024
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+HOSTNAME=ideal125
+SELINUX_ROLE_REQUESTED=
+TERM=xterm
+SHELL=/bin/sh
+HISTSIZE=1000
+SSH_CLIENT=192.168.102.8 50440 22
+SELINUX_USE_CURRENT_RANGE=
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+SSH_TTY=/dev/pts/15
+USER=max.chen
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+MAIL=/var/spool/mail/max.chen
+PATH=/usr/cad/cadence/INCISIV/cur/tools/bin/64bit:/usr/cad/cadence/INCISIV/cur/tools/bin/64bit:/usr/cad/cadence/INCISIV/cur/tools/bin/64bit:/opt/RISCV/bin:/usr/cad/cadence/JASPER/cur/bin:/home/nfs_cad/mentor/calibre/cur/bin:/usr/cad/synopsys/hspice/2015.06/hspice/bin:/usr/cad/synopsys/hspice/2015.06/hspice/GNU/linux64/gcc-4.8.3/bin:/usr/cad/synopsys/hspice/2015.06/hspice/linux64:/usr/bin:/usr/ucb/bin:/home/nfs_cad/synopsys/adp/cur/bin:/home/nfs_cad/synopsys/laker/cur/bin:/usr/cad/cadence/EDI/cur/tools/celtic/bin:/usr/cad/cadence/EDI/cur/tools/plato/bin:/usr/cad/cadence/EDI/cur/tools/dfII/bin:/usr/cad/cadence/EDI/cur/tools/fe/bin:/usr/cad/cadence/EDI/cur/tools/cdsdoc/bin:/usr/cad/cadence/EDI/cur/tools/bin:/usr/cad/cadence/EDI/cur//tools/tlfUtil/bin:/home/nfs_cad/synopsys/icc/cur/amd64/syn/bin:/usr/bin/X11:/home/nfs_cad/synopsys/synthesis/cur/amd64/syn/bin:/home/nfs_cad/synopsys/cosmos_scope/cur/ai_bin:/home/nfs_cad/synopsys/verdi/cur/bin:/home/nfs_cad/synopsys/verdi/cur/nLint/bin:/home/nfs_cad/synopsys/verdi/cur/bin:/home/nfs_cad/synopsys/verdi/cur/nLint/bin:/usr/cad/cadence/INCISIV/cur/tools/bin:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/bin:/usr/cad/cadence/INCISIV/cur/tools/dfII/bin:/home/nfs_cad/mentor/modelsim/10.2/modeltech/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin
+PWD=/home/max.chen/ICCONTEST/2017/sim
+SELINUX_LEVEL_REQUESTED=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+HISTCONTROL=ignoredups
+SHLVL=2
+HOME=/home/max.chen
+LANGUAGE=en_US.UTF-8
+LOGNAME=max.chen
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+SSH_CONNECTION=192.168.102.8 50440 140.116.245.125 22
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+DISPLAY=localhost:25.0
+G_BROKEN_FILENAMES=1
+_=/bin/tcsh
+OLDPWD=/home/max.chen/ICCONTEST/2020/sim
+HOSTTYPE=x86_64-linux
+VENDOR=unknown
+OSTYPE=linux
+MACHTYPE=x86_64
+GROUP=users
+HOST=ideal125
+REMOTEHOST=192.168.102.8
+LM_LICENSE_FILE=1717@lsncku:26585@lsncku:5280@lsncku:5280@lsnchu:5280@lscic
+MTI_VCO_MODE=64
+MGC_HOME=/home/nfs_cad/mentor/calibre/cur
+MGC_TMPDIR=/tmp
+MGC_LOCATION_MAP=NO_MAP
+LD_LIBRARY_PATH=/usr/cad/synopsys/hspice/2015.06/hspice/linux64/interfaces::/usr/cad/cadence/EDI/cur//tools/tlfUtil/lib:/home/nfs_cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/:/home/nfs_cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/:/usr/cad/cadence/INCISIV/cur/tools/lib/64bit:/usr/cad/cadence/INCISIV/cur/tools/lib:/usr/cad/cadence/INCISIV/cur/tools/vtools/vfault/lib:/usr/openwin/lib:/usr/dt/lib:/usr/lib:/usr/local/lib
+SHLIB_PATH=/home/nfs_cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/:/home/nfs_cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64
+SYNTHESIS=/home/nfs_cad/synopsys/synthesis/cur
+SYNOPSYS=/home/nfs_cad/synopsys/icc/cur
+SYN_MAN_DIR=/home/nfs_cad/synopsys/synthesis/cur/doc/syn/man
+MANPATH=/home/nfs_cad/synopsys/synthesis/cur/doc/syn/man
+ENCOUNTER=/usr/cad/cadence/EDI/cur/tools/fe
+OA_HOME=/usr/cad/cadence/EDI/cur/oa
+Laker_TCL_L3=1
+Laker_TCL_ToolBox=1
+installdir=/usr/cad/synopsys/hspice/2015.06/hspice
+ARCH=linux64
+CMIARCH=RH
+mraarch=linux64
+TMIARCH=RH
+HSP_HOME=/usr/cad/synopsys/hspice/2015.06/hspice
+SNPS_PLATFORM=linux64
+HSP_GCC=/usr/cad/synopsys/hspice/2015.06/hspice/GNU/linux64/gcc-4.8.3/bin/gcc -m64 
+SNPS_64=1
+HSP_GCC_VERSION=4.8.3
+CDS_LOAD_ENV=CSF
+_IRUNROOT_=/usr/cad/cadence/INCISIV/cur/tools
+CDS_ARCH=lnx86
+NCRUNMODE=ncverilog:./INCA_libs/irun.lnx8664.14.10.nc
+IRUNBATCH=FALSE
+IMPERAS_PORT_FILE=.vsp_ovp_gdb_port
+TCL_LIBRARY=/usr/cad/cadence/INCISIV/cur/tools/inca/files/tcl/library
+Runtime command line arguments:
+argv[0]=ncverilog
+argv[1]=-f
+argv[2]=ncvlog.f
+argv[3]=testfixture.v
+argv[4]=../dc/DT_syn.v
+argv[5]=+access+r
+argv[6]=-v
+argv[7]=/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+argv[8]=+define+TB2
+argv[9]=+define+SDF
+argv[10]=+nc64bit
+argv[11]=+ncmaxdelays
+101 profile - 100
+          CPU/Mem usage: 0.100 sys,  0.050 user,  93.33M sys,  0.00M vm
+102 VC callback profile - scalar:0 vector:0
+103 Tue Apr 13 20:20:10 2021
+104 pliAppInit
+105 FSDB_GATE is disabled.
+106 Enable Parallel Dumping.
+107 pliAppMiscSet: New Sim Round
+108 pliEntryInit
+109 LIBSSCORE=found /home/nfs_cad/synopsys/verdi/cur/share/PLI/IUS/LINUX64/libsscore_ius141.so through $LD_LIBRARY_PATH setting.
+110 argv[0]: DT.fsdb
+111 argv[0]: (handle)0x3c614a8 testfixture.u_sti_ROM.sti_M
+112 argv[0]: (handle)0x3c614a8 testfixture.u_res_RAM.res_M
+113 FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+114 (C) 1996 - 2018 by Synopsys, Inc.
+115 sps_call_fsdbDumpfile at 0 : /home/max.chen/ICCONTEST/2017/sim/testfixture.v(71)
+116 argv[0]: DT.fsdb
+117 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+118 *Verdi* : Create FSDB file 'DT.fsdb'
+119 sps_call_fsdbDumpvars at 0 : /home/max.chen/ICCONTEST/2017/sim/testfixture.v(72)
+120 *Verdi* : Begin traversing the scopes, layer (0).
+121 Cell instance `testfixture.u_dut.CTRL.\current_state_reg[0] '.
+122 *Verdi* : End of traversing.
+123 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.110 sys,  0.160 user,  181.83M sys,  0.00M vm
+                   incr: 0.000 sys,  0.100 user,  5.15M sys,  0.00M vm
+                   accu: 0.000 sys,  0.100 user,  5.15M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.100 user,  5.15M sys,  0.00M vm
+
+          Count usage: 5491 var,  1644 idcode,  1644 callback
+                 incr: 5491 var,  1644 idcode,  1644 callback
+                 accu: 5491 var,  1644 idcode,  1644 callback
+            accu incr: 5491 var,  1644 idcode,  1644 callback
+124 VC callback profile - scalar:0 vector:0
+125 Tue Apr 13 20:20:11 2021
+126 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.110 sys,  0.160 user,  182.89M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+                   accu: 0.000 sys,  0.100 user,  6.21M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.05M sys,  0.00M vm
+
+          Count usage: 5491 var,  1644 idcode,  1644 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 5491 var,  1644 idcode,  1644 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+127 VC callback profile - scalar:1633 vector:11
+128 Tue Apr 13 20:20:11 2021
+129 sps_call_fsdbDumpMDA at 0 : /home/max.chen/ICCONTEST/2017/sim/testfixture.v(73)
+130 *Verdi* : Begin traversing the MDAs, layer (0).
+131 *Verdi* : Enable +mda and +packedmda dumping.
+132 Cell instance `testfixture.u_dut.CTRL.\current_state_reg[0] '.
+133 *Verdi* : End of traversing the MDAs.
+134 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.110 sys,  0.410 user,  188.94M sys,  0.00M vm
+                   incr: 0.000 sys,  0.250 user,  6.06M sys,  0.00M vm
+                   accu: 0.000 sys,  0.250 user,  6.06M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.250 user,  6.06M sys,  0.00M vm
+
+          Count usage: 55667 var,  51820 idcode,  51824 callback
+                 incr: 50176 var,  50176 idcode,  50180 callback
+                 accu: 50176 var,  50176 idcode,  50180 callback
+            accu incr: 50176 var,  50176 idcode,  50180 callback
+135 VC callback profile - scalar:1633 vector:11
+136 Tue Apr 13 20:20:11 2021
+137 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.110 sys,  0.440 user,  191.94M sys,  0.00M vm
+                   incr: 0.000 sys,  0.030 user,  3.00M sys,  0.00M vm
+                   accu: 0.000 sys,  0.280 user,  9.06M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.030 user,  3.00M sys,  0.00M vm
+
+          Count usage: 55667 var,  51820 idcode,  51824 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 50176 var,  50176 idcode,  50180 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+138 VC callback profile - scalar:1633 vector:50187
+139 Tue Apr 13 20:20:11 2021
+140 sps_call_fsdbDumpMDA at 0 : /home/max.chen/ICCONTEST/2017/sim/testfixture.v(74)
+141 argv[0]: (handle)0x3c614a8 testfixture.u_sti_ROM.sti_M
+142 *Verdi* : Dumping the MDA (testfixture.u_sti_ROM.sti_M).
+143 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.110 sys,  0.450 user,  192.08M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  0.14M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  0.14M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  0.14M sys,  0.00M vm
+
+          Count usage: 56691 var,  51820 idcode,  51824 callback
+                 incr: 1024 var,  0 idcode,  0 callback
+                 accu: 1024 var,  0 idcode,  0 callback
+            accu incr: 1024 var,  0 idcode,  0 callback
+144 VC callback profile - scalar:1633 vector:50187
+145 Tue Apr 13 20:20:11 2021
+146 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.110 sys,  0.450 user,  192.08M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
+                   accu: 0.000 sys,  0.010 user,  0.14M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  0.00M sys,  0.00M vm
+
+          Count usage: 56691 var,  51820 idcode,  51824 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 1024 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+147 VC callback profile - scalar:1633 vector:51211
+148 Tue Apr 13 20:20:11 2021
+149 sps_call_fsdbDumpMDA at 0 : /home/max.chen/ICCONTEST/2017/sim/testfixture.v(75)
+150 argv[0]: (handle)0x3c614b8 testfixture.u_res_RAM.res_M
+151 *Verdi* : Dumping the MDA (testfixture.u_res_RAM.res_M).
+152 fsdbDumpMDA traverse var: profile - 
+          CPU/Mem usage: 0.110 sys,  0.550 user,  192.08M sys,  0.00M vm
+                   incr: 0.000 sys,  0.100 user,  0.00M sys,  0.00M vm
+                   accu: 0.000 sys,  0.100 user,  0.00M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.100 user,  0.00M sys,  0.00M vm
+
+          Count usage: 73075 var,  51820 idcode,  51824 callback
+                 incr: 16384 var,  0 idcode,  0 callback
+                 accu: 16384 var,  0 idcode,  0 callback
+            accu incr: 16384 var,  0 idcode,  0 callback
+153 VC callback profile - scalar:1633 vector:51211
+154 Tue Apr 13 20:20:11 2021
+155 fsdbDumpMDA: profile - 
+          CPU/Mem usage: 0.110 sys,  0.560 user,  192.08M sys,  0.00M vm
+                   incr: 0.000 sys,  0.010 user,  0.00M sys,  0.00M vm
+                   accu: 0.000 sys,  0.110 user,  0.00M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.010 user,  0.00M sys,  0.00M vm
+
+          Count usage: 73075 var,  51820 idcode,  51824 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 16384 var,  0 idcode,  0 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+156 VC callback profile - scalar:1633 vector:67595
+157 Tue Apr 13 20:20:11 2021
+158 End of simulation at 1493576667
+159 VC callback profile - scalar:14943387 vector:119036
+160 Tue Apr 13 20:20:19 2021
+161 Begin FSDB profile info:
+162 FSDB Writer : bc1(14943387) bcn(119036) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(1.242830) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+163 End FSDB profile info
+164 Parallel profile    -  Flush:6 Expand:0 ProduceWait:0 ConsumerWait:136 BlockUsed:136
+165                        ProduceTime:9.379305732 ConsumerTime:2.544309205 Buffer:64MB
+166 SimExit
+167 Sim process exit

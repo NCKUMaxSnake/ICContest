@@ -1,0 +1,1104 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 13, 2021 at 20:12:08 CST
+ncverilog
+	-f ncvlog.f
+		tb.v
+		../dc/huffman_syn.v
+		+access+r
+		-v
+		/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+		+define+tb3
+		+define+SDF
+		+nc64bit
+		+ncmaxdelays
+file: tb.v
+	module worklib.tb:v
+		errors: 0, warnings: 0
+file: ../dc/huffman_syn.v
+	module worklib.controlUnit:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter_DW01_inc_0_DW01_inc_9:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter_DW01_add_4_DW01_add_7:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter_DW01_add_3_DW01_add_6:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter_DW01_add_2_DW01_add_5:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter_DW01_add_1_DW01_add_4:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter_DW01_add_0_DW01_add_3:v
+		errors: 0, warnings: 0
+	module worklib.grayCounter:v
+		errors: 0, warnings: 0
+	module worklib.sorting:v
+		errors: 0, warnings: 0
+	module worklib.huffTree_DW01_add_0_DW01_add_2:v
+		errors: 0, warnings: 0
+	module worklib.huffTree:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff_DW01_inc_0_DW01_inc_3:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff_DW01_inc_1_DW01_inc_4:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff_DW01_inc_2_DW01_inc_5:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff_DW01_inc_3_DW01_inc_6:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff_DW01_inc_4_DW01_inc_7:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff_DW01_inc_5_DW01_inc_8:v
+		errors: 0, warnings: 0
+	module worklib.encodeHuff:v
+		errors: 0, warnings: 0
+	module worklib.huffman:v
+		errors: 0, warnings: 0
+file: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+	module tsmc13_neg.BUFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI31X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MX2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MXI2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MXI2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4BBX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKAND2X3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKAND2X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKMX2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ACHCINX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ACHCONX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRHQX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRHQX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRHQX4:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_mux2:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX4 \symbol_counter_reg[0][0]  ( .D(n118), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,226|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \symbol_counter_reg[3][0]  ( .D(n115), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,228|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \symbol_counter_reg[4][0]  ( .D(n116), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,230|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \symbol_counter_reg[5][0]  ( .D(n117), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,232|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  grayCounter_DW01_add_4_DW01_add_7 add_4_root_add_0_root_add_190_5 ( .A({n201, 
+                                                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,236|66): 1 output port was not connected:
+ncelab: (../dc/huffman_syn.v,65): CO
+
+  grayCounter_DW01_add_3_DW01_add_6 add_2_root_add_0_root_add_190_5 ( .A({n206, 
+                                                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,240|66): 1 output port was not connected:
+ncelab: (../dc/huffman_syn.v,91): CO
+
+  grayCounter_DW01_add_2_DW01_add_5 add_1_root_add_0_root_add_190_5 ( .A({N38, 
+                                                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,244|66): 1 output port was not connected:
+ncelab: (../dc/huffman_syn.v,117): CO
+
+  grayCounter_DW01_add_1_DW01_add_4 add_3_root_add_0_root_add_190_5 ( .A({n180, 
+                                                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,248|66): 1 output port was not connected:
+ncelab: (../dc/huffman_syn.v,143): CO
+
+  grayCounter_DW01_add_0_DW01_add_3 add_0_root_add_0_root_add_190_5 ( .A({N30, 
+                                                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,252|66): 1 output port was not connected:
+ncelab: (../dc/huffman_syn.v,169): CO
+
+  DFFRX2 \symbol_counter_reg[3][1]  ( .D(n109), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,319|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[4][1]  ( .D(n110), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,321|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[5][1]  ( .D(n111), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,323|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[0][1]  ( .D(n112), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,325|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[1][2]  ( .D(n101), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,327|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[3][2]  ( .D(n103), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,329|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[4][2]  ( .D(n104), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,331|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[5][2]  ( .D(n105), .CK(clk), .RN(n170), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,333|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \symbol_counter_reg[0][2]  ( .D(n106), .CK(clk), .RN(n169), .Q(
+                                  |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,335|34): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \sort_cnt_reg[2]  ( .D(n414), .CK(clk), .RN(n322), .QN(n321) );
+                         |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,603|25): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  huffTree_DW01_add_0_DW01_add_2 add_394 ( .A({\sorted_arr[0][13] , 
+                                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,1365|39): 1 output port was not connected:
+ncelab: (../dc/huffman_syn.v,1190): CO
+
+  DFFRX2 \hc_reg[5][7]  ( .D(n519), .CK(clk), .RN(n15), .Q(HC6[7]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2891|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][6]  ( .D(n520), .CK(clk), .RN(n15), .Q(HC6[6]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2892|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][5]  ( .D(n521), .CK(clk), .RN(n15), .Q(HC6[5]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2893|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][4]  ( .D(n522), .CK(clk), .RN(n15), .Q(HC6[4]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2894|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][3]  ( .D(n523), .CK(clk), .RN(n15), .Q(HC6[3]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2895|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][2]  ( .D(n524), .CK(clk), .RN(n15), .Q(HC6[2]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2896|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][1]  ( .D(n525), .CK(clk), .RN(n15), .Q(HC6[1]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2897|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[5][0]  ( .D(n526), .CK(clk), .RN(n15), .Q(HC6[0]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2898|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][7]  ( .D(n527), .CK(clk), .RN(n14), .Q(HC5[7]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2899|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][6]  ( .D(n528), .CK(clk), .RN(n14), .Q(HC5[6]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2900|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][5]  ( .D(n529), .CK(clk), .RN(n14), .Q(HC5[5]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2901|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][4]  ( .D(n530), .CK(clk), .RN(n14), .Q(HC5[4]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2902|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][3]  ( .D(n531), .CK(clk), .RN(n13), .Q(HC5[3]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2903|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][2]  ( .D(n532), .CK(clk), .RN(n13), .Q(HC5[2]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2904|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][1]  ( .D(n533), .CK(clk), .RN(n13), .Q(HC5[1]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2905|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[4][0]  ( .D(n534), .CK(clk), .RN(n13), .Q(HC5[0]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2906|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][7]  ( .D(n535), .CK(clk), .RN(n12), .Q(HC4[7]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2907|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][6]  ( .D(n536), .CK(clk), .RN(n12), .Q(HC4[6]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2908|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][5]  ( .D(n537), .CK(clk), .RN(n12), .Q(HC4[5]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2909|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][4]  ( .D(n538), .CK(clk), .RN(n12), .Q(HC4[4]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2910|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][3]  ( .D(n539), .CK(clk), .RN(n12), .Q(HC4[3]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2911|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][2]  ( .D(n540), .CK(clk), .RN(n12), .Q(HC4[2]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2912|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][1]  ( .D(n541), .CK(clk), .RN(n12), .Q(HC4[1]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2913|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[3][0]  ( .D(n542), .CK(clk), .RN(n12), .Q(HC4[0]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2914|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][7]  ( .D(n543), .CK(clk), .RN(n11), .Q(HC3[7]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2915|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][6]  ( .D(n544), .CK(clk), .RN(n11), .Q(HC3[6]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2916|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][5]  ( .D(n545), .CK(clk), .RN(n11), .Q(HC3[5]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2917|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][4]  ( .D(n546), .CK(clk), .RN(n11), .Q(HC3[4]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2918|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][3]  ( .D(n547), .CK(clk), .RN(n11), .Q(HC3[3]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2919|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][2]  ( .D(n548), .CK(clk), .RN(n11), .Q(HC3[2]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2920|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][1]  ( .D(n549), .CK(clk), .RN(n10), .Q(HC3[1]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2921|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[2][0]  ( .D(n550), .CK(clk), .RN(n10), .Q(HC3[0]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2922|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][7]  ( .D(n551), .CK(clk), .RN(n10), .Q(HC2[7]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2923|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][6]  ( .D(n552), .CK(clk), .RN(n9), .Q(HC2[6]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2924|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][5]  ( .D(n553), .CK(clk), .RN(n9), .Q(HC2[5]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2925|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][4]  ( .D(n554), .CK(clk), .RN(n9), .Q(HC2[4]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2926|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][3]  ( .D(n555), .CK(clk), .RN(n9), .Q(HC2[3]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2927|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][2]  ( .D(n556), .CK(clk), .RN(n9), .Q(HC2[2]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2928|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][1]  ( .D(n557), .CK(clk), .RN(n9), .Q(HC2[1]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2929|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[1][0]  ( .D(n558), .CK(clk), .RN(n9), .Q(HC2[0]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2930|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][7]  ( .D(n559), .CK(clk), .RN(n8), .Q(HC1[7]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2931|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][6]  ( .D(n560), .CK(clk), .RN(n8), .Q(HC1[6]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2932|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][5]  ( .D(n561), .CK(clk), .RN(n8), .Q(HC1[5]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2933|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][4]  ( .D(n562), .CK(clk), .RN(n8), .Q(HC1[4]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2934|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][3]  ( .D(n563), .CK(clk), .RN(n8), .Q(HC1[3]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2935|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][2]  ( .D(n564), .CK(clk), .RN(n8), .Q(HC1[2]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2936|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][1]  ( .D(n565), .CK(clk), .RN(n8), .Q(HC1[1]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2937|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \hc_reg[0][0]  ( .D(n566), .CK(clk), .RN(n8), .Q(HC1[0]) );
+                      |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2938|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \idx_reg[5][7]  ( .D(n574), .CK(clk), .RN(n16), .Q(\idx[5][7] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,2999|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[5][5]  ( .D(n568), .CK(clk), .RN(n15), .Q(\idx[5][5] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3000|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[5][6]  ( .D(n567), .CK(clk), .RN(n15), .Q(\idx[5][6] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3001|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[4][7]  ( .D(n582), .CK(clk), .RN(n14), .Q(\idx[4][7] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3002|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[4][5]  ( .D(n576), .CK(clk), .RN(n14), .Q(\idx[4][5] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3003|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[4][6]  ( .D(n575), .CK(clk), .RN(n14), .Q(\idx[4][6] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3004|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[3][7]  ( .D(n590), .CK(clk), .RN(n13), .Q(\idx[3][7] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3005|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[3][5]  ( .D(n584), .CK(clk), .RN(n13), .Q(\idx[3][5] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3006|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[3][6]  ( .D(n583), .CK(clk), .RN(n12), .Q(\idx[3][6] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3007|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[2][7]  ( .D(n598), .CK(clk), .RN(n12), .Q(\idx[2][7] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3008|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[2][5]  ( .D(n592), .CK(clk), .RN(n11), .Q(\idx[2][5] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3009|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[2][6]  ( .D(n591), .CK(clk), .RN(n11), .Q(\idx[2][6] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3010|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[1][7]  ( .D(n606), .CK(clk), .RN(n10), .Q(\idx[1][7] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3011|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[1][5]  ( .D(n600), .CK(clk), .RN(n10), .Q(\idx[1][5] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3012|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[1][6]  ( .D(n599), .CK(clk), .RN(n10), .Q(\idx[1][6] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3013|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[0][7]  ( .D(n614), .CK(clk), .RN(n9), .Q(\idx[0][7] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3014|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[0][5]  ( .D(n608), .CK(clk), .RN(n8), .Q(\idx[0][5] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3015|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \idx_reg[0][6]  ( .D(n607), .CK(clk), .RN(n8), .Q(\idx[0][6] ) );
+                       |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3016|23): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX2 \tree_cnt_reg[2]  ( .D(n676), .CK(clk), .RN(n17), .Q(tree_cnt[2]) );
+                         |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3017|25): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \huff_tree_reg[9][5]  ( .D(n674), .CK(clk), .RN(n292), .QN(n291) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3018|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[9][4]  ( .D(n673), .CK(clk), .RN(n292), .QN(n290) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3019|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[9][3]  ( .D(n672), .CK(clk), .RN(n292), .QN(n289) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3020|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[9][2]  ( .D(n671), .CK(clk), .RN(n292), .QN(n288) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3021|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[9][1]  ( .D(n670), .CK(clk), .RN(n292), .QN(n287) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3022|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[9][0]  ( .D(n669), .CK(clk), .RN(n292), .QN(n286) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3023|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[8][5]  ( .D(n668), .CK(clk), .RN(n292), .QN(n285) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3024|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[8][4]  ( .D(n667), .CK(clk), .RN(n292), .QN(n284) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3025|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[0][5]  ( .D(n620), .CK(clk), .RN(n292), .Q(n44) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3026|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[0][4]  ( .D(n619), .CK(clk), .RN(n292), .Q(n45) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3027|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[0][3]  ( .D(n618), .CK(clk), .RN(n292), .Q(n46) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3028|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[0][2]  ( .D(n617), .CK(clk), .RN(n292), .Q(n47) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3029|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[0][1]  ( .D(n616), .CK(clk), .RN(n292), .Q(n48) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3030|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[0][0]  ( .D(n615), .CK(clk), .RN(n292), .Q(n49) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3031|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[8][3]  ( .D(n666), .CK(clk), .RN(n292), .QN(n283) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3032|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[8][2]  ( .D(n665), .CK(clk), .RN(n292), .QN(n282) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3033|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[8][1]  ( .D(n664), .CK(clk), .RN(n292), .QN(n281) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3034|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[8][0]  ( .D(n663), .CK(clk), .RN(n292), .QN(n280) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3035|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \huff_tree_reg[2][0]  ( .D(n627), .CK(clk), .RN(n292), .Q(n244) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3038|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[1][5]  ( .D(n626), .CK(clk), .RN(n292), .Q(n243) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3039|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[1][4]  ( .D(n625), .CK(clk), .RN(n292), .Q(n242) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3040|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[1][3]  ( .D(n624), .CK(clk), .RN(n292), .Q(n241) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3041|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[1][2]  ( .D(n623), .CK(clk), .RN(n292), .Q(n240) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3042|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[1][1]  ( .D(n622), .CK(clk), .RN(n292), .Q(n239) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3043|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[1][0]  ( .D(n621), .CK(clk), .RN(n292), .Q(n238) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3044|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[7][5]  ( .D(n662), .CK(clk), .RN(n292), .Q(n279) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3045|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[7][4]  ( .D(n661), .CK(clk), .RN(n292), .Q(n278) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3046|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[7][3]  ( .D(n660), .CK(clk), .RN(n292), .Q(n277) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3047|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[7][2]  ( .D(n659), .CK(clk), .RN(n292), .Q(n276) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3048|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[7][1]  ( .D(n658), .CK(clk), .RN(n292), .Q(n275) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3049|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[7][0]  ( .D(n657), .CK(clk), .RN(n292), .Q(n274) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3050|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[6][5]  ( .D(n656), .CK(clk), .RN(n292), .Q(n273) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3051|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[6][4]  ( .D(n655), .CK(clk), .RN(n292), .Q(n272) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3052|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[6][3]  ( .D(n654), .CK(clk), .RN(n292), .Q(n271) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3053|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[6][2]  ( .D(n653), .CK(clk), .RN(n292), .Q(n270) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3054|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[6][1]  ( .D(n652), .CK(clk), .RN(n292), .Q(n269) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3055|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[6][0]  ( .D(n651), .CK(clk), .RN(n292), .Q(n268) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3056|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[5][5]  ( .D(n650), .CK(clk), .RN(n292), .Q(n267) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3057|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[5][4]  ( .D(n649), .CK(clk), .RN(n292), .Q(n266) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3058|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[5][3]  ( .D(n648), .CK(clk), .RN(n292), .Q(n265) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3059|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[5][2]  ( .D(n647), .CK(clk), .RN(n292), .Q(n264) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3060|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[5][1]  ( .D(n646), .CK(clk), .RN(n292), .Q(n263) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3061|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[5][0]  ( .D(n645), .CK(clk), .RN(n292), .Q(n262) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3062|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[4][5]  ( .D(n644), .CK(clk), .RN(n292), .Q(n261) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3063|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[4][4]  ( .D(n643), .CK(clk), .RN(n292), .Q(n260) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3064|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[4][3]  ( .D(n642), .CK(clk), .RN(n292), .Q(n259) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3065|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[4][2]  ( .D(n641), .CK(clk), .RN(n292), .Q(n258) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3066|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[4][1]  ( .D(n640), .CK(clk), .RN(n292), .Q(n257) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3067|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[4][0]  ( .D(n639), .CK(clk), .RN(n292), .Q(n256) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3068|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[2][5]  ( .D(n632), .CK(clk), .RN(n292), .Q(n249) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3081|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[2][4]  ( .D(n631), .CK(clk), .RN(n292), .Q(n248) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3082|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[2][3]  ( .D(n630), .CK(clk), .RN(n292), .Q(n247) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3083|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[2][2]  ( .D(n629), .CK(clk), .RN(n292), .Q(n246) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3084|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \huff_tree_reg[2][1]  ( .D(n628), .CK(clk), .RN(n292), .Q(n245) );
+                             |
+ncelab: *W,CUVWSP (../dc/huffman_syn.v,3085|29): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+	Reading SDF file from location "../dc/huffman_syn.sdf"
+	Writing compiled SDF file to "huffman_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     huffman_syn.sdf.X
+		Log file:              
+		Backannotation scope:  tb.u_huffman
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 8287  Annotated = 100.00% -- No. of Tchecks = 4797  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        8287	        8287	      100.00
+		      $width	        1599	        1599	      100.00
+		  $setuphold	        3198	        3198	      100.00
+  assign finish_flag = N372;
+       |
+ncelab: *W,SDFNCAP (../dc/huffman_syn.v,598|7): The interconnect source tb.u_huffman.SORT.U321.Y is separated by a unidirectional continuous assign from the destination tb.u_huffman.CTRL.U4.A.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ACHCINX2:v <0x2ade2e76>
+			streams:   4, words:   318
+		tsmc13_neg.ACHCONX2:v <0x78353be6>
+			streams:   4, words:   318
+		tsmc13_neg.ADDFXL:v <0x079f21bd>
+			streams:  14, words:  1719
+		tsmc13_neg.ADDHX1:v <0x0ccb9433>
+			streams:   4, words:   318
+		tsmc13_neg.ADDHX2:v <0x7a8697e6>
+			streams:   4, words:   318
+		tsmc13_neg.ADDHXL:v <0x28eed215>
+			streams:   4, words:   318
+		tsmc13_neg.CLKMX2X2:v <0x7a1f665d>
+			streams:   2, words:   240
+		tsmc13_neg.DFFRHQX1:v <0x595a3896>
+			streams:   1, words:    64
+		tsmc13_neg.DFFRHQX2:v <0x4a8e85d8>
+			streams:   1, words:    64
+		tsmc13_neg.DFFRHQX4:v <0x372839dc>
+			streams:   1, words:    64
+		tsmc13_neg.DFFRX1:v <0x4891c9ca>
+			streams:   2, words:   128
+		tsmc13_neg.DFFRX2:v <0x41456f83>
+			streams:   2, words:   128
+		tsmc13_neg.DFFRX4:v <0x32acbaf5>
+			streams:   2, words:   128
+		tsmc13_neg.MX2XL:v <0x250b3f3d>
+			streams:   2, words:   240
+		tsmc13_neg.MXI2X1:v <0x022227b1>
+			streams:   2, words:   240
+		tsmc13_neg.MXI2XL:v <0x4ff1911a>
+			streams:   2, words:   240
+		tsmc13_neg.XNOR2X1:v <0x522d4ebb>
+			streams:   4, words:   318
+		tsmc13_neg.XNOR2X4:v <0x65cfca29>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2X1:v <0x5363592d>
+			streams:   4, words:   318
+		tsmc13_neg.XOR3X1:v <0x076a4983>
+			streams:  10, words:  1401
+		tsmc13_neg.XOR3XL:v <0x48508e82>
+			streams:  10, words:  1401
+		worklib.encodeHuff:v <0x73889cab>
+			streams:   0, words:     0
+		worklib.grayCounter:v <0x6473af6d>
+			streams:   0, words:     0
+		worklib.huffTree:v <0x7c30b148>
+			streams:   0, words:     0
+		worklib.huffman:v <0x4da8ff12>
+			streams:   0, words:     0
+		worklib.sorting:v <0x3f4f1074>
+			streams:   0, words:     0
+		worklib.tb:v <0x43b1d9af>
+			streams:  21, words: 18064
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 2300     129
+		UDPs:                     645       2
+		Primitives:              6153       8
+		Timing outputs:          2861      36
+		Registers:                544      18
+		Scalar wires:            3407       -
+		Expanded wires:             8       1
+		Vectored wires:             6       -
+		Always blocks:              2       2
+		Initial blocks:             8       8
+		Cont. assignments:          6       7
+		Pseudo assignments:         1       1
+		Timing checks:           4797     648
+		Interconnect:            6920       -
+		Delayed tcheck signals:  1599     576
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.tb:v
+Loading snapshot worklib.tb:v .................... Done
+*Verdi* Loading libsscore_ius141.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'huffman.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+./pattern3.dat and ./golden3.dat were used for this simulation.
+Check CNT : PASS
+Check HC : PASS
+Check M : PASS
+You PASS the contest now.
+Simulation complete via $finish(1) at time 1420 NS + 0
+./tb.v:176                  $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 13, 2021 at 20:12:12 CST  (total: 00:00:04)

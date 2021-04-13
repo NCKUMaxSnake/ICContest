@@ -1,0 +1,877 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 13, 2021 at 20:20:09 CST
+ncverilog
+	-f ncvlog.f
+		testfixture.v
+		../dc/DT_syn.v
+		+access+r
+		-v
+		/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+		+define+TB2
+		+define+SDF
+		+nc64bit
+		+ncmaxdelays
+file: testfixture.v
+	module worklib.testfixture:v
+		errors: 0, warnings: 0
+	module worklib.sti_ROM:v
+		errors: 0, warnings: 0
+	module worklib.res_RAM:v
+		errors: 0, warnings: 0
+file: ../dc/DT_syn.v
+	module worklib.control:v
+		errors: 0, warnings: 0
+	module worklib.rdSti_DW01_dec_0_DW01_dec_1:v
+		errors: 0, warnings: 0
+	module worklib.rdSti_DW01_inc_0_DW01_inc_4:v
+		errors: 0, warnings: 0
+	module worklib.rdSti:v
+		errors: 0, warnings: 0
+	module worklib.checkSti:v
+		errors: 0, warnings: 0
+	module worklib.getSmallest:v
+		errors: 0, warnings: 0
+	module worklib.wrRes_DW01_inc_0_DW01_inc_2:v
+		errors: 0, warnings: 0
+	module worklib.wrRes_DW01_inc_1_DW01_inc_3:v
+		errors: 0, warnings: 0
+	module worklib.wrRes:v
+		errors: 0, warnings: 0
+	module worklib.rdRes_DW01_inc_0_DW01_inc_1:v
+		errors: 0, warnings: 0
+	module worklib.rdRes_DW01_dec_0:v
+		errors: 0, warnings: 0
+	module worklib.rdRes:v
+		errors: 0, warnings: 0
+	module worklib.DT:v
+		errors: 0, warnings: 0
+file: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+	module tsmc13_neg.BUFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX16:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX20:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX16:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX20:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI21X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR3X6:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX20:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKAND2X8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKAND2X12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.EDFFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.EDFFX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.TLATNX1:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_tlat:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_edff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX4 \current_state_reg[3]  ( .D(next_state[3]), .CK(clk), .RN(reset), .Q(
+                              |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,20|30): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  TLATNX1 \next_state_reg[1]  ( .D(N38), .GN(current_state[3]), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,22|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,27416): QN
+
+  TLATNX1 \next_state_reg[0]  ( .D(N37), .GN(current_state[3]), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,24|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,27416): QN
+
+  TLATNX1 \next_state_reg[2]  ( .D(N39), .GN(current_state[3]), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,26|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,27416): QN
+
+  TLATNX1 \next_state_reg[3]  ( .D(N40), .GN(current_state[3]), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,28|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,27416): QN
+
+  DFFRX4 \global_idx_reg[13]  ( .D(n39), .CK(clk), .RN(reset), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,127|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \global_idx_reg[5]  ( .D(n46), .CK(clk), .RN(n57), .Q(global_idx[5])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,129|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \global_idx_reg[6]  ( .D(n45), .CK(clk), .RN(n57), .Q(global_idx[6])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,131|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \global_idx_reg[10]  ( .D(n42), .CK(clk), .RN(n57), .Q(global_idx[10]) );
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,133|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \global_idx_reg[11]  ( .D(n41), .CK(clk), .RN(n57), .Q(global_idx[11]) );
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,134|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX1 \global_idx_reg[12]  ( .D(n40), .CK(clk), .RN(n57), .Q(global_idx[12]) );
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,138|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \global_idx_reg[0]  ( .D(n51), .CK(clk), .RN(reset), .Q(n61) );
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,139|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX2 \global_idx_reg[1]  ( .D(n50), .CK(clk), .RN(n57), .Q(global_idx[1])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,140|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \global_idx_reg[8]  ( .D(n44), .CK(clk), .RN(n57), .Q(global_idx[8])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,142|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \global_idx_reg[9]  ( .D(n43), .CK(clk), .RN(n57), .Q(global_idx[9])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,144|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \global_idx_reg[7]  ( .D(n58), .CK(clk), .RN(n57), .Q(global_idx[7])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,146|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \global_idx_reg[4]  ( .D(n47), .CK(clk), .RN(reset), .QN(n1) );
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,148|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX2 \global_idx_reg[2]  ( .D(n49), .CK(clk), .RN(n57), .Q(global_idx[2])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,149|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \global_idx_reg[3]  ( .D(n48), .CK(clk), .RN(n57), .Q(global_idx[3])
+                           |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,151|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX4 \res_data_reg[2][4]  ( .D(n71), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,508|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \res_data_reg[2][2]  ( .D(n69), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,510|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \res_data_reg[1][4]  ( .D(n63), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,512|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX4 \res_data_reg[0][4]  ( .D(n55), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,514|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  EDFFX1 \res_data_reg[4][0]  ( .D(res_di[0]), .E(n85), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,536|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  EDFFX1 \res_data_reg[4][2]  ( .D(res_di[2]), .E(n85), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,544|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  EDFFX1 \res_data_reg[4][4]  ( .D(res_di[4]), .E(n85), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,546|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  DFFRX1 \res_data_reg[3][7]  ( .D(n82), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,548|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[1][7]  ( .D(n66), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,550|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[2][7]  ( .D(n74), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,552|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[0][7]  ( .D(n58), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,554|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[3][0]  ( .D(n75), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,556|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[1][0]  ( .D(n59), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,558|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[2][0]  ( .D(n67), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,560|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[1][6]  ( .D(n65), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,562|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[3][6]  ( .D(n81), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,564|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX4 \res_data_reg[3][2]  ( .D(n77), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,566|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX1 \res_data_reg[0][6]  ( .D(n57), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,568|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \res_data_reg[2][6]  ( .D(n73), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,570|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  EDFFX1 \res_data_reg[4][6]  ( .D(res_di[6]), .E(n85), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,572|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  DFFRX4 \res_data_reg[0][2]  ( .D(n53), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,574|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18445): QN
+
+  DFFRX2 \res_data_reg[0][5]  ( .D(n56), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,576|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[3][3]  ( .D(n78), .CK(clk), .RN(reset), .Q(n33) );
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,578|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[3][4]  ( .D(n79), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,581|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[1][2]  ( .D(n61), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,583|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[1][1]  ( .D(n60), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,585|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[1][5]  ( .D(n64), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,587|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \res_data_reg[2][1]  ( .D(n68), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,589|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX2 \res_data_reg[2][3]  ( .D(n70), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,591|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[1][3]  ( .D(n62), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,593|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX1 \res_data_reg[0][0]  ( .D(n51), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,595|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX2 \res_data_reg[0][1]  ( .D(n52), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,597|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[0][3]  ( .D(n54), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,599|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[2][5]  ( .D(n72), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,601|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[3][1]  ( .D(n76), .CK(clk), .RN(n94), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,603|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \res_data_reg[3][5]  ( .D(n80), .CK(clk), .RN(n93), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/DT_syn.v,605|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+	Reading SDF file from location "../dc/DT_syn.sdf"
+	Writing compiled SDF file to "DT_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     DT_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_dut
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 2447  Annotated = 100.00% -- No. of Tchecks = 577  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        2447	        2447	      100.00
+		      $width	         179	         179	      100.00
+		  $setuphold	         398	         398	      100.00
+  assign \rd_addr_idx_fw[1][2]  = global_idx[2];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,932|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[2] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U25.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][3]  = global_idx[3];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,931|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[3] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U40.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U10.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U255.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U33.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U243.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U39.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U13.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U223.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U222.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U34.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U203.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U38.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U37.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.sub_359.U13.A1N.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.sub_359.U15.A1N.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.sub_359.U14.A1N.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.sub_359.U2.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.sub_359.U30.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.sub_359.U12.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U175.B0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U75.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U80.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U172.B0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U83.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U87.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U169.B0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U84.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U88.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.add_364.U1_1_5.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.add_364.U1_1_4.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.add_364.U1_1_6.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U128.B0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U89.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U127.A0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][5]  = global_idx[5];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,929|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[5] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U85.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U125.B0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U90.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U124.A0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][4]  = global_idx[4];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,930|7): The interconnect source testfixture.u_dut.RDSTI.U4.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U86.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U122.B0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U81.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U121.A0.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][6]  = global_idx[6];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,928|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[6] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U78.B.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][0]  = global_idx[0];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,934|7): The interconnect source testfixture.u_dut.RDSTI.U3.Y is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U5.A.  The port annotation will still occur.
+  assign \rd_addr_idx_fw[1][1]  = global_idx[1];
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,933|7): The interconnect source testfixture.u_dut.RDSTI.\global_idx_reg[1] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.RDRES.U23.A.  The port annotation will still occur.
+  assign rd_idx[1] = N17;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,927|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[1] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U114.A.  The port annotation will still occur.
+  assign rd_idx[0] = N16;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,926|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[0] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U113.A.  The port annotation will still occur.
+  assign rd_idx[1] = N17;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,927|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[1] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U111.C.  The port annotation will still occur.
+  assign rd_idx[0] = N16;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,926|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[0] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U110.C.  The port annotation will still occur.
+  assign rd_idx[1] = N17;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,927|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[1] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U63.B.  The port annotation will still occur.
+  assign rd_idx[0] = N16;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,926|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[0] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U63.C.  The port annotation will still occur.
+  assign rd_idx[0] = N16;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,926|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[0] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U33.A.  The port annotation will still occur.
+  assign rd_idx[1] = N17;
+       |
+ncelab: *W,SDFNCAP (../dc/DT_syn.v,927|7): The interconnect source testfixture.u_dut.RDRES.\rd_idx_reg[1] .Q is separated by a unidirectional continuous assign from the destination testfixture.u_dut.WRRES.U33.C.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDHX1:v <0x0ccb9433>
+			streams:   4, words:   318
+		tsmc13_neg.ADDHX2:v <0x1293feca>
+			streams:   4, words:   318
+		tsmc13_neg.ADDHX4:v <0x1e24d3f8>
+			streams:   4, words:   318
+		tsmc13_neg.ADDHXL:v <0x28eed215>
+			streams:   4, words:   318
+		tsmc13_neg.DFFRX1:v <0x4891c9ca>
+			streams:   2, words:   128
+		tsmc13_neg.DFFRX2:v <0x41456f83>
+			streams:   2, words:   128
+		tsmc13_neg.DFFRX4:v <0x32acbaf5>
+			streams:   2, words:   128
+		tsmc13_neg.EDFFX1:v <0x45c4007c>
+			streams:   2, words:   128
+		tsmc13_neg.EDFFXL:v <0x7639a28d>
+			streams:   2, words:   128
+		tsmc13_neg.TLATNX1:v <0x2aeeb357>
+			streams:   2, words:   128
+		tsmc13_neg.XNOR2X1:v <0x522d4ebb>
+			streams:   4, words:   318
+		tsmc13_neg.XNOR2XL:v <0x518b5b1d>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2X1:v <0x5363592d>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2XL:v <0x52c1658f>
+			streams:   4, words:   318
+		worklib.DT:v <0x1bb62992>
+			streams:   0, words:     0
+		worklib.rdRes:v <0x658f25a6>
+			streams:   0, words:     0
+		worklib.rdSti:v <0x087de64a>
+			streams:   0, words:     0
+		worklib.res_RAM:v <0x0ae95059>
+			streams:   5, words:  2345
+		worklib.sti_ROM:v <0x072feb51>
+			streams:   3, words:  1607
+		worklib.testfixture:v <0x6d9b2610>
+			streams:  11, words: 15634
+		worklib.wrRes:v <0x61e601db>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  827     133
+		UDPs:                      65       3
+		Primitives:              1563       8
+		Timing outputs:           912      35
+		Registers:                 84      28
+		Scalar wires:             993       -
+		Expanded wires:            24       2
+		Always blocks:              4       4
+		Initial blocks:            11      11
+		Cont. assignments:          0       9
+		Pseudo assignments:         1       1
+		Timing checks:            577      94
+		Interconnect:            2100       -
+		Delayed tcheck signals:   191      72
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius141.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'DT.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+*Verdi* : Dumping the MDA (testfixture.u_sti_ROM.sti_M).
+*Verdi* : Dumping the MDA (testfixture.u_res_RAM.res_M).
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+ Output pixel: 0 ~           0 are correct!
+
+ Output pixel: 0 ~        1000 are correct!
+
+ Output pixel: 0 ~        2000 are correct!
+
+ Output pixel: 0 ~        3000 are correct!
+
+ Output pixel: 0 ~        4000 are correct!
+
+ Output pixel: 0 ~        5000 are correct!
+
+ Output pixel: 0 ~        6000 are correct!
+
+ Output pixel: 0 ~        7000 are correct!
+
+ Output pixel: 0 ~        8000 are correct!
+
+ Output pixel: 0 ~        9000 are correct!
+
+ Output pixel: 0 ~       10000 are correct!
+
+ Output pixel: 0 ~       11000 are correct!
+
+ Output pixel: 0 ~       12000 are correct!
+
+ Output pixel: 0 ~       13000 are correct!
+
+ Output pixel: 0 ~       14000 are correct!
+
+ Output pixel: 0 ~       15000 are correct!
+
+ Output pixel: 0 ~       16000 are correct!
+
+-------------------------------------------------------------
+
+Congratulations!!! All data have been generated successfully!
+
+---------- The test result is ..... PASS --------------------
+
+                                                     
+
+-----------------------------------------------------
+
+Simulation complete via $finish(1) at time 1493576667 PS + 0
+./testfixture.v:175       #(`CYCLE/3); $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 13, 2021 at 20:20:20 CST  (total: 00:00:11)

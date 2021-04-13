@@ -1,0 +1,496 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 13, 2021 at 20:38:02 CST
+ncverilog
+	-f ncvlog.f
+		testfixture.v
+		../dc/SET_syn.v
+		+define+MD2
+		+access+r
+		-v
+		tsmc13_neg.v
+		+define+SDF
+		+nc64bit
+file: testfixture.v
+	module worklib.testfixture1:v
+		errors: 0, warnings: 0
+file: ../dc/SET_syn.v
+	module worklib.CTRL:v
+		errors: 0, warnings: 0
+	module worklib.PROC_DW01_inc_0:v
+		errors: 0, warnings: 0
+	module worklib.PROC:v
+		errors: 0, warnings: 0
+	module worklib.SET:v
+		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CMPR32X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFSX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.EDFFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.EDFFX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRHQX2:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_edff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 read_done_reg ( .D(n105), .CK(clk), .RN(n79), .Q(read_done) );
+                     |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,156|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  EDFFX1 tmp_res2_reg ( .D(\r453/GE_LT_GT_LE ), .E(n163), .CK(clk), .Q(
+                    |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,161|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,19783): QN
+
+  DFFRX1 \reg_radius_reg[3]  ( .D(n193), .CK(clk), .RN(n75), .Q(reg_radius[3])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,163|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[2]  ( .D(n192), .CK(clk), .RN(n75), .Q(reg_radius[2])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,165|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[11]  ( .D(n202), .CK(clk), .RN(n75), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,167|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[10]  ( .D(n200), .CK(clk), .RN(n75), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,169|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[7]  ( .D(n197), .CK(clk), .RN(n75), .Q(reg_radius[7])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,171|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[6]  ( .D(n196), .CK(clk), .RN(n75), .Q(reg_radius[6])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,173|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[1]  ( .D(n191), .CK(clk), .RN(n75), .Q(reg_radius[1])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,175|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[0]  ( .D(n190), .CK(clk), .RN(n75), .Q(reg_radius[0])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,177|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[9]  ( .D(n199), .CK(clk), .RN(n75), .Q(reg_radius[9])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,179|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[8]  ( .D(n198), .CK(clk), .RN(n75), .Q(reg_radius[8])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,181|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[5]  ( .D(n195), .CK(clk), .RN(n75), .Q(reg_radius[5])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,183|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_radius_reg[4]  ( .D(n194), .CK(clk), .RN(n75), .Q(reg_radius[4])
+                           |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,185|27): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[23]  ( .D(n187), .CK(clk), .RN(n79), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,187|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[19]  ( .D(n183), .CK(clk), .RN(n79), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,189|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[15]  ( .D(n179), .CK(clk), .RN(n79), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,191|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[11]  ( .D(n175), .CK(clk), .RN(n87), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,193|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[7]  ( .D(n171), .CK(clk), .RN(n87), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,195|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[3]  ( .D(n167), .CK(clk), .RN(n87), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,197|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[5]  ( .D(n169), .CK(clk), .RN(n87), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,211|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[1]  ( .D(n165), .CK(clk), .RN(n92), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,213|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[4]  ( .D(n168), .CK(clk), .RN(n87), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,215|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[21]  ( .D(n185), .CK(clk), .RN(n79), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,217|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[17]  ( .D(n181), .CK(clk), .RN(n79), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,219|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[13]  ( .D(n177), .CK(clk), .RN(n87), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,221|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[9]  ( .D(n173), .CK(clk), .RN(n87), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,223|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[12]  ( .D(n176), .CK(clk), .RN(n87), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,229|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[8]  ( .D(n172), .CK(clk), .RN(n87), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,233|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[16]  ( .D(n180), .CK(clk), .RN(n79), .Q(
+                             |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,235|29): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \reg_central_reg[0]  ( .D(n164), .CK(clk), .RN(n92), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,237|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \cntY_reg[3]  ( .D(n222), .CK(clk), .RN(n92), .Q(cntY[3]) );
+                     |
+ncelab: *W,CUVWSP (../dc/SET_syn.v,241|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+	Reading SDF file from location "../dc/SET_syn.sdf"
+	Writing compiled SDF file to "SET_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     SET_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture1.u_set
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 1447  Annotated = 100.00% -- No. of Tchecks = 551  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        1447	        1447	      100.00
+		      $width	         181	         181	      100.00
+		  $setuphold	         370	         370	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDFX2:v <0x04842435>
+			streams:  14, words:  1719
+		tsmc13_neg.ADDFXL:v <0x337b760e>
+			streams:  14, words:  1719
+		tsmc13_neg.ADDHXL:v <0x62b06da2>
+			streams:   4, words:   318
+		tsmc13_neg.CMPR32X2:v <0x648db4e7>
+			streams:  14, words:  1719
+		tsmc13_neg.DFFRHQX2:v <0x23038363>
+			streams:   1, words:    64
+		tsmc13_neg.DFFRX1:v <0x2fab90e1>
+			streams:   2, words:   128
+		tsmc13_neg.DFFRX2:v <0x285f369a>
+			streams:   2, words:   128
+		tsmc13_neg.DFFSX1:v <0x55653174>
+			streams:   2, words:   128
+		tsmc13_neg.EDFFX1:v <0x2f2e85f0>
+			streams:   2, words:   128
+		tsmc13_neg.EDFFXL:v <0x0a74eefd>
+			streams:   2, words:   128
+		tsmc13_neg.XNOR2X1:v <0x3e22ab73>
+			streams:   4, words:   318
+		tsmc13_neg.XNOR2XL:v <0x3d80b7d5>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2X1:v <0x3f58b5e5>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2XL:v <0x3eb6c247>
+			streams:   4, words:   318
+		tsmc13_neg.XOR3X1:v <0x671e3368>
+			streams:  10, words:  1401
+		tsmc13_neg.XOR3X2:v <0x439881cd>
+			streams:  10, words:  1401
+		worklib.PROC:v <0x3195b032>
+			streams:   0, words:     0
+		worklib.testfixture1:v <0x18e013f5>
+			streams:  11, words: 15805
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  422      78
+		UDPs:                      61       2
+		Primitives:               937       8
+		Timing outputs:           500      34
+		Registers:                 73      20
+		Scalar wires:             568       -
+		Expanded wires:            38       3
+		Always blocks:              2       2
+		Initial blocks:             7       7
+		Pseudo assignments:         2       2
+		Timing checks:            551      84
+		Interconnect:            1100       -
+		Delayed tcheck signals:   183      69
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture1:v
+Loading snapshot worklib.testfixture1:v .................... Done
+*Verdi* Loading libsscore_ius141.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SET.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+--------------------------- [ Function 2. Simulation START !! ] ---------------------------
+ Pattern           0 at Mode 1 is PASS !
+ Pattern           1 at Mode 1 is PASS !
+ Pattern           2 at Mode 1 is PASS !
+ Pattern           3 at Mode 1 is PASS !
+ Pattern           4 at Mode 1 is PASS !
+ Pattern           5 at Mode 1 is PASS !
+ Pattern           6 at Mode 1 is PASS !
+ Pattern           7 at Mode 1 is PASS !
+ Pattern           8 at Mode 1 is PASS !
+ Pattern           9 at Mode 1 is PASS !
+ Pattern          10 at Mode 1 is PASS !
+ Pattern          11 at Mode 1 is PASS !
+ Pattern          12 at Mode 1 is PASS !
+ Pattern          13 at Mode 1 is PASS !
+ Pattern          14 at Mode 1 is PASS !
+ Pattern          15 at Mode 1 is PASS !
+ Pattern          16 at Mode 1 is PASS !
+ Pattern          17 at Mode 1 is PASS !
+ Pattern          18 at Mode 1 is PASS !
+ Pattern          19 at Mode 1 is PASS !
+ Pattern          20 at Mode 1 is PASS !
+ Pattern          21 at Mode 1 is PASS !
+ Pattern          22 at Mode 1 is PASS !
+ Pattern          23 at Mode 1 is PASS !
+ Pattern          24 at Mode 1 is PASS !
+ Pattern          25 at Mode 1 is PASS !
+ Pattern          26 at Mode 1 is PASS !
+ Pattern          27 at Mode 1 is PASS !
+ Pattern          28 at Mode 1 is PASS !
+ Pattern          29 at Mode 1 is PASS !
+ Pattern          30 at Mode 1 is PASS !
+ Pattern          31 at Mode 1 is PASS !
+ Pattern          32 at Mode 1 is PASS !
+ Pattern          33 at Mode 1 is PASS !
+ Pattern          34 at Mode 1 is PASS !
+ Pattern          35 at Mode 1 is PASS !
+ Pattern          36 at Mode 1 is PASS !
+ Pattern          37 at Mode 1 is PASS !
+ Pattern          38 at Mode 1 is PASS !
+ Pattern          39 at Mode 1 is PASS !
+ Pattern          40 at Mode 1 is PASS !
+ Pattern          41 at Mode 1 is PASS !
+ Pattern          42 at Mode 1 is PASS !
+ Pattern          43 at Mode 1 is PASS !
+ Pattern          44 at Mode 1 is PASS !
+ Pattern          45 at Mode 1 is PASS !
+ Pattern          46 at Mode 1 is PASS !
+ Pattern          47 at Mode 1 is PASS !
+ Pattern          48 at Mode 1 is PASS !
+ Pattern          49 at Mode 1 is PASS !
+ Pattern          50 at Mode 1 is PASS !
+ Pattern          51 at Mode 1 is PASS !
+ Pattern          52 at Mode 1 is PASS !
+ Pattern          53 at Mode 1 is PASS !
+ Pattern          54 at Mode 1 is PASS !
+ Pattern          55 at Mode 1 is PASS !
+ Pattern          56 at Mode 1 is PASS !
+ Pattern          57 at Mode 1 is PASS !
+ Pattern          58 at Mode 1 is PASS !
+ Pattern          59 at Mode 1 is PASS !
+ Pattern          60 at Mode 1 is PASS !
+ Pattern          61 at Mode 1 is PASS !
+ Pattern          62 at Mode 1 is PASS !
+ Pattern          63 at Mode 1 is PASS !
+--------------------------- Simulation FINISH !!---------------------------
+============================================================================
+
+ \(^o^)/ CONGRATULATIONS!!  The simulation result is PASS!!!
+
+============================================================================
+Simulation complete via $finish(1) at time 125835 NS + 0
+./testfixture.v:131 $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 13, 2021 at 20:38:05 CST  (total: 00:00:03)

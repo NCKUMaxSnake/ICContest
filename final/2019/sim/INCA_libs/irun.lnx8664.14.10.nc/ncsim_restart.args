@@ -1,0 +1,27 @@
+//
+// File created by:  ncverilog
+// Do not modify this file
+//
++define+F1
++access+r
++define+SDF
++nc64bit
+-MESSAGES
++EMGRLOG
+ncverilog.log
+-XLSTIME
+1618318712
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.lnx8664.14.10.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.14.10.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.14.10.nc/hdl.var
+-XLNAME
+ncverilog
+-XLVERSION
+"TOOL:	ncverilog	14.10-s005"
+-XLNAME
+./INCA_libs/irun.lnx8664.14.10.nc/ideal125_16773

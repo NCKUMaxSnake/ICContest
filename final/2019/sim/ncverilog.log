@@ -1,0 +1,576 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 13, 2021 at 20:58:32 CST
+ncverilog
+	-f ncvlog.f
+		testfixture.v
+		../dc/IOTDF_syn.v
+		+define+F1
+		+access+r
+		-v
+		tsmc13_neg.v
+		+define+SDF
+		+nc64bit
+file: testfixture.v
+	module worklib.test:v
+		errors: 0, warnings: 0
+file: ../dc/IOTDF_syn.v
+	module worklib.CTRL:v
+		errors: 0, warnings: 0
+	module worklib.READ_DW_cmp_0:v
+		errors: 0, warnings: 0
+	module worklib.READ_DW_cmp_1:v
+		errors: 0, warnings: 0
+	module worklib.READ_DW_cmp_2:v
+		errors: 0, warnings: 0
+	module worklib.READ_DW_cmp_3:v
+		errors: 0, warnings: 0
+	module worklib.READ_DW01_add_1:v
+		errors: 0, warnings: 0
+	module worklib.READ:v
+		errors: 0, warnings: 0
+	module worklib.IOTDF:v
+		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.INVXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB1XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.MX2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4BBX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKMX2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFQX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFSX1:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_mux2:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \cur_state_reg[0]  ( .D(next_state[0]), .CK(clk), .RN(n6), .Q(
+                          |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,17|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[129]  ( .D(n1553), .CK(clk), .RN(n234), .Q(sum[129]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3871|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[130]  ( .D(n1552), .CK(clk), .RN(n234), .Q(sum[130]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3872|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[113]  ( .D(n1569), .CK(clk), .RN(n235), .Q(sum[113]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3873|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[114]  ( .D(n1568), .CK(clk), .RN(n235), .Q(sum[114]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3874|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[115]  ( .D(n1567), .CK(clk), .RN(n235), .Q(sum[115]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3875|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[116]  ( .D(n1566), .CK(clk), .RN(n235), .Q(sum[116]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3876|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[117]  ( .D(n1565), .CK(clk), .RN(n235), .Q(sum[117]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3877|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[118]  ( .D(n1564), .CK(clk), .RN(n235), .Q(sum[118]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3878|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[119]  ( .D(n1563), .CK(clk), .RN(n235), .Q(sum[119]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3879|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[120]  ( .D(n1562), .CK(clk), .RN(n235), .Q(sum[120]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3880|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[121]  ( .D(n1561), .CK(clk), .RN(n235), .Q(sum[121]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3881|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[122]  ( .D(n1560), .CK(clk), .RN(n235), .Q(sum[122]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3882|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[123]  ( .D(n1559), .CK(clk), .RN(n235), .Q(sum[123]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3883|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[124]  ( .D(n1558), .CK(clk), .RN(n235), .Q(sum[124]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3884|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[125]  ( .D(n1557), .CK(clk), .RN(n235), .Q(sum[125]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3885|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[126]  ( .D(n1556), .CK(clk), .RN(n235), .Q(sum[126]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,3886|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[104]  ( .D(n1578), .CK(clk), .RN(n257), .Q(sum[104]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4625|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[105]  ( .D(n1577), .CK(clk), .RN(n257), .Q(sum[105]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4626|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[106]  ( .D(n1576), .CK(clk), .RN(n257), .Q(sum[106]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4627|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[107]  ( .D(n1575), .CK(clk), .RN(n252), .Q(sum[107]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4628|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[108]  ( .D(n1574), .CK(clk), .RN(n236), .Q(sum[108]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4629|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[109]  ( .D(n1573), .CK(clk), .RN(n236), .Q(sum[109]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4630|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[110]  ( .D(n1572), .CK(clk), .RN(n236), .Q(sum[110]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4631|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[111]  ( .D(n1571), .CK(clk), .RN(n236), .Q(sum[111]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4632|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[112]  ( .D(n1570), .CK(clk), .RN(n235), .Q(sum[112]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4633|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[96]  ( .D(n1586), .CK(clk), .RN(n257), .Q(sum[96]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4662|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[97]  ( .D(n1585), .CK(clk), .RN(n257), .Q(sum[97]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4663|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[98]  ( .D(n1584), .CK(clk), .RN(n257), .Q(sum[98]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4664|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[99]  ( .D(n1583), .CK(clk), .RN(n257), .Q(sum[99]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4665|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[100]  ( .D(n1582), .CK(clk), .RN(n257), .Q(sum[100]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4666|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[101]  ( .D(n1581), .CK(clk), .RN(n257), .Q(sum[101]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4667|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[102]  ( .D(n1580), .CK(clk), .RN(n257), .Q(sum[102]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4668|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[103]  ( .D(n1579), .CK(clk), .RN(n245), .Q(sum[103]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4669|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[88]  ( .D(n1594), .CK(clk), .RN(n256), .Q(sum[88]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4670|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[89]  ( .D(n1593), .CK(clk), .RN(n256), .Q(sum[89]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4671|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[90]  ( .D(n1592), .CK(clk), .RN(n257), .Q(sum[90]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4672|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[91]  ( .D(n1591), .CK(clk), .RN(n257), .Q(sum[91]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4673|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[92]  ( .D(n1590), .CK(clk), .RN(n257), .Q(sum[92]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4674|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[93]  ( .D(n1589), .CK(clk), .RN(n257), .Q(sum[93]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4675|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[94]  ( .D(n1588), .CK(clk), .RN(n257), .Q(sum[94]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4676|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[95]  ( .D(n1587), .CK(clk), .RN(n257), .Q(sum[95]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4677|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[2]  ( .D(n1680), .CK(clk), .RN(n245), .Q(sum[2]) );
+                    |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4678|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[82]  ( .D(n1600), .CK(clk), .RN(n256), .Q(sum[82]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4679|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[83]  ( .D(n1599), .CK(clk), .RN(n256), .Q(sum[83]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4680|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[84]  ( .D(n1598), .CK(clk), .RN(n256), .Q(sum[84]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4681|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[85]  ( .D(n1597), .CK(clk), .RN(n256), .Q(sum[85]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4682|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[86]  ( .D(n1596), .CK(clk), .RN(n256), .Q(sum[86]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4683|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[87]  ( .D(n1595), .CK(clk), .RN(n256), .Q(sum[87]) );
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4684|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[0]  ( .D(n1682), .CK(clk), .RN(n245), .Q(sum[0]) );
+                    |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4789|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[1]  ( .D(n1681), .CK(clk), .RN(n245), .Q(sum[1]) );
+                    |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4790|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[127]  ( .D(n1555), .CK(clk), .RN(n235), .Q(sum[127]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4977|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \sum_reg[128]  ( .D(n1554), .CK(clk), .RN(n235), .Q(sum[128]) );
+                      |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,4994|22): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_cnt_reg[1]  ( .D(n1944), .CK(clk), .RN(n2351), .QN(n645) );
+                         |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,5052|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_cnt_reg[0]  ( .D(n1945), .CK(clk), .RN(n2351), .QN(n643) );
+                         |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,5057|25): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  READ_DW_cmp_0 lt_171 ( .A({comp_data[127:58], n38, comp_data[56:54], n24, 
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,7062|21): 1 output port was not connected:
+ncelab: (../dc/IOTDF_syn.v,29): EQ_NE
+
+  READ_DW_cmp_1 gt_167 ( .A({comp_data[127:58], n35, comp_data[56:54], n25, 
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,7073|21): 1 output port was not connected:
+ncelab: (../dc/IOTDF_syn.v,602): EQ_NE
+
+  READ_DW_cmp_2 lt_160 ( .A({comp_data[127:58], n35, comp_data[56:54], n24, 
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,7077|21): 1 output port was not connected:
+ncelab: (../dc/IOTDF_syn.v,1146): EQ_NE
+
+  READ_DW_cmp_3 gt_158 ( .A({comp_data[127:58], n35, comp_data[56:54], n25, 
+                     |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,7089|21): 1 output port was not connected:
+ncelab: (../dc/IOTDF_syn.v,1719): EQ_NE
+
+  READ_DW01_add_1 add_162 ( .A(sum), .B({1'b0, 1'b0, 1'b0, comp_data[127:58], 
+                        |
+ncelab: *W,CUVWSP (../dc/IOTDF_syn.v,7093|24): 1 output port was not connected:
+ncelab: (../dc/IOTDF_syn.v,2263): CO
+
+	Reading SDF file from location "../dc/IOTDF_syn.sdf"
+	Writing compiled SDF file to "IOTDF_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     IOTDF_syn.sdf.X
+		Log file:              
+		Backannotation scope:  test.u_IOTDF
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 15364  Annotated = 100.00% -- No. of Tchecks = 7047  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	       15364	       15364	      100.00
+		      $width	        2349	        2349	      100.00
+		  $setuphold	        4698	        4698	      100.00
+  assign n133 = A[128];
+       |
+ncelab: *W,SDFNCAP (../dc/IOTDF_syn.v,2347|7): The interconnect source test.u_IOTDF.READ.\sum_reg[128] .Q is separated by a unidirectional continuous assign from the destination test.u_IOTDF.READ.add_162.U1368.B.  The port annotation will still occur.
+  assign n133 = A[128];
+       |
+ncelab: *W,SDFNCAP (../dc/IOTDF_syn.v,2347|7): The interconnect source test.u_IOTDF.READ.\sum_reg[128] .Q is separated by a unidirectional continuous assign from the destination test.u_IOTDF.READ.add_162.U1416.B.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.CLKMX2X2:v <0x61c02bd6>
+			streams:   2, words:   240
+		tsmc13_neg.DFFQX1:v <0x30b8fae2>
+			streams:   1, words:    64
+		tsmc13_neg.DFFRX1:v <0x2fab90e1>
+			streams:   2, words:   128
+		tsmc13_neg.DFFSX1:v <0x55653174>
+			streams:   2, words:   128
+		tsmc13_neg.MX2XL:v <0x0cac04b6>
+			streams:   2, words:   240
+		tsmc13_neg.XNOR2X1:v <0x3e22ab73>
+			streams:   4, words:   318
+		tsmc13_neg.XNOR2XL:v <0x3d80b7d5>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2X1:v <0x3f58b5e5>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2XL:v <0x3eb6c247>
+			streams:   4, words:   318
+		worklib.CTRL:v <0x121390d3>
+			streams:   0, words:     0
+		worklib.IOTDF:v <0x7b850259>
+			streams:   0, words:     0
+		worklib.READ:v <0x6347b1fa>
+			streams:   0, words:     0
+		worklib.READ_DW01_add_1:v <0x49e7e035>
+			streams:   0, words:     0
+		worklib.test:v <0x20630991>
+			streams:  11, words: 17434
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                  5087      71
+		UDPs:                     1149       2
+		Primitives:              10988       8
+		Timing outputs:           5859      22
+		Registers:                 812      32
+		Scalar wires:             6665       -
+		Expanded wires:             11       2
+		Always blocks:               3       3
+		Initial blocks:              7       7
+		Cont. assignments:           0       1
+		Pseudo assignments:          1       1
+		Timing checks:            7047     875
+		Interconnect:            13951       -
+		Delayed tcheck signals:   2349     831
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.test:v
+Loading snapshot worklib.test:v .................... Done
+*Verdi* Loading libsscore_ius141.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'IOTDF_F1.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+-----------------------------------------------------
+
+Start to Send IOT Data & Compare ...
+
+
+P00:  ** Correct!! ** 
+P01:  ** Correct!! ** 
+P02:  ** Correct!! ** 
+P03:  ** Correct!! ** 
+P04:  ** Correct!! ** 
+P05:  ** Correct!! ** 
+P06:  ** Correct!! ** 
+P07:  ** Correct!! ** 
+P08:  ** Correct!! ** 
+P09:  ** Correct!! ** 
+P10:  ** Correct!! ** 
+P11:  ** Correct!! ** 
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 18270 NS + 0
+./testfixture.v:231       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 13, 2021 at 20:58:37 CST  (total: 00:00:05)
