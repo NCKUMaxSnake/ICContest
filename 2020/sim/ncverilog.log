@@ -1,0 +1,1773 @@
+ncverilog(64): 14.10-s005: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+TOOL:	ncverilog	14.10-s005: Started on Apr 13, 2021 at 17:50:27 CST
+ncverilog
+	-f ncvlog.f
+		-sv
+		tb.sv
+		../dc/SME_syn.v
+		+access+r
+		-v
+		/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+		+define+SDF
+		+nc64bit
+		+ncmaxdelays
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: ../dc/SME_syn.v
+	module worklib.Counter32:v
+		errors: 0, warnings: 0
+	module worklib.Compare:v
+		errors: 0, warnings: 0
+	module worklib.SME:v
+		errors: 0, warnings: 0
+file: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v
+	module tsmc13_neg.BUFX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX12:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.BUFX16:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.INVX16:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI31X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB1X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AO22X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND3BX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NAND4BBXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR4X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2BX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3BXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI21X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI211X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI22XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI221XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI222XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI31XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI32X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI33X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB1XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OAI2BB2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.OA21X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XNOR2X1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKBUFX3:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFXL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFRX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFSX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFSX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.EDFFX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.TLATX1:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_dff:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_tlat:v
+		errors: 0, warnings: 0
+	primitive tsmc13_neg.udp_edff:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \isStrPat_reg[1]  ( .D(N22), .CK(clk), .RN(n2), .Q(isStrPat[1]) );
+                         |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,18|25): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \isStrPat_reg[0]  ( .D(n5), .CK(clk), .RN(n2), .Q(isStrPat[0]) );
+                         |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,19|25): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \count_out_reg[4]  ( .D(N16), .CK(clk), .RN(n2), .Q(count_out[4]) );
+                          |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,20|26): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX1 \count_out_reg[3]  ( .D(N15), .CK(clk), .RN(n2), .Q(count_out[3]) );
+                          |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,21|26): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX2 \count_out_reg[0]  ( .D(N12), .CK(clk), .RN(n2), .Q(count_out[0]) );
+                          |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,22|26): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \count_out_reg[2]  ( .D(N14), .CK(clk), .RN(n2), .Q(count_out[2]) );
+                          |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,23|26): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  DFFRX2 \count_out_reg[1]  ( .D(N13), .CK(clk), .RN(n2), .Q(count_out[1]) );
+                          |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,24|26): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): QN
+
+  TLATX1 recnt_flag_reg ( .G(N354), .D(N355), .Q(recnt_flag) );
+                      |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,301|22): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,26772): QN
+
+  EDFFX1 \strings_num_reg[0]  ( .D(cnt_num[0]), .E(n1580), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,310|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  EDFFX1 \strings_num_reg[1]  ( .D(cnt_num[1]), .E(n1580), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,312|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  EDFFX1 \strings_num_reg[2]  ( .D(cnt_num[2]), .E(n1580), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,314|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  EDFFX1 \strings_num_reg[3]  ( .D(cnt_num[3]), .E(n1580), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,316|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  EDFFX1 \strings_num_reg[4]  ( .D(cnt_num[4]), .E(n1580), .CK(clk), .Q(
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,318|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,19783): QN
+
+  DFFSX1 \strings_reg[31][7]  ( .D(n1310), .CK(clk), .SN(n1703), .QN(n232) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,320|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][6]  ( .D(n1311), .CK(clk), .SN(n1703), .QN(n233) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,321|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][5]  ( .D(n1312), .CK(clk), .SN(n1702), .QN(n234) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,322|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][4]  ( .D(n1313), .CK(clk), .SN(n1702), .QN(n235) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,323|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][2]  ( .D(n1315), .CK(clk), .SN(n1702), .QN(n237) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,324|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][1]  ( .D(n1316), .CK(clk), .SN(n1702), .QN(n238) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,325|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][0]  ( .D(n1317), .CK(clk), .SN(n1702), .QN(n239) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,326|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][7]  ( .D(n1318), .CK(clk), .SN(n1702), .QN(n240) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,327|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][6]  ( .D(n1319), .CK(clk), .SN(n1702), .QN(n241) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,328|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][5]  ( .D(n1320), .CK(clk), .SN(n1702), .QN(n242) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,329|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][4]  ( .D(n1321), .CK(clk), .SN(n1702), .QN(n243) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,330|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][2]  ( .D(n1323), .CK(clk), .SN(n1702), .QN(n245) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,331|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][1]  ( .D(n1324), .CK(clk), .SN(n1702), .QN(n246) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,332|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][0]  ( .D(n1325), .CK(clk), .SN(n1702), .QN(n247) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,333|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][7]  ( .D(n1326), .CK(clk), .SN(n1702), .QN(n248) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,334|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][6]  ( .D(n1327), .CK(clk), .SN(n1702), .QN(n249) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,335|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][5]  ( .D(n1328), .CK(clk), .SN(n1701), .QN(n250) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,336|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][4]  ( .D(n1329), .CK(clk), .SN(n1701), .QN(n251) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,337|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][3]  ( .D(n1330), .CK(clk), .SN(n1701), .QN(n252) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,338|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][2]  ( .D(n1331), .CK(clk), .SN(n1701), .QN(n253) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,339|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][1]  ( .D(n1332), .CK(clk), .SN(n1701), .QN(n254) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,340|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[29][0]  ( .D(n1333), .CK(clk), .SN(n1701), .QN(n255) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,341|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][7]  ( .D(n1334), .CK(clk), .SN(n1701), .QN(n256) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,342|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][6]  ( .D(n1335), .CK(clk), .SN(n1701), .QN(n257) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,343|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][5]  ( .D(n1336), .CK(clk), .SN(n1701), .QN(n258) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,344|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][4]  ( .D(n1337), .CK(clk), .SN(n1701), .QN(n259) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,345|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][3]  ( .D(n1338), .CK(clk), .SN(n1701), .QN(n260) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,346|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][2]  ( .D(n1339), .CK(clk), .SN(n1701), .QN(n261) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,347|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][1]  ( .D(n1340), .CK(clk), .SN(n1701), .QN(n262) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,348|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[28][0]  ( .D(n1341), .CK(clk), .SN(n1701), .QN(n263) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,349|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][7]  ( .D(n1350), .CK(clk), .SN(n1700), .QN(n272) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,350|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][6]  ( .D(n1351), .CK(clk), .SN(n1700), .QN(n273) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,351|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][5]  ( .D(n1352), .CK(clk), .SN(n1700), .QN(n274) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,352|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][4]  ( .D(n1353), .CK(clk), .SN(n1700), .QN(n275) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,353|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][3]  ( .D(n1354), .CK(clk), .SN(n1700), .QN(n276) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,354|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][2]  ( .D(n1355), .CK(clk), .SN(n1700), .QN(n277) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,355|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][1]  ( .D(n1356), .CK(clk), .SN(n1700), .QN(n278) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,356|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[26][0]  ( .D(n1357), .CK(clk), .SN(n1700), .QN(n279) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,357|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][7]  ( .D(n1366), .CK(clk), .SN(n1699), .QN(n288) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,358|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][6]  ( .D(n1367), .CK(clk), .SN(n1699), .QN(n289) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,359|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][5]  ( .D(n1368), .CK(clk), .SN(n1699), .QN(n290) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,360|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][4]  ( .D(n1369), .CK(clk), .SN(n1699), .QN(n291) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,361|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][3]  ( .D(n1370), .CK(clk), .SN(n1699), .QN(n292) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,362|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][2]  ( .D(n1371), .CK(clk), .SN(n1699), .QN(n293) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,363|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][1]  ( .D(n1372), .CK(clk), .SN(n1699), .QN(n294) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,364|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[24][0]  ( .D(n1373), .CK(clk), .SN(n1699), .QN(n295) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,365|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][7]  ( .D(n1382), .CK(clk), .SN(n1698), .QN(n304) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,366|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][6]  ( .D(n1383), .CK(clk), .SN(n1703), .QN(n305) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,367|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][5]  ( .D(n1384), .CK(clk), .SN(n1698), .QN(n306) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,368|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][4]  ( .D(n1385), .CK(clk), .SN(n1698), .QN(n307) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,369|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][3]  ( .D(n1386), .CK(clk), .SN(n1698), .QN(n308) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,370|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][2]  ( .D(n1387), .CK(clk), .SN(n1698), .QN(n309) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,371|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][1]  ( .D(n1388), .CK(clk), .SN(n1698), .QN(n310) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,372|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[22][0]  ( .D(n1389), .CK(clk), .SN(n1698), .QN(n311) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,373|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][7]  ( .D(n1398), .CK(clk), .SN(n1697), .QN(n320) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,374|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][6]  ( .D(n1399), .CK(clk), .SN(n1697), .QN(n321) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,375|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][5]  ( .D(n1400), .CK(clk), .SN(n1697), .QN(n322) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,376|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][4]  ( .D(n1401), .CK(clk), .SN(n1697), .QN(n323) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,377|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][3]  ( .D(n1402), .CK(clk), .SN(n1697), .QN(n324) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,378|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][2]  ( .D(n1403), .CK(clk), .SN(n1697), .QN(n325) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,379|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][1]  ( .D(n1404), .CK(clk), .SN(n1697), .QN(n326) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,380|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[20][0]  ( .D(n1405), .CK(clk), .SN(n1697), .QN(n327) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,381|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][7]  ( .D(n1414), .CK(clk), .SN(n1696), .QN(n336) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,382|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][6]  ( .D(n1415), .CK(clk), .SN(n1696), .QN(n337) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,383|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][5]  ( .D(n1416), .CK(clk), .SN(n1696), .QN(n338) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,384|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][4]  ( .D(n1417), .CK(clk), .SN(n1696), .QN(n339) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,385|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][3]  ( .D(n1418), .CK(clk), .SN(n1696), .QN(n340) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,386|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][2]  ( .D(n1419), .CK(clk), .SN(n1696), .QN(n341) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,387|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][1]  ( .D(n1420), .CK(clk), .SN(n1695), .QN(n342) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,388|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[18][0]  ( .D(n1421), .CK(clk), .SN(n1695), .QN(n343) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,389|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][7]  ( .D(n1430), .CK(clk), .SN(n1695), .QN(n352) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,390|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][6]  ( .D(n1431), .CK(clk), .SN(n1695), .QN(n353) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,391|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][5]  ( .D(n1432), .CK(clk), .SN(n1695), .QN(n354) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,392|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][4]  ( .D(n1433), .CK(clk), .SN(n1696), .QN(n355) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,393|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][3]  ( .D(n1434), .CK(clk), .SN(n1695), .QN(n356) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,394|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][2]  ( .D(n1435), .CK(clk), .SN(n1695), .QN(n357) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,395|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][1]  ( .D(n1436), .CK(clk), .SN(n1694), .QN(n358) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,396|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[16][0]  ( .D(n1437), .CK(clk), .SN(n1695), .QN(n359) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,397|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][7]  ( .D(n1446), .CK(clk), .SN(n1694), .QN(n368) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,398|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][6]  ( .D(n1447), .CK(clk), .SN(n1694), .QN(n369) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,399|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][5]  ( .D(n1448), .CK(clk), .SN(n1694), .QN(n370) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,400|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][4]  ( .D(n1449), .CK(clk), .SN(n1694), .QN(n371) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,401|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][3]  ( .D(n1450), .CK(clk), .SN(n1694), .QN(n372) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,402|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][2]  ( .D(n1451), .CK(clk), .SN(n1694), .QN(n373) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,403|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][1]  ( .D(n1452), .CK(clk), .SN(n1694), .QN(n374) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,404|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[14][0]  ( .D(n1453), .CK(clk), .SN(n1693), .QN(n375) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,405|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][7]  ( .D(n1462), .CK(clk), .SN(n1693), .QN(n384) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,406|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][6]  ( .D(n1463), .CK(clk), .SN(n1693), .QN(n385) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,407|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][5]  ( .D(n1464), .CK(clk), .SN(n1698), .QN(n386) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,408|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][4]  ( .D(n1465), .CK(clk), .SN(n1713), .QN(n387) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,409|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][3]  ( .D(n1466), .CK(clk), .SN(n1713), .QN(n388) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,410|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][2]  ( .D(n1467), .CK(clk), .SN(n1713), .QN(n389) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,411|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][1]  ( .D(n1468), .CK(clk), .SN(n1713), .QN(n390) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,412|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[12][0]  ( .D(n1469), .CK(clk), .SN(n1713), .QN(n391) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,413|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][7]  ( .D(n1478), .CK(clk), .SN(n1712), .QN(n400) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,414|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][6]  ( .D(n1479), .CK(clk), .SN(n1712), .QN(n401) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,415|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][5]  ( .D(n1480), .CK(clk), .SN(n1712), .QN(n402) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,416|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][4]  ( .D(n1481), .CK(clk), .SN(n1712), .QN(n403) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,417|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][3]  ( .D(n1482), .CK(clk), .SN(n1712), .QN(n404) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,418|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][2]  ( .D(n1483), .CK(clk), .SN(n1712), .QN(n405) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,419|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][1]  ( .D(n1484), .CK(clk), .SN(n1712), .QN(n406) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,420|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[10][0]  ( .D(n1485), .CK(clk), .SN(n1712), .QN(n407) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,421|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][7]  ( .D(n1494), .CK(clk), .SN(n1711), .QN(n416) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,422|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][6]  ( .D(n1495), .CK(clk), .SN(n1711), .QN(n417) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,423|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][5]  ( .D(n1496), .CK(clk), .SN(n1711), .QN(n418) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,424|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][4]  ( .D(n1497), .CK(clk), .SN(n1711), .QN(n419) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,425|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][3]  ( .D(n1498), .CK(clk), .SN(n1711), .QN(n420) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,426|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][2]  ( .D(n1499), .CK(clk), .SN(n1711), .QN(n421) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,427|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][1]  ( .D(n1500), .CK(clk), .SN(n1711), .QN(n422) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,428|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[8][0]  ( .D(n1501), .CK(clk), .SN(n1711), .QN(n423) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,429|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][7]  ( .D(n1510), .CK(clk), .SN(n1710), .QN(n432) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,430|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][6]  ( .D(n1511), .CK(clk), .SN(n1710), .QN(n433) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,431|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][5]  ( .D(n1512), .CK(clk), .SN(n1710), .QN(n434) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,432|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][4]  ( .D(n1513), .CK(clk), .SN(n1710), .QN(n435) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,433|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][3]  ( .D(n1514), .CK(clk), .SN(n1710), .QN(n436) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,434|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][2]  ( .D(n1515), .CK(clk), .SN(n1710), .QN(n437) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,435|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][1]  ( .D(n1516), .CK(clk), .SN(n1710), .QN(n438) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,436|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[6][0]  ( .D(n1517), .CK(clk), .SN(n1710), .QN(n439) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,437|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][7]  ( .D(n1526), .CK(clk), .SN(n1709), .QN(n448) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,438|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][6]  ( .D(n1527), .CK(clk), .SN(n1709), .QN(n449) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,439|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][5]  ( .D(n1528), .CK(clk), .SN(n1709), .QN(n450) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,440|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][4]  ( .D(n1529), .CK(clk), .SN(n1709), .QN(n451) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,441|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][3]  ( .D(n1530), .CK(clk), .SN(n1709), .QN(n452) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,442|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][2]  ( .D(n1531), .CK(clk), .SN(n1709), .QN(n453) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,443|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][1]  ( .D(n1532), .CK(clk), .SN(n1709), .QN(n454) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,444|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[4][0]  ( .D(n1533), .CK(clk), .SN(n1709), .QN(n455) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,445|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][7]  ( .D(n1542), .CK(clk), .SN(n1708), .QN(n464) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,446|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][6]  ( .D(n1543), .CK(clk), .SN(n1708), .QN(n465) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,447|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][5]  ( .D(n1544), .CK(clk), .SN(n1708), .QN(n466) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,448|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][4]  ( .D(n1545), .CK(clk), .SN(n1708), .QN(n467) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,449|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][3]  ( .D(n1546), .CK(clk), .SN(n1708), .QN(n468) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,450|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][2]  ( .D(n1547), .CK(clk), .SN(n1708), .QN(n469) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,451|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][1]  ( .D(n1548), .CK(clk), .SN(n1708), .QN(n470) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,452|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[2][0]  ( .D(n1549), .CK(clk), .SN(n1708), .QN(n471) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,453|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][7]  ( .D(n1342), .CK(clk), .SN(n1701), .QN(n264) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,454|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][6]  ( .D(n1343), .CK(clk), .SN(n1701), .QN(n265) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,455|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][5]  ( .D(n1344), .CK(clk), .SN(n1700), .QN(n266) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,456|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][4]  ( .D(n1345), .CK(clk), .SN(n1700), .QN(n267) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,457|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][3]  ( .D(n1346), .CK(clk), .SN(n1700), .QN(n268) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,458|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][2]  ( .D(n1347), .CK(clk), .SN(n1700), .QN(n269) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,459|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][1]  ( .D(n1348), .CK(clk), .SN(n1700), .QN(n270) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,460|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[27][0]  ( .D(n1349), .CK(clk), .SN(n1700), .QN(n271) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,461|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][7]  ( .D(n1358), .CK(clk), .SN(n1700), .QN(n280) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,462|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][6]  ( .D(n1359), .CK(clk), .SN(n1700), .QN(n281) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,463|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][5]  ( .D(n1360), .CK(clk), .SN(n1699), .QN(n282) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,464|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][4]  ( .D(n1361), .CK(clk), .SN(n1699), .QN(n283) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,465|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][3]  ( .D(n1362), .CK(clk), .SN(n1699), .QN(n284) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,466|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][2]  ( .D(n1363), .CK(clk), .SN(n1699), .QN(n285) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,467|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][1]  ( .D(n1364), .CK(clk), .SN(n1699), .QN(n286) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,468|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[25][0]  ( .D(n1365), .CK(clk), .SN(n1699), .QN(n287) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,469|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][7]  ( .D(n1374), .CK(clk), .SN(n1699), .QN(n296) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,470|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][6]  ( .D(n1375), .CK(clk), .SN(n1699), .QN(n297) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,471|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][5]  ( .D(n1376), .CK(clk), .SN(n1698), .QN(n298) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,472|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][4]  ( .D(n1377), .CK(clk), .SN(n1698), .QN(n299) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,473|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][3]  ( .D(n1378), .CK(clk), .SN(n1698), .QN(n300) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,474|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][2]  ( .D(n1379), .CK(clk), .SN(n1698), .QN(n301) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,475|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][1]  ( .D(n1380), .CK(clk), .SN(n1698), .QN(n302) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,476|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[23][0]  ( .D(n1381), .CK(clk), .SN(n1698), .QN(n303) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,477|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][7]  ( .D(n1390), .CK(clk), .SN(n1698), .QN(n312) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,478|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][6]  ( .D(n1391), .CK(clk), .SN(n1697), .QN(n313) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,479|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][5]  ( .D(n1392), .CK(clk), .SN(n1697), .QN(n314) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,480|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][4]  ( .D(n1393), .CK(clk), .SN(n1698), .QN(n315) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,481|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][3]  ( .D(n1394), .CK(clk), .SN(n1697), .QN(n316) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,482|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][2]  ( .D(n1395), .CK(clk), .SN(n1697), .QN(n317) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,483|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][1]  ( .D(n1396), .CK(clk), .SN(n1697), .QN(n318) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,484|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[21][0]  ( .D(n1397), .CK(clk), .SN(n1697), .QN(n319) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,485|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][7]  ( .D(n1406), .CK(clk), .SN(n1697), .QN(n328) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,486|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][6]  ( .D(n1407), .CK(clk), .SN(n1696), .QN(n329) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,487|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][5]  ( .D(n1408), .CK(clk), .SN(n1697), .QN(n330) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,488|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][4]  ( .D(n1409), .CK(clk), .SN(n1696), .QN(n331) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,489|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][3]  ( .D(n1410), .CK(clk), .SN(n1696), .QN(n332) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,490|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][2]  ( .D(n1411), .CK(clk), .SN(n1696), .QN(n333) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,491|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][1]  ( .D(n1412), .CK(clk), .SN(n1696), .QN(n334) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,492|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[19][0]  ( .D(n1413), .CK(clk), .SN(n1696), .QN(n335) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,493|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][7]  ( .D(n1422), .CK(clk), .SN(n1696), .QN(n344) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,494|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][6]  ( .D(n1423), .CK(clk), .SN(n1695), .QN(n345) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,495|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][5]  ( .D(n1424), .CK(clk), .SN(n1695), .QN(n346) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,496|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][4]  ( .D(n1425), .CK(clk), .SN(n1696), .QN(n347) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,497|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][3]  ( .D(n1426), .CK(clk), .SN(n1695), .QN(n348) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,498|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][2]  ( .D(n1427), .CK(clk), .SN(n1695), .QN(n349) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,499|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][1]  ( .D(n1428), .CK(clk), .SN(n1696), .QN(n350) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,500|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[17][0]  ( .D(n1429), .CK(clk), .SN(n1695), .QN(n351) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,501|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][7]  ( .D(n1438), .CK(clk), .SN(n1694), .QN(n360) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,502|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][6]  ( .D(n1439), .CK(clk), .SN(n1694), .QN(n361) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,503|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][5]  ( .D(n1440), .CK(clk), .SN(n1695), .QN(n362) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,504|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][4]  ( .D(n1441), .CK(clk), .SN(n1695), .QN(n363) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,505|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][3]  ( .D(n1442), .CK(clk), .SN(n1694), .QN(n364) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,506|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][2]  ( .D(n1443), .CK(clk), .SN(n1695), .QN(n365) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,507|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][1]  ( .D(n1444), .CK(clk), .SN(n1694), .QN(n366) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,508|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[15][0]  ( .D(n1445), .CK(clk), .SN(n1694), .QN(n367) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,509|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][7]  ( .D(n1454), .CK(clk), .SN(n1693), .QN(n376) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,510|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][6]  ( .D(n1455), .CK(clk), .SN(n1694), .QN(n377) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,511|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][5]  ( .D(n1456), .CK(clk), .SN(n1693), .QN(n378) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,512|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][4]  ( .D(n1457), .CK(clk), .SN(n1694), .QN(n379) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,513|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][3]  ( .D(n1458), .CK(clk), .SN(n1694), .QN(n380) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,514|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][2]  ( .D(n1459), .CK(clk), .SN(n1693), .QN(n381) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,515|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][1]  ( .D(n1460), .CK(clk), .SN(n1693), .QN(n382) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,516|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[13][0]  ( .D(n1461), .CK(clk), .SN(n1693), .QN(n383) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,517|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][7]  ( .D(n1470), .CK(clk), .SN(n1713), .QN(n392) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,518|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][6]  ( .D(n1471), .CK(clk), .SN(n1713), .QN(n393) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,519|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][5]  ( .D(n1472), .CK(clk), .SN(n1713), .QN(n394) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,520|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][4]  ( .D(n1473), .CK(clk), .SN(n1712), .QN(n395) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,521|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][3]  ( .D(n1474), .CK(clk), .SN(n1712), .QN(n396) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,522|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][2]  ( .D(n1475), .CK(clk), .SN(n1712), .QN(n397) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,523|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][1]  ( .D(n1476), .CK(clk), .SN(n1712), .QN(n398) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,524|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[11][0]  ( .D(n1477), .CK(clk), .SN(n1712), .QN(n399) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,525|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][7]  ( .D(n1486), .CK(clk), .SN(n1712), .QN(n408) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,526|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][6]  ( .D(n1487), .CK(clk), .SN(n1712), .QN(n409) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,527|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][5]  ( .D(n1488), .CK(clk), .SN(n1712), .QN(n410) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,528|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][4]  ( .D(n1489), .CK(clk), .SN(n1711), .QN(n411) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,529|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][3]  ( .D(n1490), .CK(clk), .SN(n1711), .QN(n412) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,530|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][2]  ( .D(n1491), .CK(clk), .SN(n1711), .QN(n413) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,531|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][1]  ( .D(n1492), .CK(clk), .SN(n1711), .QN(n414) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,532|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[9][0]  ( .D(n1493), .CK(clk), .SN(n1711), .QN(n415) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,533|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][7]  ( .D(n1502), .CK(clk), .SN(n1711), .QN(n424) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,534|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][6]  ( .D(n1503), .CK(clk), .SN(n1711), .QN(n425) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,535|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][5]  ( .D(n1504), .CK(clk), .SN(n1711), .QN(n426) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,536|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][4]  ( .D(n1505), .CK(clk), .SN(n1710), .QN(n427) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,537|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][3]  ( .D(n1506), .CK(clk), .SN(n1710), .QN(n428) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,538|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][2]  ( .D(n1507), .CK(clk), .SN(n1710), .QN(n429) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,539|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][1]  ( .D(n1508), .CK(clk), .SN(n1710), .QN(n430) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,540|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[7][0]  ( .D(n1509), .CK(clk), .SN(n1710), .QN(n431) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,541|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][7]  ( .D(n1518), .CK(clk), .SN(n1710), .QN(n440) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,542|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][6]  ( .D(n1519), .CK(clk), .SN(n1710), .QN(n441) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,543|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][5]  ( .D(n1520), .CK(clk), .SN(n1710), .QN(n442) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,544|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][4]  ( .D(n1521), .CK(clk), .SN(n1709), .QN(n443) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,545|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][3]  ( .D(n1522), .CK(clk), .SN(n1709), .QN(n444) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,546|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][2]  ( .D(n1523), .CK(clk), .SN(n1709), .QN(n445) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,547|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][1]  ( .D(n1524), .CK(clk), .SN(n1709), .QN(n446) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,548|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[5][0]  ( .D(n1525), .CK(clk), .SN(n1709), .QN(n447) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,549|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][7]  ( .D(n1534), .CK(clk), .SN(n1709), .QN(n456) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,550|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][6]  ( .D(n1535), .CK(clk), .SN(n1709), .QN(n457) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,551|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][5]  ( .D(n1536), .CK(clk), .SN(n1709), .QN(n458) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,552|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][4]  ( .D(n1537), .CK(clk), .SN(n1708), .QN(n459) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,553|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][3]  ( .D(n1538), .CK(clk), .SN(n1708), .QN(n460) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,554|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][2]  ( .D(n1539), .CK(clk), .SN(n1708), .QN(n461) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,555|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][1]  ( .D(n1540), .CK(clk), .SN(n1708), .QN(n462) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,556|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[3][0]  ( .D(n1541), .CK(clk), .SN(n1708), .QN(n463) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,557|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][7]  ( .D(n1550), .CK(clk), .SN(n1708), .QN(n472) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,558|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][6]  ( .D(n1551), .CK(clk), .SN(n1708), .QN(n473) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,559|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][5]  ( .D(n1552), .CK(clk), .SN(n1707), .QN(n474) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,560|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][4]  ( .D(n1553), .CK(clk), .SN(n1707), .QN(n475) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,561|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][3]  ( .D(n1554), .CK(clk), .SN(n1707), .QN(n476) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,562|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][2]  ( .D(n1555), .CK(clk), .SN(n1707), .QN(n477) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,563|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][1]  ( .D(n1556), .CK(clk), .SN(n1707), .QN(n478) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,564|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[1][0]  ( .D(n1557), .CK(clk), .SN(n1707), .QN(n479) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,565|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][7]  ( .D(n1558), .CK(clk), .SN(n1707), .QN(n480) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,566|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][6]  ( .D(n1559), .CK(clk), .SN(n1707), .QN(n481) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,567|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][5]  ( .D(n1560), .CK(clk), .SN(n1707), .QN(n482) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,568|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][4]  ( .D(n1561), .CK(clk), .SN(n1707), .QN(n483) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,569|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][3]  ( .D(n1562), .CK(clk), .SN(n1707), .QN(n484) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,570|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][2]  ( .D(n1563), .CK(clk), .SN(n1707), .QN(n485) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,571|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][1]  ( .D(n1564), .CK(clk), .SN(n1707), .QN(n486) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,572|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[0][0]  ( .D(n1565), .CK(clk), .SN(n1707), .QN(n487) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,573|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[31][3]  ( .D(n1314), .CK(clk), .SN(n1702), .QN(n236) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,622|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFSX1 \strings_reg[30][3]  ( .D(n1322), .CK(clk), .SN(n1702), .QN(n244) );
+                            |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,623|28): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+  DFFRX1 \star_index_reg[4]  ( .D(n1304), .CK(clk), .RN(n1693), .QN(n227) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,628|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \star_index_reg[3]  ( .D(n1305), .CK(clk), .RN(n1692), .QN(n228) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,629|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \star_index_reg[2]  ( .D(n1306), .CK(clk), .RN(n1693), .QN(n229) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,630|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \star_index_reg[1]  ( .D(n1307), .CK(clk), .RN(n1693), .QN(n230) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,631|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \star_index_reg[0]  ( .D(n1308), .CK(clk), .RN(n1692), .QN(n231) );
+                           |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,632|27): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): Q
+
+  DFFRX1 \current_state_reg[0]  ( .D(next_state[0]), .CK(clk), .RN(n1692), .Q(
+                              |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,709|30): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18307): QN
+
+  DFFRX2 star_flag_reg ( .D(n1309), .CK(clk), .RN(n1821), .QN(n492) );
+                     |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,729|21): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18376): Q
+
+  DFFSX1 match_reg ( .D(n1575), .CK(clk), .SN(n1821), .QN(n490) );
+                 |
+ncelab: *W,CUVWSP (../dc/SME_syn.v,736|17): 1 output port was not connected:
+ncelab: (/home/nfs_cad/lib/CBDK_IC_Contest_v2.1/Verilog/tsmc13_neg.v,18583): Q
+
+	Reading SDF file from location "../dc/SME_syn.sdf"
+	Writing compiled SDF file to "SME_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     SME_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_SME
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 6025  Annotated = 100.00% -- No. of Tchecks = 3206  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        6025	        6025	      100.00
+		      $width	        1060	        1060	      100.00
+		  $setuphold	        2146	        2146	      100.00
+  assign N22 = isstring;
+       |
+ncelab: *W,SDFNCAP (../dc/SME_syn.v,16|7): The interconnect source testfixture.u_SME.isstring is separated by a unidirectional continuous assign from the destination testfixture.u_SME.GET.U12.A.  The port annotation will still occur.
+  assign N22 = isstring;
+       |
+ncelab: *W,SDFNCAP (../dc/SME_syn.v,16|7): The interconnect source testfixture.u_SME.isstring is separated by a unidirectional continuous assign from the destination testfixture.u_SME.GET.\isStrPat_reg[1] .D.  The port annotation will still occur.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDFX2:v <0x301145fd>
+			streams:  14, words:  1719
+		tsmc13_neg.ADDFXL:v <0x5f0897d6>
+			streams:  14, words:  1719
+		tsmc13_neg.ADDHXL:v <0x034d71c5>
+			streams:   4, words:   318
+		tsmc13_neg.DFFRX1:v <0x433bafb1>
+			streams:   2, words:   128
+		tsmc13_neg.DFFRX2:v <0x3bef556a>
+			streams:   2, words:   128
+		tsmc13_neg.DFFSX1:v <0x68f55044>
+			streams:   2, words:   128
+		tsmc13_neg.DFFSX2:v <0x61a8f5fd>
+			streams:   2, words:   128
+		tsmc13_neg.DFFX1:v <0x54f81193>
+			streams:   2, words:   128
+		tsmc13_neg.DFFXL:v <0x5c0e7483>
+			streams:   2, words:   128
+		tsmc13_neg.EDFFX1:v <0x4d1c4bbb>
+			streams:   2, words:   128
+		tsmc13_neg.TLATX1:v <0x4af2eedb>
+			streams:   2, words:   128
+		tsmc13_neg.XNOR2X1:v <0x09f31468>
+			streams:   4, words:   318
+		tsmc13_neg.XNOR2XL:v <0x64220ca5>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2X1:v <0x16810689>
+			streams:   4, words:   318
+		tsmc13_neg.XOR2XL:v <0x15df12eb>
+			streams:   4, words:   318
+		worklib.Counter32:v <0x41173cc7>
+			streams:   0, words:     0
+		worklib.\$unit_0x72cdafba :compilation_unit <0x7a1677b5>
+			streams:   1, words:  5111
+		worklib.testfixture:sv <0x3070a6f9>
+			streams:  15, words: 29151
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 1729      72
+		UDPs:                     358       3
+		Primitives:              4820       8
+		Timing outputs:          2093      37
+		Registers:                387      40
+		Scalar wires:            2458       -
+		Expanded wires:             8       1
+		Always blocks:              5       5
+		Initial blocks:            11      11
+		Cont. assignments:          0       1
+		Pseudo assignments:         1       1
+		Timing checks:           3206     420
+		Interconnect:            5533       -
+		Delayed tcheck signals:  1068     385
+		Compilation units:          1       1
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+*Verdi* Loading libsscore_ius141.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_O-2018.09, Linux x86_64/64bit, 08/30/2018
+(C) 1996 - 2018 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'SME.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+----------------------
+-- Simulation Start --
+----------------------
+  __________________________________________________________
+  == String 1  "abcdijk lmnop q rstuv"
+  -- Pattern 1  "1234"
+       cycle 6f, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 2  "abcd"
+       cycle 79, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 3  "dijk"
+       cycle 8f, expect(1,03) , get(1,03) >> Pass
+  -- Pattern 4  "pqrst"
+       cycle fa, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 5  "pqr.t"
+       cycle 165, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 6  "c...k"
+       cycle 17b, expect(1,02) , get(1,02) >> Pass
+  -- Pattern 7  "^lmno"
+       cycle 1a9, expect(1,08) , get(1,08) >> Pass
+  -- Pattern 8  "rstuv$"
+       cycle 217, expect(1,10) , get(1,10) >> Pass
+  -- Pattern 9  "^rmn"
+       cycle 26c, expect(0,--) , get(0,--) >> Pass
+  -- Pattern a  "ijk l$"
+       cycle 2ec, expect(0,--) , get(0,--) >> Pass
+  -- Pattern b  "v"
+       cycle 303, expect(1,14) , get(1,14) >> Pass
+  -- Pattern c  "lmnoprst"
+       cycle 3ad, expect(0,--) , get(0,--) >> Pass
+  -- Pattern d  "^ijk$"
+       cycle 417, expect(0,--) , get(0,--) >> Pass
+  -- Pattern e  "^q$"
+       cycle 445, expect(1,0e) , get(1,0e) >> Pass
+  __________________________________________________________
+  == String 2  "2x1=2 2x2=4 2x3=6"
+  -- Pattern 1  "^2.2.2"
+       cycle 4bd, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 2  "2.2.2"
+       cycle 4dd, expect(1,04) , get(1,04) >> Pass
+  -- Pattern 3  "^2.2.4$"
+       cycle 50f, expect(1,06) , get(1,06) >> Pass
+  -- Pattern 4  "."
+       cycle 513, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 5  "^.."
+       cycle 51a, expect(1,00) , get(1,00) >> Pass
+  -- Pattern 6  "^.$"
+       cycle 54e, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 7  "2.$"
+       cycle 583, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 8  "2x4=7"
+       cycle 5da, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 9  "3=6-3"
+       cycle 631, expect(0,--) , get(0,--) >> Pass
+  -- Pattern a  "1.2=2"
+       cycle 688, expect(0,--) , get(0,--) >> Pass
+  -- Pattern b  "2*2=4"
+       cycle 6a9, expect(1,00) , get(1,00) >> Pass
+  __________________________________________________________
+  == String 3  "She sees cheese"
+  -- Pattern 1  "ees."
+       cycle 6d6, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 2  "ees.$"
+       cycle 719, expect(1,0b) , get(1,0b) >> Pass
+  -- Pattern 3  "e..se"
+       cycle 766, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 4  "e..ee$"
+       cycle 7c2, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 5  "^ees*"
+       cycle 80e, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 6  "hee*se"
+       cycle 858, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 7  "he.s"
+       cycle 866, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 8  "*see$"
+       cycle 8a6, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 9  "se*ce"
+       cycle 8d4, expect(0,--) , get(0,--) >> Pass
+  __________________________________________________________
+  == String 4  "But she said the butter's bitter"
+  -- Pattern 1  "sa*said"
+       cycle 98c, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 2  "b*tter"
+       cycle a04, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 3  "b*tter$"
+       cycle abd, expect(1,11) , get(1,11) >> Pass
+  -- Pattern 4  "ut*r"
+       cycle ade, expect(1,01) , get(1,01) >> Pass
+  -- Pattern 5  "ut*tted"
+       cycle b61, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 6  "^ut*tter"
+       cycle c62, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 7  "*tered"
+       cycle d06, expect(0,--) , get(0,--) >> Pass
+  __________________________________________________________
+  == String 5  "He threw three free throws"
+  -- Pattern 1  "thr*the$"
+       cycle d92, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 2  "^thro*th"
+       cycle e3b, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 3  ".ree th"
+       cycle eb4, expect(1,0f) , get(1,0f) >> Pass
+  -- Pattern 4  ".ree  fr"
+       cycle f86, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 5  ".ree *re"
+       cycle fea, expect(1,0a) , get(1,0a) >> Pass
+  -- Pattern 6  "re. thr"
+       cycle 101d, expect(1,05) , get(1,05) >> Pass
+  -- Pattern 7  "ee*ee fr"
+       cycle 10c1, expect(0,--) , get(0,--) >> Pass
+  -- Pattern 8  "ee*ee th"
+       cycle 1142, expect(1,0c) , get(1,0c) >> Pass
+  -- Pattern 9  "re*ee.$"
+       cycle 11b9, expect(0,--) , get(0,--) >> Pass
+  -- Pattern a  "^...$"
+       cycle 123c, expect(0,--) , get(0,--) >> Pass
+  -- Pattern b  "^....$"
+       cycle 129d, expect(1,0f) , get(1,0f) >> Pass
+----------------------------------
+-- Simulation finish, ALL PASS  --
+-- cycle =4766 , Score =100       --
+----------------------------------
+Simulation complete via $finish(1) at time 57192 NS + 0
+./tb.sv:201                     $finish;
+ncsim> exit
+TOOL:	ncverilog	14.10-s005: Exiting on Apr 13, 2021 at 17:50:31 CST  (total: 00:00:04)
